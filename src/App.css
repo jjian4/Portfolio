@@ -1,0 +1,21 @@
+.navbar {
+    margin: 0;
+    background-color: black;
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.navItem {
+    display: inline;
+    padding: 20px;
+}
+
+.navItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    color: var(--primary-color);
+}
