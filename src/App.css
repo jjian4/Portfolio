@@ -1,14 +1,27 @@
-.navbar {
-    margin: 0;
+.navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: black;
     list-style-type: none;
-    padding: 10px;
-    text-align: center;
+    height: var(--navBar-height);
+    padding-top: 8px;
+}
+
+.logo {
+    float: left;
+    font-weight: bold;
+}
+
+.navBarRight {
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
 .navItem {
     display: inline;
-    padding: 20px;
+    margin: 0 10px;
 }
 
 .navItem a {

@@ -1,0 +1,21 @@
+.landingScreen {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landingText {
+    padding-bottom: 150px;
+}
+.landingTitle {
+    font-size: 80px;
+}
+
+.landingSubtitle {
+    font-size: 25px;
+}

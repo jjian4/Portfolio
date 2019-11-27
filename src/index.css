@@ -1,6 +1,8 @@
 :root {
     --primary-color: #c72c41;
     --secondary-color: #c72c41;
+
+    --navBar-height: 40px;
 }
 
 body,
