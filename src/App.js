@@ -11,9 +11,9 @@ function App() {
         <Router>
             <div className='navBar'>
                 <div className='container'>
-                    <span className='navItem logo'>
+                    <div className='navItem logo'>
                         <Link to='/'>JAMES JIANG</Link>
-                    </span>
+                    </div>
                     <nav>
                         <ul className='navBarRight'>
                             <li className='navItem'>

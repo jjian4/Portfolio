@@ -9,8 +9,9 @@
     text-align: center;
 }
 
-.landingText {
-    padding-bottom: 150px;
+.overlay {
+    padding-bottom: 50px;
+    width: 70%;
 }
 .landingTitle {
     font-size: 80px;
@@ -18,4 +19,31 @@
 
 .landingSubtitle {
     font-size: 25px;
+}
+
+.homeLinks {
+    padding-top: 30px;
+}
+
+.homeLink {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.homeLink a {
+    color: white;
+    padding: 10px 25px;
+    background-color: black;
+    border: 1px black solid;
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+.homeArrow {
+    margin-top: 120px;
+    font-size: 50px;
+}
+
+.homeArrow a {
+    color: black;
 }
