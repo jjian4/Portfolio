@@ -5,7 +5,17 @@
     background-color: black;
     list-style-type: none;
     height: var(--navBar-height);
-    padding-top: 8px;
+    z-index: 1;
+    border-bottom: 2px white solid;
+}
+
+.navBarContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .logo {
