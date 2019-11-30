@@ -18,7 +18,11 @@
 
 .aboutTitle {
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 15px;
+}
+
+.skillTitle {
+    padding: 5px 0;
 }
 
 .skillRow {

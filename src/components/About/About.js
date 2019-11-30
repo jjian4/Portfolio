@@ -27,11 +27,11 @@ const About = () => {
                             <p>
                                 The number of paths to take are endless, and I'm
                                 excited to be a part of this technological world
-                                that is rapidly transforming our lives everyday.
+                                that is transforming our lives everyday.
                             </p>
                             <p>
-                                Feel free to contact me with any questions or
-                                comments!
+                                Feel free to contact me at jjian@umich.edu with
+                                any questions or comments!
                             </p>
                         </div>
                     </div>

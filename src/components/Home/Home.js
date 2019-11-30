@@ -5,7 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Home.css';
 import About from '../About/About';
 
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+
 const Home = () => {
+    const homeDividerRef = React.createRef();
+    const executeScroll = () => scrollToRef(homeDividerRef);
+
     return (
         <div className='home'>
             <div className='container'>
@@ -16,11 +21,12 @@ const Home = () => {
 
                         <div className='homeButtons row'>
                             <span className='col-md-4'>
-                                <a href='#homeDivider'>
-                                    <button className='homeButton'>
-                                        ABOUT
-                                    </button>
-                                </a>
+                                <button
+                                    className='homeButton'
+                                    onClick={executeScroll}
+                                >
+                                    ABOUT
+                                </button>
                             </span>
                             <span className='col-md-4'>
                                 <Link to='/experience'>
@@ -40,14 +46,14 @@ const Home = () => {
                     </div>
 
                     <div className='homeArrow'>
-                        <a href='#homeDivider'>
+                        <button onClick={executeScroll}>
                             <FontAwesomeIcon icon={faAngleDoubleDown} />
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div id='homeDivider' />
+            <div ref={homeDividerRef} id='homeDivider' />
 
             <About />
         </div>

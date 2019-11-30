@@ -55,8 +55,8 @@
 
 .footerIcon {
     color: gray;
-    padding: 0 24px;
-    font-size: 25px;
+    padding: 0 35px;
+    font-size: 30px;
 }
 
 .footerIcon:hover {
@@ -65,4 +65,11 @@
 
 .footerCopyright {
     padding-top: 10px;
+}
+
+@media (max-width: 575px) {
+    .footerIcon {
+        padding: 0 24px;
+        font-size: 25px;
+    }
 }

@@ -41,6 +41,10 @@
     transition: all 0.1s ease-in-out;
 }
 
+.homeButton:focus {
+    outline: none;
+}
+
 .homeButton:hover {
     transform: scale(1.1);
 }
@@ -54,12 +58,18 @@
     margin: auto;
 }
 
-.homeArrow a {
+.homeArrow button {
     color: black;
+    background: none;
+    border: none;
+}
+
+.homeArrow button:focus {
+    outline: none;
 }
 
 #homeDivider {
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 @keyframes MoveUpDown {
