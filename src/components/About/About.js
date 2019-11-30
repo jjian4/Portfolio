@@ -15,34 +15,32 @@ const About = () => {
                         </div>
                     </div>
                     <div className='col-md-8'>
-                        <p>
-                            I'm a Computer Science major and Multidisciplinary
-                            Design minor at UMichigan Engineering and pursuing a
-                            career in full stack software engineering. I enjoy
-                            creating web apps during my free time and am always
-                            looking for new opportunities to grow.
-                        </p>
-                        <p>
-                            The number of paths to take are endless, and I'm
-                            excited to be a part of this technological world
-                            that is rapidly transforming our lives everyday.
-                        </p>
-                        <p>
-                            I have a passion for guitar, basketball, dancing,
-                            footracing, and billiards, all of which I would love
-                            to talk about if you're interested!
-                        </p>
-                        <p>
-                            Feel free to contact me with any questions or
-                            comments!
-                        </p>
+                        <div className='aboutIntro'>
+                            <p>
+                                I'm a Computer Science major and
+                                Multidisciplinary Design minor at UMichigan
+                                Engineering and pursuing a career in full stack
+                                software engineering. I enjoy creating web apps
+                                during my free time and am always looking for
+                                new opportunities to grow.
+                            </p>
+                            <p>
+                                The number of paths to take are endless, and I'm
+                                excited to be a part of this technological world
+                                that is rapidly transforming our lives everyday.
+                            </p>
+                            <p>
+                                Feel free to contact me with any questions or
+                                comments!
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div className='row'>
                     <div className='col-md-6'>
                         <div className='education'>
-                            <div className='aboutTitle'>Education</div>
+                            <div className='aboutTitle'>EDUCATION</div>
                             {/* <div>UNIVERSITY OF MICHIGAN - COLLEGE OF ENGINEERING</div> */}
                             <div>
                                 University of Michigan - College of Engineering
@@ -55,16 +53,16 @@ const About = () => {
                     </div>
                     <div className='col-md-6'>
                         <div className='courses'>
-                            <div className='aboutTitle'>Favorite Courses</div>
+                            <div className='aboutTitle'>FAVORITE COURSES</div>
                             <div>Data Structures & Algorithms</div>
                             <div>Multidisciplinary Software Engineering</div>
                             <div>Web Information & Database Systems</div>
-                            <div>Database Management Systems</div>
+                            <div>Database Management Systems &lt;3 </div>
                         </div>
                     </div>
                 </div>
 
-                <div className='aboutTitle'>Skills</div>
+                <div className='aboutTitle'>SKILLS</div>
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='skillTitle'>Languages</div>
@@ -147,8 +145,8 @@ const About = () => {
                             </div>
                             <div className='col-2'>
                                 <Skill
-                                    icon={require('../../static/skills/node.png')}
-                                    skillName='Node'
+                                    icon={require('../../static/skills/nodejs.png')}
+                                    skillName='NodeJS'
                                 />
                             </div>
                             <div className='col-2'>
@@ -196,47 +194,6 @@ const About = () => {
                                 <Skill
                                     icon={require('../../static/skills/firebase.png')}
                                     skillName='Firebase'
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-lg-6'>
-                        <div className='skillTitle'>Other</div>
-                        <div className='skillRow row'>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/github.png')}
-                                    skillName='Github'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/gitlab.png')}
-                                    skillName='Gitlab'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/vscode.png')}
-                                    skillName='VSCode'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/xcode.png')}
-                                    skillName='XCode'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/heroku.png')}
-                                    skillName='Heroku'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/aws.png')}
-                                    skillName='AWS'
                                 />
                             </div>
                         </div>

@@ -15,21 +15,21 @@ const Home = () => {
                         <div className='landingSubtitle'>Software Engineer</div>
 
                         <div className='homeButtons row'>
-                            <span className='col-lg-4'>
-                                <a href='#about'>
+                            <span className='col-md-4'>
+                                <a href='#homeDivider'>
                                     <button className='homeButton'>
                                         ABOUT
                                     </button>
                                 </a>
                             </span>
-                            <span className='col-lg-4'>
+                            <span className='col-md-4'>
                                 <Link to='/experience'>
                                     <button className='homeButton'>
                                         EXPERIENCE
                                     </button>
                                 </Link>
                             </span>
-                            <span className='col-lg-4'>
+                            <span className='col-md-4'>
                                 <Link to='/projects'>
                                     <button className='homeButton'>
                                         PROJECTS
@@ -40,16 +40,16 @@ const Home = () => {
                     </div>
 
                     <div className='homeArrow'>
-                        <a href='#about'>
+                        <a href='#homeDivider'>
                             <FontAwesomeIcon icon={faAngleDoubleDown} />
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div id='about'>
-                <About />
-            </div>
+            <div id='homeDivider' />
+
+            <About />
         </div>
     );
 };

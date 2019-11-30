@@ -6,7 +6,7 @@
     list-style-type: none;
     height: var(--navBar-height);
     z-index: 1;
-    border-bottom: 2px white solid;
+    border-bottom: 3px gray solid;
 }
 
 .navBarContainer {
@@ -44,4 +44,25 @@
 
 .navItem a:hover {
     color: var(--primary-color);
+}
+
+.footer {
+    padding: 20px;
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
+
+.footerIcon {
+    color: gray;
+    padding: 0 24px;
+    font-size: 25px;
+}
+
+.footerIcon:hover {
+    color: var(--primary-color);
+}
+
+.footerCopyright {
+    padding-top: 10px;
 }

@@ -14,9 +14,10 @@
 }
 
 .overlay {
-    padding-bottom: 200px;
+    padding-bottom: 130px;
     width: 70%;
 }
+
 .landingTitle {
     font-size: 80px;
 }
@@ -57,6 +58,10 @@
     color: black;
 }
 
+#homeDivider {
+    border: 1px black solid;
+}
+
 @keyframes MoveUpDown {
     0%,
     100% {
@@ -64,5 +69,25 @@
     }
     50% {
         bottom: 140px;
+    }
+}
+
+@media (max-width: 991px) {
+    .homeButton {
+        font-size: 18px;
+        padding: 5px 15px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .landingTitle {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 575px) {
+    .landingTitle {
+        font-size: 43px;
     }
 }
