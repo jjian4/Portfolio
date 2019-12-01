@@ -88,6 +88,44 @@ const projectRows = [
             require('../../static/projects/pincil/pincil-icon.png'),
             require('../../static/projects/pincil/pincil.png')
         ]}
+    />,
+    <ProjectRow
+        title='Company Hub (2019)'
+        languages={['Python']}
+        tools={['Flask', 'SQLite', 'Stripe API']}
+        description='A social media platform for employees to collaborate with
+        different departments within a company. It allows for registering multiple users, 
+        posting and replying on different channels, and transferring money the site'
+        gitLink='https://github.com/jjian4/CompanyHub'
+        image={require('../../static/projects/companyHub/companyHub-preview.png')}
+        imageList={[
+            require('../../static/projects/companyHub/companyHub-register.png'),
+            require('../../static/projects/companyHub/companyHub-new_post.png'),
+            require('../../static/projects/companyHub/companyHub-channel.png'),
+            require('../../static/projects/companyHub/companyHub-account.png'),
+            require('../../static/projects/companyHub/companyHub-posts.png'),
+            require('../../static/projects/companyHub/companyHub-donate.png'),
+            require('../../static/projects/companyHub/companyHub.png')
+        ]}
+    />,
+    <ProjectRow
+        title='Alpha Tetris (2018)'
+        languages={['JavaScript']}
+        tools={[]}
+        description='Alpha Tetris is a Tetris-inspired web game built with JavaScript 
+        and playable both on the browser and as a Chrome extension. It allows for a 
+        customizable canvas size and block shapes based on the characters the user inputs.'
+        websiteLink='https://jjian4.github.io/AlphaTetris/'
+        gitLink='https://github.com/jjian4/AlphaTetris'
+        image={require('../../static/projects/alphaTetris/alphaTetris-preview.png')}
+        imageList={[
+            require('../../static/projects/alphaTetris/alphaTetris-home.png'),
+            require('../../static/projects/alphaTetris/alphaTetris-gameplay.png'),
+            require('../../static/projects/alphaTetris/alphaTetris-classic.png'),
+            require('../../static/projects/alphaTetris/alphaTetris-high_score.png'),
+            require('../../static/projects/alphaTetris/alphaTetris-chrome.png'),
+            require('../../static/projects/alphaTetris/alphaTetris.png')
+        ]}
     />
 ];
 
