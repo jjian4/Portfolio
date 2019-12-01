@@ -3,13 +3,13 @@ import './Projects.css';
 
 const ProjectRow = props => {
     const languages = props.languages.map((item, i) => (
-        <span className='projectRowTag languageTag' key={i}>
+        <span className='tag languageTag' key={i}>
             {item}
         </span>
     ));
 
     const tools = props.tools.map((item, i) => (
-        <span className='projectRowTag toolTag' key={i}>
+        <span className='tag toolTag' key={i}>
             {item}
         </span>
     ));

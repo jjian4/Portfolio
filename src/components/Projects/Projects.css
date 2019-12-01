@@ -16,23 +16,6 @@
     font-size: 30px;
 }
 
-.projectRowTag {
-    display: inline-block;
-    font-size: 12px;
-    border-radius: 8px;
-    padding: 5px;
-    margin: 3px 6px 3px 0;
-    cursor: default;
-}
-
-.languageTag {
-    background-color: lightcoral;
-}
-
-.toolTag {
-    background-color: lightblue;
-}
-
 .projectImageAndButtons {
     width: 100%;
     max-height: 100%;
@@ -81,6 +64,10 @@
 }
 
 @media (max-width: 767px) {
+    .projects {
+        font-size: 17px;
+    }
+
     /* Remove vertical centering */
     .projectRow {
         text-align: center;
@@ -102,12 +89,9 @@
     .projects {
         font-size: 15px;
     }
-    .projectRowTag {
-        font-size: 10px;
-        border-radius: 8px;
-        padding: 3px;
+    .projectRowTitle {
+        font-size: 25px;
     }
-
     .projectImage {
         max-width: 90%;
     }
