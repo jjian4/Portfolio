@@ -1,3 +1,102 @@
 .projects {
     margin-top: var(--navBar-height);
+    padding: 20px 0 20px 0;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.projectRow {
+    background-color: var(--gray-background);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.projectRowTitle {
+    font-size: 30px;
+}
+
+.projectRowTag {
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 3px 6px 3px 0;
+    cursor: default;
+}
+
+.languageTag {
+    background-color: lightcoral;
+}
+
+.toolTag {
+    background-color: lightblue;
+}
+
+.projectRowRight {
+    position: relative;
+}
+
+.projectImageAndButtons {
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.projectImage {
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.projectButtons {
+    margin-top: 10px;
+}
+
+.projectButtons button {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0 3%;
+}
+
+@media (max-width: 991px) {
+    .projectImage {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .projectRow {
+        text-align: center;
+    }
+
+    .projectImageAndButtons {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+    }
+
+    .projectImage {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 575px) {
+    .projects {
+        font-size: 15px;
+    }
+    .projectRowTag {
+        font-size: 10px;
+        border-radius: 8px;
+        padding: 3px;
+    }
+
+    .projectImage {
+        max-width: 90%;
+    }
 }
