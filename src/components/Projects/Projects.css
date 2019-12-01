@@ -1,6 +1,6 @@
 .projects {
     margin-top: var(--navBar-height);
-    padding: 20px 0 20px 0;
+    padding: 10px 0 0px 0;
     background-color: white;
     color: black;
     font-size: 20px;
@@ -9,7 +9,7 @@
 .projectRow {
     background-color: var(--gray-background);
     padding: 20px;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 
 .projectRowTitle {
@@ -33,18 +33,9 @@
     background-color: lightblue;
 }
 
-.projectRowRight {
-    position: relative;
-}
-
 .projectImageAndButtons {
     width: 100%;
     max-height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -63,13 +54,34 @@
     border-radius: 10px;
 }
 
+.moreProjects {
+    background-color: var(--gray-background);
+    padding: 20px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
 @media (max-width: 991px) {
+    /* Vertically Center image and buttons at this screen width */
+    .projectRowRight {
+        position: relative;
+    }
+
+    .projectImageAndButtons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
     .projectImage {
         max-width: 90%;
     }
 }
 
 @media (max-width: 767px) {
+    /* Remove vertical centering */
     .projectRow {
         text-align: center;
     }

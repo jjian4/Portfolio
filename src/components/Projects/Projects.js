@@ -34,8 +34,24 @@ const ProjectRow = props => {
                             alt='Project Preview'
                         />
                         <div className='projectButtons'>
-                            <button>Visit</button>
-                            <button>Code</button>
+                            {props.websiteLink && (
+                                <a
+                                    href={props.websiteLink}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    <button>Visit</button>
+                                </a>
+                            )}
+                            {props.gitLink && (
+                                <a
+                                    href={props.gitLink}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                >
+                                    <button>Code</button>
+                                </a>
+                            )}
                             <button>Images</button>
                         </div>
                     </div>
@@ -95,7 +111,7 @@ const projectRows = [
         tools={['Flask', 'SQLite', 'Stripe API']}
         description='A social media platform for employees to collaborate with
         different departments within a company. It allows for registering multiple users, 
-        posting and replying on different channels, and transferring money the site'
+        posting and replying on different channels, and transferring money the site.'
         gitLink='https://github.com/jjian4/CompanyHub'
         image={require('../../static/projects/companyHub/companyHub-preview.png')}
         imageList={[
@@ -139,6 +155,18 @@ const Projects = () => {
                     </div>
                 );
             })}
+
+            <div className='moreProjects'>
+                Check out my other projects on{' '}
+                <a
+                    href='https://github.com/jjian4'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                >
+                    Github
+                </a>
+                !
+            </div>
         </div>
     );
 };

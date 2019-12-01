@@ -1,5 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from 'react-router-dom';
 import { faEnvelope, faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,15 +21,27 @@ function App() {
             <div className='navBar'>
                 <div className='container navBarContainer'>
                     <div className='navItem logo'>
-                        <Link to='/'>JAMES JIANG</Link>
+                        <Link to='/'>JAMES JIANG </Link>
                     </div>
                     <nav>
                         <ul className='navBarRight'>
                             <li className='navItem'>
-                                <Link to='/experience'>EXPERIENCE</Link>
+                                <NavLink
+                                    exact
+                                    to='/experience'
+                                    activeClassName='navItemActive'
+                                >
+                                    EXPERIENCE
+                                </NavLink>
                             </li>
                             <li className='navItem'>
-                                <Link to='/projects'>PROJECTS</Link>
+                                <NavLink
+                                    exact
+                                    to='/projects'
+                                    activeClassName='navItemActive'
+                                >
+                                    PROJECTS
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>

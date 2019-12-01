@@ -46,6 +46,10 @@
     color: var(--primary-color);
 }
 
+.navItemActive {
+    color: var(--primary-color) !important;
+}
+
 .footer {
     padding: 20px;
     background-color: black;
