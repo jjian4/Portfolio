@@ -45,8 +45,8 @@ const experienceRows = [
         position='Incoming Software Engineer Intern'
         languages={['Python', 'JavaScript', 'Bash']}
         tools={['Flask', 'MongoDB']}
-        description='I will be interning at Apple as a Software Automation & Tools intern on the
-        Wireless Tech and Ecosystems Team. I will be identifying areas that can be improved with
+        description='I&#39;m excited to be interning at Apple as a Software Automation & Tools intern on the
+        Wireless Tech and Ecosystems Team in January! I will be identifying areas that can be improved with
         automation and provide documented and tested software solutions.'
         image={require('../../static/experience/apple.png')}
     />,

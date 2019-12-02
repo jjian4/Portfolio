@@ -1,0 +1,50 @@
+.ReactModal__Overlay {
+    z-index: 20;
+}
+
+.ReactModal__Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imageModal {
+}
+
+.imageModal .projectImage {
+    max-width: 100%;
+    max-height: 85vh;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+.imageModal .slideControl {
+    position: absolute;
+    outline: none;
+    padding: 15px;
+    border: none;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imageModal .previousButton {
+    left: 3vw;
+}
+
+.imageModal .nextButton {
+    right: 3vw;
+}
+
+.imageModal .imagePage {
+    position: absolute;
+    padding: 3px 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 15%;
+    color: white;
+    right: 3vw;
+    top: 3vh;
+}

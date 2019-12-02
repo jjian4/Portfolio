@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageModal from '../ImageModal/ImageModal';
 import './Projects.css';
 
 const ProjectRow = props => {
@@ -52,7 +53,10 @@ const ProjectRow = props => {
                                     <button>Code</button>
                                 </a>
                             )}
-                            <button>Images</button>
+                            {/* Images button and modal */}
+                            {props.imageList && (
+                                <ImageModal imageList={props.imageList} />
+                            )}
                         </div>
                     </div>
                 </div>
