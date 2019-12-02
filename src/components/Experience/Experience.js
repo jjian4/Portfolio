@@ -41,6 +41,16 @@ const ExperienceRow = props => {
 
 const experienceRows = [
     <ExperienceRow
+        title='Apple (2020)'
+        position='Incoming Software Engineer Intern'
+        languages={['Python', 'JavaScript', 'Bash']}
+        tools={['Flask', 'MongoDB']}
+        description='I will be interning at Apple as a Software Automation & Tools intern on the
+        Wireless Tech and Ecosystems Team. I will be identifying areas that can be improved with
+        automation and provide documented and tested software solutions.'
+        image={require('../../static/experience/apple.png')}
+    />,
+    <ExperienceRow
         title='Dataminr (2019)'
         position='Software Engineer Intern'
         languages={['JavaScript']}
@@ -71,7 +81,7 @@ const experienceRows = [
         Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, 
         a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives 
         to help grow the development team.'
-        image={require('../../static/experience/apple.png')}
+        image={require('../../static/experience/michiganDaily.png')}
     />
 ];
 

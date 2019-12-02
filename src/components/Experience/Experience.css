@@ -21,8 +21,8 @@
 }
 
 .experienceImage {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 65%;
+    max-height: 65%;
 
     position: absolute;
     top: 50%;
@@ -33,7 +33,8 @@
 
 @media (max-width: 991px) {
     .experienceImage {
-        max-width: 100%;
+        max-width: 70%;
+        max-height: 70%;
     }
 }
 
@@ -48,8 +49,7 @@
     }
 
     .experienceImage {
-        max-width: 70%;
-        max-height: 150px;
+        max-height: 120px;
 
         position: relative;
         left: auto;
