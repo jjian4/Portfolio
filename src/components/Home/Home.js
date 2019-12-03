@@ -17,11 +17,11 @@ const Home = () => {
                 <div className='backgroundVideoWrap'>
                     <video autoPlay loop>
                         <source
-                            src={require('../../static/lights2.mp4')}
+                            src={require('../../static/backgrounds/lights2.mp4')}
                             type='video/mp4'
                         />
                         <source
-                            src={require('../../static/lights2.webm')}
+                            src={require('../../static/backgrounds/lights2.webm')}
                             type='video/webm'
                         />
                     </video>
@@ -35,7 +35,8 @@ const Home = () => {
                         </div>
 
                         <div className='landingButtons row'>
-                            <span className='col-md-4'>
+                            <span className='col-md-1' />
+                            <span className='col-md-3'>
                                 <button
                                     className='landingButton'
                                     onClick={executeScroll}
@@ -43,20 +44,21 @@ const Home = () => {
                                     ABOUT
                                 </button>
                             </span>
-                            <span className='col-md-4'>
+                            <span className='col-md-3'>
                                 <Link to='/experience'>
                                     <button className='landingButton'>
                                         EXPERIENCE
                                     </button>
                                 </Link>
                             </span>
-                            <span className='col-md-4'>
+                            <span className='col-md-3'>
                                 <Link to='/projects'>
                                     <button className='landingButton'>
                                         PROJECTS
                                     </button>
                                 </Link>
                             </span>
+                            <span className='col-md-1' />
                         </div>
                     </div>
                 </div>
