@@ -5,7 +5,7 @@
     background-color: black;
     list-style-type: none;
     height: var(--navBar-height);
-    z-index: 1;
+    z-index: 3;
     border-bottom: 3px gray solid;
 }
 

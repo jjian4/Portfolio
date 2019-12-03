@@ -13,39 +13,46 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <div className='container'>
-                <div className='landingScreen'>
-                    <div className='overlay'>
-                        <div className='landingTitle'>James Jiang</div>
-                        <div className='landingSubtitle'>Software Engineer</div>
+            <div className='landingScreen'>
+                <div className='backgroundVideoWrap'>
+                    <video
+                        src={require('../../static/lights.mp4')}
+                        autoPlay
+                        loop
+                    />
+                </div>
+                <div className='videoOverlay'></div>
+                <div className='landingContent'>
+                    <div className='landingTitle'>James Jiang</div>
+                    <div className='landingSubtitle'>Full Stack Engineer</div>
 
-                        <div className='homeButtons row'>
-                            <span className='col-md-4'>
-                                <button
-                                    className='homeButton'
-                                    onClick={executeScroll}
-                                >
-                                    ABOUT
+                    <div className='landingButtons row'>
+                        <span className='col-md-4'>
+                            <button
+                                className='landingButton'
+                                onClick={executeScroll}
+                            >
+                                ABOUT
+                            </button>
+                        </span>
+                        <span className='col-md-4'>
+                            <Link to='/experience'>
+                                <button className='landingButton'>
+                                    EXPERIENCE
                                 </button>
-                            </span>
-                            <span className='col-md-4'>
-                                <Link to='/experience'>
-                                    <button className='homeButton'>
-                                        EXPERIENCE
-                                    </button>
-                                </Link>
-                            </span>
-                            <span className='col-md-4'>
-                                <Link to='/projects'>
-                                    <button className='homeButton'>
-                                        PROJECTS
-                                    </button>
-                                </Link>
-                            </span>
-                        </div>
+                            </Link>
+                        </span>
+                        <span className='col-md-4'>
+                            <Link to='/projects'>
+                                <button className='landingButton'>
+                                    PROJECTS
+                                </button>
+                            </Link>
+                        </span>
                     </div>
-
-                    <div className='homeArrow'>
+                </div>
+                <div className='container'>
+                    <div className='landingArrow'>
                         <button onClick={executeScroll}>
                             <FontAwesomeIcon icon={faAngleDoubleDown} />
                         </button>

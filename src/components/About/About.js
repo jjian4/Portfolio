@@ -54,7 +54,6 @@ const About = () => {
                     <div className='col-md-6'>
                         <div className='courses'>
                             <div className='aboutTitle'>FAVORITE COURSES</div>
-                            <div>Data Structures & Algorithms</div>
                             <div>Multidisciplinary Software Engineering</div>
                             <div>Web Information & Database Systems</div>
                             <div>Database Management Systems &lt;3 </div>
