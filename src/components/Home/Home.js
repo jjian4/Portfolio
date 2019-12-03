@@ -15,40 +15,49 @@ const Home = () => {
         <div className='home'>
             <div className='landingScreen'>
                 <div className='backgroundVideoWrap'>
-                    <video
-                        src={require('../../static/lights.mp4')}
-                        autoPlay
-                        loop
-                    />
+                    <video autoPlay loop>
+                        <source
+                            src={require('../../static/lights2.mp4')}
+                            type='video/mp4'
+                        />
+                        <source
+                            src={require('../../static/lights2.webm')}
+                            type='video/webm'
+                        />
+                    </video>
                 </div>
                 <div className='videoOverlay'></div>
                 <div className='landingContent'>
-                    <div className='landingTitle'>James Jiang</div>
-                    <div className='landingSubtitle'>Full Stack Engineer</div>
+                    <div className='container'>
+                        <div className='landingTitle'>James Jiang</div>
+                        <div className='landingSubtitle'>
+                            Full Stack Engineer
+                        </div>
 
-                    <div className='landingButtons row'>
-                        <span className='col-md-4'>
-                            <button
-                                className='landingButton'
-                                onClick={executeScroll}
-                            >
-                                ABOUT
-                            </button>
-                        </span>
-                        <span className='col-md-4'>
-                            <Link to='/experience'>
-                                <button className='landingButton'>
-                                    EXPERIENCE
+                        <div className='landingButtons row'>
+                            <span className='col-md-4'>
+                                <button
+                                    className='landingButton'
+                                    onClick={executeScroll}
+                                >
+                                    ABOUT
                                 </button>
-                            </Link>
-                        </span>
-                        <span className='col-md-4'>
-                            <Link to='/projects'>
-                                <button className='landingButton'>
-                                    PROJECTS
-                                </button>
-                            </Link>
-                        </span>
+                            </span>
+                            <span className='col-md-4'>
+                                <Link to='/experience'>
+                                    <button className='landingButton'>
+                                        EXPERIENCE
+                                    </button>
+                                </Link>
+                            </span>
+                            <span className='col-md-4'>
+                                <Link to='/projects'>
+                                    <button className='landingButton'>
+                                        PROJECTS
+                                    </button>
+                                </Link>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div className='container'>
