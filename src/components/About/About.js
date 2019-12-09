@@ -61,71 +61,47 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='aboutTitle'>SKILLS</div>
+                <div className='aboutTitle'>FAVORITE TOOLS</div>
                 <div className='row'>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-3 col-sm-6'>
                         <div className='skillTitle'>Languages</div>
                         <div className='skillRow row'>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/javascript.png')}
                                     skillName='JavaScript'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/python.png')}
                                     skillName='Python'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/c++.png')}
                                     skillName='C++'
                                 />
                             </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/java.png')}
-                                    skillName='Java'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/kotlin.png')}
-                                    skillName='Kotlin'
-                                />
-                            </div>
                         </div>
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-3 col-sm-6'>
                         <div className='skillTitle'>Front-end</div>
                         <div className='skillRow row'>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/react.png')}
                                     skillName='React'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/redux.png')}
                                     skillName='Redux'
                                 />
                             </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/enzyme.png')}
-                                    skillName='Enzyme'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/sass.png')}
-                                    skillName='Sass'
-                                />
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/bootstrap.png')}
                                     skillName='Bootstrap'
@@ -133,34 +109,22 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-3 col-sm-6'>
                         <div className='skillTitle'>Server-side</div>
                         <div className='skillRow row'>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/postman.png')}
-                                    skillName='Postman'
-                                />
-                            </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/nodejs.png')}
-                                    skillName='NodeJS'
-                                />
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/express.png')}
                                     skillName='Express'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/socketio.png')}
                                     skillName='Socket.io'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/flask.png')}
                                     skillName='Flask'
@@ -168,28 +132,22 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-lg-6'>
+                    <div className='col-lg-3 col-sm-6'>
                         <div className='skillTitle'>Database</div>
                         <div className='skillRow row'>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/mongodb.png')}
                                     skillName='MongoDB'
                                 />
                             </div>
-                            <div className='col-2'>
-                                <Skill
-                                    icon={require('../../static/skills/mongoose.png')}
-                                    skillName='Mongoose'
-                                />
-                            </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/sql.png')}
                                     skillName='SQL'
                                 />
                             </div>
-                            <div className='col-2'>
+                            <div className='col-4'>
                                 <Skill
                                     icon={require('../../static/skills/firebase.png')}
                                     skillName='Firebase'

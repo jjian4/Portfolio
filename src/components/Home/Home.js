@@ -17,11 +17,11 @@ const Home = () => {
                 <div className='backgroundVideoWrap'>
                     <video autoPlay loop>
                         <source
-                            src={require('../../static/backgrounds/lights2.mp4')}
+                            src={require('../../static/backgrounds/clouds.mp4')}
                             type='video/mp4'
                         />
                         <source
-                            src={require('../../static/backgrounds/lights2.webm')}
+                            src={require('../../static/backgrounds/clouds.webm')}
                             type='video/webm'
                         />
                     </video>
