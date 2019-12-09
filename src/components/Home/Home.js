@@ -35,8 +35,7 @@ const Home = () => {
                         </div>
 
                         <div className='landingButtons row'>
-                            <span className='col-md-1' />
-                            <span className='col-md-3'>
+                            <span className='col-md-4'>
                                 <button
                                     className='landingButton'
                                     onClick={executeScroll}
@@ -44,21 +43,20 @@ const Home = () => {
                                     ABOUT
                                 </button>
                             </span>
-                            <span className='col-md-3'>
+                            <span className='col-md-4'>
                                 <Link to='/experience'>
                                     <button className='landingButton'>
                                         EXPERIENCE
                                     </button>
                                 </Link>
                             </span>
-                            <span className='col-md-3'>
+                            <span className='col-md-4'>
                                 <Link to='/projects'>
                                     <button className='landingButton'>
                                         PROJECTS
                                     </button>
                                 </Link>
                             </span>
-                            <span className='col-md-1' />
                         </div>
                     </div>
                 </div>

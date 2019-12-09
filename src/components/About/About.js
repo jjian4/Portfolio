@@ -37,121 +37,127 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='row'>
-                    <div className='col-md-6'>
-                        <div className='education'>
-                            <div className='aboutTitle'>EDUCATION</div>
-                            {/* <div>UNIVERSITY OF MICHIGAN - COLLEGE OF ENGINEERING</div> */}
-                            <div>
-                                University of Michigan - College of Engineering
+                <div className='moreAboutInfo'>
+                    <div className='row'>
+                        <div className='col-md-6'>
+                            <div className='education'>
+                                <div className='aboutTitle'>EDUCATION</div>
+                                <div>
+                                    University of Michigan - College of
+                                    Engineering
+                                </div>
+                                <div>
+                                    Bachelor of Engineering in Computer Science
+                                </div>
+                                <div>Minor in Multidisciplinary Design</div>
                             </div>
-                            <div>
-                                Bachelor of Engineering in Computer Science
+                        </div>
+                        <div className='col-md-6'>
+                            <div className='courses'>
+                                <div className='aboutTitle'>
+                                    FAVORITE COURSES
+                                </div>
+                                <div>
+                                    Multidisciplinary Software Engineering
+                                </div>
+                                <div>Web Information & Database Systems</div>
+                                <div>Database Management Systems &lt;3 </div>
                             </div>
-                            <div>Minor in Multidisciplinary Design</div>
                         </div>
                     </div>
-                    <div className='col-md-6'>
-                        <div className='courses'>
-                            <div className='aboutTitle'>FAVORITE COURSES</div>
-                            <div>Multidisciplinary Software Engineering</div>
-                            <div>Web Information & Database Systems</div>
-                            <div>Database Management Systems &lt;3 </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div className='aboutTitle'>FAVORITE TOOLS</div>
-                <div className='row'>
-                    <div className='col-lg-3 col-sm-6'>
-                        <div className='skillTitle'>Languages</div>
-                        <div className='skillRow row'>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/javascript.png')}
-                                    skillName='JavaScript'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/python.png')}
-                                    skillName='Python'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/c++.png')}
-                                    skillName='C++'
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div className='col-lg-3 col-sm-6'>
-                        <div className='skillTitle'>Front-end</div>
-                        <div className='skillRow row'>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/react.png')}
-                                    skillName='React'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/redux.png')}
-                                    skillName='Redux'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/bootstrap.png')}
-                                    skillName='Bootstrap'
-                                />
+                    <div className='aboutTitle'>FAVORITE TOOLS</div>
+                    <div className='row'>
+                        <div className='col-lg-3 col-sm-6'>
+                            <div className='skillTitle'>Languages</div>
+                            <div className='skillRow row'>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/javascript.png')}
+                                        skillName='JavaScript'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/python.png')}
+                                        skillName='Python'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/c++.png')}
+                                        skillName='C++'
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='col-lg-3 col-sm-6'>
-                        <div className='skillTitle'>Server-side</div>
-                        <div className='skillRow row'>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/express.png')}
-                                    skillName='Express'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/socketio.png')}
-                                    skillName='Socket.io'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/flask.png')}
-                                    skillName='Flask'
-                                />
+                        <div className='col-lg-3 col-sm-6'>
+                            <div className='skillTitle'>Front-end</div>
+                            <div className='skillRow row'>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/react.png')}
+                                        skillName='React'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/redux.png')}
+                                        skillName='Redux'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/bootstrap.png')}
+                                        skillName='Bootstrap'
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='col-lg-3 col-sm-6'>
-                        <div className='skillTitle'>Database</div>
-                        <div className='skillRow row'>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/mongodb.png')}
-                                    skillName='MongoDB'
-                                />
+                        <div className='col-lg-3 col-sm-6'>
+                            <div className='skillTitle'>Server-side</div>
+                            <div className='skillRow row'>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/express.png')}
+                                        skillName='Express'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/socketio.png')}
+                                        skillName='Socket.io'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/flask.png')}
+                                        skillName='Flask'
+                                    />
+                                </div>
                             </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/sql.png')}
-                                    skillName='SQL'
-                                />
-                            </div>
-                            <div className='col-4'>
-                                <Skill
-                                    icon={require('../../static/skills/firebase.png')}
-                                    skillName='Firebase'
-                                />
+                        </div>
+                        <div className='col-lg-3 col-sm-6'>
+                            <div className='skillTitle'>Database</div>
+                            <div className='skillRow row'>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/mongodb.png')}
+                                        skillName='MongoDB'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/sql.png')}
+                                        skillName='SQL'
+                                    />
+                                </div>
+                                <div className='col-4'>
+                                    <Skill
+                                        icon={require('../../static/skills/firebase.png')}
+                                        skillName='Firebase'
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

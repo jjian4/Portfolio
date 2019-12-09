@@ -60,9 +60,7 @@
 
 .landingButtons {
     padding-top: 30px;
-}
-
-.landingButtons span {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -104,6 +102,12 @@
     }
     50% {
         bottom: 140px;
+    }
+}
+
+@media (max-width: 1999px) {
+    .landingButtons {
+        width: 100%;
     }
 }
 
