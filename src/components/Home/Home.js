@@ -15,14 +15,14 @@ const Home = () => {
         <div className='home'>
             <div className='landingScreen'>
                 <div className='backgroundVideoWrap'>
-                    <video autoPlay loop>
-                        <source
-                            src={require('../../static/backgrounds/clouds.mp4')}
-                            type='video/mp4'
-                        />
+                    <video playsinline autoPlay muted loop>
                         <source
                             src={require('../../static/backgrounds/clouds.webm')}
                             type='video/webm'
+                        />
+                        <source
+                            src={require('../../static/backgrounds/clouds.mp4')}
+                            type='video/mp4'
                         />
                     </video>
                 </div>
