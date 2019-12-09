@@ -6,7 +6,7 @@
     list-style-type: none;
     height: var(--navBar-height);
     z-index: 3;
-    border-bottom: 3px gray solid;
+    border-bottom: 3px var(--blue) solid;
 }
 
 .navBarContainer {
@@ -43,11 +43,12 @@
 }
 
 .navItem a:hover {
-    color: var(--primary-color);
+    color: var(--blue);
 }
 
 .navItemActive {
-    color: var(--primary-color) !important;
+    color: var(--blue) !important;
+    font-weight: bold;
 }
 
 .footer {
@@ -64,7 +65,7 @@
 }
 
 .footerIcon:hover {
-    color: var(--primary-color);
+    color: var(--blue);
 }
 
 .footerCopyright {

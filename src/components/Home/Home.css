@@ -126,3 +126,13 @@
         font-size: 43px;
     }
 }
+
+@media (max-height: 675px) {
+    .landingContent {
+        padding-bottom: 0;
+    }
+
+    .landingArrow {
+        visibility: hidden;
+    }
+}
