@@ -131,7 +131,7 @@
     }
 }
 
-@media (max-height: 675px) {
+@media (max-height: 715px) {
     .landingContent {
         padding-bottom: 0;
     }
