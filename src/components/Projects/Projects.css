@@ -7,7 +7,7 @@
 }
 
 .projectRow {
-    background-color: var(--gray-background);
+    background-color: var(--smoke);
     padding: 20px;
     margin: 10px 0 20px 0;
 }
@@ -42,7 +42,7 @@
 }
 
 .moreProjects {
-    background-color: var(--gray-background);
+    background-color: var(--smoke);
     padding: 20px;
     margin: 20px 0 0 0;
     text-align: center;
