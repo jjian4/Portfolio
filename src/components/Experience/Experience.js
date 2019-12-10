@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import Fade from 'react-reveal/Fade';
 
 const ExperienceRow = props => {
     const languages = props.languages.map((item, i) => (
@@ -88,13 +89,15 @@ const experienceRows = [
 const Experience = () => {
     return (
         <div className='experience'>
-            {experienceRows.map((item, i) => {
-                return (
-                    <div className='experienceRow' key={i}>
-                        {item}
-                    </div>
-                );
-            })}
+            <Fade up>
+                {experienceRows.map((item, i) => {
+                    return (
+                        <div className='experienceRow' key={i}>
+                            {item}
+                        </div>
+                    );
+                })}
+            </Fade>
         </div>
     );
 };

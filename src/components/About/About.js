@@ -1,71 +1,81 @@
 import React from 'react';
 import './About.css';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
     return (
         <div className='about'>
             <div className='container'>
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <div className='portrait'>
-                            <img
-                                src={require('../../static/portrait2.jpg')}
-                                alt='portrait'
-                            />
+                <Fade up>
+                    <div className='row'>
+                        <div className='col-md-4'>
+                            <div className='portrait'>
+                                <img
+                                    src={require('../../static/portrait2.jpg')}
+                                    alt='portrait'
+                                />
+                            </div>
+                        </div>
+                        <div className='col-md-8'>
+                            <div className='aboutIntro'>
+                                <p>
+                                    I'm a Computer Science major and
+                                    Multidisciplinary Design minor at UMichigan
+                                    Engineering and pursuing a career in full
+                                    stack software engineering. I enjoy creating
+                                    web apps during my free time and am always
+                                    looking for new opportunities to grow.
+                                </p>
+                                <p>
+                                    The number of paths to take are endless, and
+                                    I'm excited to be a part of this
+                                    technological world that is transforming our
+                                    lives everyday.
+                                </p>
+                                <div>
+                                    Feel free to contact me at jjian@umich.edu
+                                    with any questions or comments!
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='col-md-8'>
-                        <div className='aboutIntro'>
-                            <p>
-                                I'm a Computer Science major and
-                                Multidisciplinary Design minor at UMichigan
-                                Engineering and pursuing a career in full stack
-                                software engineering. I enjoy creating web apps
-                                during my free time and am always looking for
-                                new opportunities to grow.
-                            </p>
-                            <p>
-                                The number of paths to take are endless, and I'm
-                                excited to be a part of this technological world
-                                that is transforming our lives everyday.
-                            </p>
-                            <p>
-                                Feel free to contact me at jjian@umich.edu with
-                                any questions or comments!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                </Fade>
 
                 <div className='moreAboutInfo'>
-                    <div className='row'>
-                        <div className='col-md-6'>
-                            <div className='education'>
-                                <div className='aboutTitle'>EDUCATION</div>
-                                <div>
-                                    University of Michigan - College of
-                                    Engineering
+                    <Fade up>
+                        <div className='row'>
+                            <div className='col-md-6'>
+                                <div className='education'>
+                                    <div className='aboutTitle'>EDUCATION</div>
+                                    <div>
+                                        University of Michigan - College of
+                                        Engineering
+                                    </div>
+                                    <div>
+                                        Bachelor of Engineering in Computer
+                                        Science
+                                    </div>
+                                    <div>Minor in Multidisciplinary Design</div>
                                 </div>
-                                <div>
-                                    Bachelor of Engineering in Computer Science
+                            </div>
+                            <div className='col-md-6'>
+                                <div className='courses'>
+                                    <div className='aboutTitle'>
+                                        FAVORITE COURSES
+                                    </div>
+                                    <div>
+                                        Multidisciplinary Software Engineering
+                                    </div>
+                                    <div>
+                                        Web Information & Database Systems
+                                    </div>
+                                    <div>
+                                        Database Management Systems &lt;3{' '}
+                                    </div>
                                 </div>
-                                <div>Minor in Multidisciplinary Design</div>
                             </div>
                         </div>
-                        <div className='col-md-6'>
-                            <div className='courses'>
-                                <div className='aboutTitle'>
-                                    FAVORITE COURSES
-                                </div>
-                                <div>
-                                    Multidisciplinary Software Engineering
-                                </div>
-                                <div>Web Information & Database Systems</div>
-                                <div>Database Management Systems &lt;3 </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    </Fade>
                     <div className='aboutTitle'>FAVORITE TOOLS</div>
                     <div className='row'>
                         <div className='col-lg-3 col-sm-6'>

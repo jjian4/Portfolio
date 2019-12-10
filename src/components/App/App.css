@@ -38,12 +38,14 @@
 }
 
 .navItem a {
+    display: inline-block;
     color: white;
     text-decoration: none;
+    transition: all 0.1s ease-in-out;
 }
 
 .navItem a:hover {
-    color: var(--blue);
+    transform: scale(1.1);
 }
 
 .navItemActive {
@@ -56,16 +58,20 @@
     background-color: black;
     color: gray;
     text-align: center;
+    z-index: 3;
 }
 
 .footerIcon {
+    display: inline-block;
     color: gray;
     padding: 0 35px;
     font-size: 30px;
+    transition: all 0.1s ease-in-out;
 }
 
 .footerIcon:hover {
     color: var(--blue);
+    transform: scale(1.2);
 }
 
 .footerCopyright {

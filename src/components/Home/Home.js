@@ -4,6 +4,7 @@ import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Home.css';
 import About from '../About/About';
+import Fade from 'react-reveal/Fade';
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
 
@@ -30,34 +31,35 @@ const Home = () => {
                 <div className='landingContent'>
                     <div className='container'>
                         <div className='landingTitle'>James Jiang</div>
-                        <div className='landingSubtitle'>
-                            Full Stack Engineer
-                        </div>
-
-                        <div className='landingButtons row'>
-                            <span className='col-md-4'>
-                                <button
-                                    className='landingButton'
-                                    onClick={executeScroll}
-                                >
-                                    ABOUT
-                                </button>
-                            </span>
-                            <span className='col-md-4'>
-                                <Link to='/experience'>
-                                    <button className='landingButton'>
-                                        EXPERIENCE
+                        <Fade>
+                            <div className='landingSubtitle'>
+                                Full Stack Engineer
+                            </div>
+                            <div className='landingButtons row'>
+                                <span className='col-md-4'>
+                                    <button
+                                        className='landingButton'
+                                        onClick={executeScroll}
+                                    >
+                                        ABOUT
                                     </button>
-                                </Link>
-                            </span>
-                            <span className='col-md-4'>
-                                <Link to='/projects'>
-                                    <button className='landingButton'>
-                                        PROJECTS
-                                    </button>
-                                </Link>
-                            </span>
-                        </div>
+                                </span>
+                                <span className='col-md-4'>
+                                    <Link to='/experience'>
+                                        <button className='landingButton'>
+                                            EXPERIENCE
+                                        </button>
+                                    </Link>
+                                </span>
+                                <span className='col-md-4'>
+                                    <Link to='/projects'>
+                                        <button className='landingButton'>
+                                            PROJECTS
+                                        </button>
+                                    </Link>
+                                </span>
+                            </div>
+                        </Fade>
                     </div>
                 </div>
                 <div className='container'>
