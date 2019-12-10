@@ -15,7 +15,7 @@ const Home = () => {
         <div className='home'>
             <div className='landingScreen'>
                 <div className='backgroundVideoWrap'>
-                    <video playsinline autoPlay muted loop>
+                    <video playsInline autoPlay muted loop>
                         <source
                             src={require('../../static/backgrounds/clouds.webm')}
                             type='video/webm'
