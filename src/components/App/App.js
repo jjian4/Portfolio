@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
     Link,
@@ -52,18 +52,11 @@ function App() {
 
                 {/* Renders Route where path matches current url */}
                 <Switch>
-                    <Route exact path='/'>
-                        <Home />
-                    </Route>
-                    <Route path='/about'>
-                        <About />
-                    </Route>
-                    <Route path='/experience'>
-                        <Experience />
-                    </Route>
-                    <Route path='/projects'>
-                        <Projects />
-                    </Route>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/experience' component={Experience} />
+                    <Route exact path='/projects' component={Projects} />
+                    <Route component={Home} />
                 </Switch>
 
                 <div className='footer'>
