@@ -6,17 +6,17 @@ const About = () => {
     return (
         <div className='about'>
             <div className='container'>
-                <Fade up>
-                    <div className='row'>
-                        <div className='col-md-4'>
-                            <div className='portrait'>
-                                <img
-                                    src={require('../../static/portrait2.jpg')}
-                                    alt='portrait'
-                                />
-                            </div>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <div className='portrait'>
+                            <img
+                                src={require('../../static/portrait2.jpg')}
+                                alt='portrait'
+                            />
                         </div>
-                        <div className='col-md-8'>
+                    </div>
+                    <div className='col-md-8'>
+                        <Fade right>
                             <div className='aboutIntro'>
                                 <p>
                                     I'm a Computer Science major and
@@ -37,16 +37,16 @@ const About = () => {
                                     with any questions or comments!
                                 </div>
                             </div>
-                        </div>
+                        </Fade>
                     </div>
-                </Fade>
+                </div>
 
                 <div className='moreAboutInfo'>
-                    <Fade up>
-                        <div className='row'>
-                            <div className='col-md-6'>
-                                <div className='education'>
-                                    <div className='aboutTitle'>EDUCATION</div>
+                    <div className='row'>
+                        <div className='col-md-6'>
+                            <div className='education'>
+                                <div className='aboutTitle'>EDUCATION</div>
+                                <Fade right>
                                     <div>
                                         University of Michigan - College of
                                         Engineering
@@ -56,13 +56,15 @@ const About = () => {
                                         Science
                                     </div>
                                     <div>Minor in Multidisciplinary Design</div>
-                                </div>
+                                </Fade>
                             </div>
-                            <div className='col-md-6'>
-                                <div className='courses'>
-                                    <div className='aboutTitle'>
-                                        FAVORITE COURSES
-                                    </div>
+                        </div>
+                        <div className='col-md-6'>
+                            <div className='courses'>
+                                <div className='aboutTitle'>
+                                    FAVORITE COURSES
+                                </div>
+                                <Fade right>
                                     <div>
                                         Multidisciplinary Software Engineering
                                     </div>
@@ -72,103 +74,111 @@ const About = () => {
                                     <div>
                                         Database Management Systems &lt;3{' '}
                                     </div>
-                                </div>
+                                </Fade>
                             </div>
                         </div>
-                    </Fade>
+                    </div>
                     <div className='aboutTitle'>FAVORITE TOOLS</div>
                     <div className='row'>
                         <div className='col-lg-3 col-sm-6'>
                             <div className='skillTitle'>Languages</div>
-                            <div className='skillRow row'>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/javascript.png')}
-                                        skillName='JavaScript'
-                                    />
+                            <Fade>
+                                <div className='skillRow row'>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/javascript.png')}
+                                            skillName='JavaScript'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/python.png')}
+                                            skillName='Python'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/c++.png')}
+                                            skillName='C++'
+                                        />
+                                    </div>
                                 </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/python.png')}
-                                        skillName='Python'
-                                    />
-                                </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/c++.png')}
-                                        skillName='C++'
-                                    />
-                                </div>
-                            </div>
+                            </Fade>
                         </div>
                         <div className='col-lg-3 col-sm-6'>
                             <div className='skillTitle'>Front-end</div>
-                            <div className='skillRow row'>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/react.png')}
-                                        skillName='React'
-                                    />
+                            <Fade>
+                                <div className='skillRow row'>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/react.png')}
+                                            skillName='React'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/redux.png')}
+                                            skillName='Redux'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/bootstrap.png')}
+                                            skillName='Bootstrap'
+                                        />
+                                    </div>
                                 </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/redux.png')}
-                                        skillName='Redux'
-                                    />
-                                </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/bootstrap.png')}
-                                        skillName='Bootstrap'
-                                    />
-                                </div>
-                            </div>
+                            </Fade>
                         </div>
                         <div className='col-lg-3 col-sm-6'>
                             <div className='skillTitle'>Server-side</div>
-                            <div className='skillRow row'>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/express.png')}
-                                        skillName='Express'
-                                    />
+                            <Fade>
+                                <div className='skillRow row'>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/express.png')}
+                                            skillName='Express'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/socketio.png')}
+                                            skillName='Socket.io'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/flask.png')}
+                                            skillName='Flask'
+                                        />
+                                    </div>
                                 </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/socketio.png')}
-                                        skillName='Socket.io'
-                                    />
-                                </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/flask.png')}
-                                        skillName='Flask'
-                                    />
-                                </div>
-                            </div>
+                            </Fade>
                         </div>
                         <div className='col-lg-3 col-sm-6'>
                             <div className='skillTitle'>Database</div>
-                            <div className='skillRow row'>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/mongodb.png')}
-                                        skillName='MongoDB'
-                                    />
+                            <Fade>
+                                <div className='skillRow row'>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/mongodb.png')}
+                                            skillName='MongoDB'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/sql.png')}
+                                            skillName='SQL'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/firebase.png')}
+                                            skillName='Firebase'
+                                        />
+                                    </div>
                                 </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/sql.png')}
-                                        skillName='SQL'
-                                    />
-                                </div>
-                                <div className='col-4'>
-                                    <Skill
-                                        icon={require('../../static/skills/firebase.png')}
-                                        skillName='Firebase'
-                                    />
-                                </div>
-                            </div>
+                            </Fade>
                         </div>
                     </div>
                 </div>

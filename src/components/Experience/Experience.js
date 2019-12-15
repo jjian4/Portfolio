@@ -64,25 +64,25 @@ const experienceRows = [
         image={require('../../static/experience/dataminr.png')}
     />,
     <ExperienceRow
-        title='Little Caesars (2019)'
-        position='Student Software Engineer'
-        languages={['Dart']}
-        tools={['Flutter', 'MySQL', 'DialogFlow']}
-        description='I am on a corporate-sponsored team of six students formed under the Multidisciplinary Design Program.
-        My team and I are developing a natural language processing mobile application to interpret and respond to customers&#39; 
-        intents. We continuously build prototypes and update our sponsors, using JIRA to manage multiple tasks across the team.'
-        image={require('../../static/experience/littleCaesars.png')}
-    />,
-    <ExperienceRow
         title='Michigan Daily (2018 - )'
         position='Web Team Front-end Engineer'
         languages={['Python', 'JavaScript']}
         tools={['Flask', 'React', 'SQL']}
         description='The Michigan Daily is University of Michigan&#39; oldest publication organization. As an engineer on the
-        Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, 
-        a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives 
-        to help grow the development team.'
+    Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, 
+    a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives 
+    to help grow the development team.'
         image={require('../../static/experience/michiganDaily.png')}
+    />,
+    <ExperienceRow
+        title='Little Caesars (2019)'
+        position='Student Software Engineer'
+        languages={['Dart']}
+        tools={['Flutter', 'MySQL', 'DialogFlow']}
+        description='I recently completed a year-long corporate-sponsored project with five other students under the Multidisciplinary Design Program.
+        My team and I developed a natural language processing mobile application to interpret and respond to customers&#39; 
+        intents. We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.'
+        image={require('../../static/experience/littleCaesars.png')}
     />
 ];
 
