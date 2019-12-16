@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79030f286a4f961997f0bd53a4ca128c",
+    "revision": "05d5cad9b14b5017635cc638213deb80",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.1c29a7ee.chunk.css"
   },
   {
-    "revision": "1afdb33aaf60d5bfd63f",
-    "url": "/static/css/main.ff080231.chunk.css"
+    "revision": "6a68246b6c54dc9830af",
+    "url": "/static/css/main.c440bc47.chunk.css"
   },
   {
     "revision": "13d6f8e900bc2a175bcb",
     "url": "/static/js/2.49bed2d5.chunk.js"
   },
   {
-    "revision": "1afdb33aaf60d5bfd63f",
-    "url": "/static/js/main.8c107a23.chunk.js"
+    "revision": "6a68246b6c54dc9830af",
+    "url": "/static/js/main.68dd94b4.chunk.js"
   },
   {
     "revision": "0ac2b0fd5fd4af3be109",
@@ -184,8 +184,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/redux.59c46753.png"
   },
   {
-    "revision": "5c1437ed28c37d6acaa3ab9df90a905f",
-    "url": "/static/media/resume.5c1437ed.pdf"
+    "revision": "0329eba04635a24c21cb9d567e9b36ff",
+    "url": "/static/media/resume.0329eba0.pdf"
   },
   {
     "revision": "99c61a707587b5656d58fce75eb93709",
