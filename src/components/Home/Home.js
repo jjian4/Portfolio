@@ -14,22 +14,32 @@ class Home extends React.Component {
         scrollToRef(this.homeDividerRef);
     };
 
+    state = {
+        finishedLoading: false
+    };
+
+    componentDidMount() {
+        this.setState({ finishedLoading: true });
+    }
+
     render() {
         return (
             <div className='home'>
                 <div className='landingScreen'>
-                    <div className='backgroundVideoWrap'>
-                        <video playsInline autoPlay muted loop id='vid'>
-                            <source
-                                src={require('../../static/backgrounds/clouds.webm')}
-                                type='video/webm'
-                            />
-                            <source
-                                src={require('../../static/backgrounds/clouds.mp4')}
-                                type='video/mp4'
-                            />
-                        </video>
-                    </div>
+                    {this.state.finishedLoading && (
+                        <div className='backgroundVideoWrap'>
+                            <video playsInline autoPlay muted loop id='vid'>
+                                <source
+                                    src={require('../../static/backgrounds/clouds.webm')}
+                                    type='video/webm'
+                                />
+                                <source
+                                    src={require('../../static/backgrounds/clouds.mp4')}
+                                    type='video/mp4'
+                                />
+                            </video>
+                        </div>
+                    )}
                     <div className='videoOverlay'></div>
                     <div className='landingContent'>
                         <div className='container'>

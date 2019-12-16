@@ -16,8 +16,8 @@ const About = () => {
                         </div>
                     </div>
                     <div className='col-md-8'>
-                        <Fade right>
-                            <div className='aboutIntro'>
+                        <div className='aboutIntro'>
+                            <Fade right>
                                 <p>
                                     I'm a Computer Science major and
                                     Multidisciplinary Design minor at UMichigan
@@ -36,8 +36,8 @@ const About = () => {
                                     Feel free to contact me at jjian@umich.edu
                                     with any questions or comments!
                                 </div>
-                            </div>
-                        </Fade>
+                            </Fade>
+                        </div>
                     </div>
                 </div>
 
