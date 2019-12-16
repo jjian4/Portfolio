@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
+import {
+    faAngleDoubleDown,
+    faSpinner
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Home.css';
 import About from '../About/About';
@@ -18,17 +21,39 @@ class Home extends React.Component {
         finishedLoading: false
     };
 
-    componentDidMount() {
+    replaceSpinner = () => {
         this.setState({ finishedLoading: true });
-    }
+    };
 
     render() {
+        let loadingScreenClass = 'loadingScreen';
+        let homeClass = 'gone';
+        if (this.state.finishedLoading) {
+            loadingScreenClass = 'gone';
+            homeClass = 'home';
+        }
+
         return (
-            <div className='home'>
-                <div className='landingScreen'>
-                    {this.state.finishedLoading && (
+            <div>
+                <div className={loadingScreenClass}>
+                    <span className='loader'>
+                        <FontAwesomeIcon icon={faSpinner} />
+                    </span>
+                </div>
+
+                <div className={homeClass}>
+                    <div className='landingScreen'>
                         <div className='backgroundVideoWrap'>
-                            <video playsInline autoPlay muted loop id='vid'>
+                            <video
+                                playsInline
+                                autoPlay
+                                muted
+                                loop
+                                id='vid'
+                                onCanPlay={() => {
+                                    this.replaceSpinner();
+                                }}
+                            >
                                 <source
                                     src={require('../../static/backgrounds/clouds.webm')}
                                     type='video/webm'
@@ -39,54 +64,54 @@ class Home extends React.Component {
                                 />
                             </video>
                         </div>
-                    )}
-                    <div className='videoOverlay'></div>
-                    <div className='landingContent'>
+                        <div className='videoOverlay'></div>
+                        <div className='landingContent'>
+                            <div className='container'>
+                                <div className='landingTitle'>James Jiang</div>
+                                <Fade>
+                                    <div className='landingSubtitle'>
+                                        Full Stack Engineer
+                                    </div>
+                                    <div className='landingButtons row'>
+                                        <span className='col-md-4'>
+                                            <button
+                                                className='landingButton'
+                                                onClick={this.executeScroll}
+                                            >
+                                                ABOUT
+                                            </button>
+                                        </span>
+                                        <span className='col-md-4'>
+                                            <Link to='/experience'>
+                                                <button className='landingButton'>
+                                                    EXPERIENCE
+                                                </button>
+                                            </Link>
+                                        </span>
+                                        <span className='col-md-4'>
+                                            <Link to='/projects'>
+                                                <button className='landingButton'>
+                                                    PROJECTS
+                                                </button>
+                                            </Link>
+                                        </span>
+                                    </div>
+                                </Fade>
+                            </div>
+                        </div>
                         <div className='container'>
-                            <div className='landingTitle'>James Jiang</div>
-                            <Fade>
-                                <div className='landingSubtitle'>
-                                    Full Stack Engineer
-                                </div>
-                                <div className='landingButtons row'>
-                                    <span className='col-md-4'>
-                                        <button
-                                            className='landingButton'
-                                            onClick={this.executeScroll}
-                                        >
-                                            ABOUT
-                                        </button>
-                                    </span>
-                                    <span className='col-md-4'>
-                                        <Link to='/experience'>
-                                            <button className='landingButton'>
-                                                EXPERIENCE
-                                            </button>
-                                        </Link>
-                                    </span>
-                                    <span className='col-md-4'>
-                                        <Link to='/projects'>
-                                            <button className='landingButton'>
-                                                PROJECTS
-                                            </button>
-                                        </Link>
-                                    </span>
-                                </div>
-                            </Fade>
+                            <div className='landingArrow'>
+                                <button onClick={this.executeScroll}>
+                                    <FontAwesomeIcon icon={faAngleDoubleDown} />
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div className='container'>
-                        <div className='landingArrow'>
-                            <button onClick={this.executeScroll}>
-                                <FontAwesomeIcon icon={faAngleDoubleDown} />
-                            </button>
-                        </div>
-                    </div>
+
+                    <div ref={this.homeDividerRef} id='homeDivider' />
+
+                    <About />
                 </div>
-
-                <div ref={this.homeDividerRef} id='homeDivider' />
-
-                <About />
             </div>
         );
     }
