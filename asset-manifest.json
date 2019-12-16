@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce140405.chunk.css",
-    "main.js": "/static/js/main.565944ac.chunk.js",
-    "main.js.map": "/static/js/main.565944ac.chunk.js.map",
+    "main.css": "/static/css/main.405822f3.chunk.css",
+    "main.js": "/static/js/main.81861426.chunk.js",
+    "main.js.map": "/static/js/main.81861426.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8896086d.js",
     "runtime-main.js.map": "/static/js/runtime-main.8896086d.js.map",
     "static/css/2.1c29a7ee.chunk.css": "/static/css/2.1c29a7ee.chunk.css",
     "static/js/2.15960ddd.chunk.js": "/static/js/2.15960ddd.chunk.js",
     "static/js/2.15960ddd.chunk.js.map": "/static/js/2.15960ddd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.89968d2fdb25fffd7f51128d1a0dda9d.js": "/precache-manifest.89968d2fdb25fffd7f51128d1a0dda9d.js",
+    "precache-manifest.26fe42c27fa670d34a230f8f6efe6968.js": "/precache-manifest.26fe42c27fa670d34a230f8f6efe6968.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.1c29a7ee.chunk.css.map": "/static/css/2.1c29a7ee.chunk.css.map",
-    "static/css/main.ce140405.chunk.css.map": "/static/css/main.ce140405.chunk.css.map",
+    "static/css/main.405822f3.chunk.css.map": "/static/css/main.405822f3.chunk.css.map",
     "static/media/alphaTetris-chrome.png": "/static/media/alphaTetris-chrome.776f1b42.png",
     "static/media/alphaTetris-classic.png": "/static/media/alphaTetris-classic.40ec7a70.png",
     "static/media/alphaTetris-gameplay.png": "/static/media/alphaTetris-gameplay.8b1251b2.png",
@@ -68,7 +68,7 @@
     "static/js/runtime-main.8896086d.js",
     "static/css/2.1c29a7ee.chunk.css",
     "static/js/2.15960ddd.chunk.js",
-    "static/css/main.ce140405.chunk.css",
-    "static/js/main.565944ac.chunk.js"
+    "static/css/main.405822f3.chunk.css",
+    "static/js/main.81861426.chunk.js"
   ]
 }
