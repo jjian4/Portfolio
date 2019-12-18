@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd443698d3fa309e0e539d355aef16de",
+    "revision": "48ef78398950bded51e218ebeca083a9",
     "url": "/index.html"
   },
   {
-    "revision": "c5d027deb904857f711f",
+    "revision": "7b2f51f6ed81f35355b5",
     "url": "/static/css/2.1c29a7ee.chunk.css"
   },
   {
-    "revision": "e9ae512c7009ad041c0b",
-    "url": "/static/css/main.405822f3.chunk.css"
+    "revision": "cbd44a228282e5f9f80d",
+    "url": "/static/css/main.0eef7c90.chunk.css"
   },
   {
-    "revision": "c5d027deb904857f711f",
-    "url": "/static/js/2.15960ddd.chunk.js"
+    "revision": "7b2f51f6ed81f35355b5",
+    "url": "/static/js/2.70ba05ba.chunk.js"
   },
   {
-    "revision": "e9ae512c7009ad041c0b",
-    "url": "/static/js/main.81861426.chunk.js"
+    "revision": "cbd44a228282e5f9f80d",
+    "url": "/static/js/main.ec27bada.chunk.js"
   },
   {
     "revision": "0ac2b0fd5fd4af3be109",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alphaTetris.c1d5414c.png"
   },
   {
-    "revision": "baf0cae734a3a5938b7c2909de64393c",
-    "url": "/static/media/apple.baf0cae7.png"
+    "revision": "954585576a2884bc747f8f3582821c9c",
+    "url": "/static/media/apple.95458557.png"
   },
   {
     "revision": "fc389ff99346e2a56fdfc89aa7e4cf83",
@@ -104,6 +104,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/companyHub.939ce632.png"
   },
   {
+    "revision": "03de73b724abf68fb0b6daeb7b5fe360",
+    "url": "/static/media/dataminr.03de73b7.png"
+  },
+  {
     "revision": "b2797802d3a7953fe94b3672249b6c17",
     "url": "/static/media/firebase.b2797802.png"
   },
@@ -116,12 +120,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/javascript.0cded3a3.png"
   },
   {
-    "revision": "1c5e6823cf99779021419a0500ad0fb0",
-    "url": "/static/media/littleCaesars.1c5e6823.png"
+    "revision": "3fe09ba37094070af4314006e9f211eb",
+    "url": "/static/media/littleCaesars.3fe09ba3.png"
   },
   {
-    "revision": "31a4f4907be189e1bb5e403b20ac8c04",
-    "url": "/static/media/michiganDaily.31a4f490.png"
+    "revision": "74a550a33ed35e3cfa37d9d00ed98763",
+    "url": "/static/media/michiganDaily.74a550a3.png"
   },
   {
     "revision": "d0d13df7ebedd066b2e371dc80edc81b",
