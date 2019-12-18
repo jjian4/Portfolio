@@ -22,6 +22,8 @@ class Home extends React.Component {
     };
 
     replaceSpinner = () => {
+        // Scroll to top to hide spinner offset change
+        window.scrollTo(0, 0);
         this.setState({ finishedLoading: true });
     };
 
