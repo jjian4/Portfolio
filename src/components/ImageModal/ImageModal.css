@@ -8,10 +8,12 @@
     justify-content: center;
 }
 
-.imageModal {
+.imageCarousel {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.imageModal .projectImage {
+.imageCarousel .projectImage {
     max-width: 100%;
     max-height: 85vh;
     margin-left: auto;
@@ -19,7 +21,7 @@
     user-select: none;
 }
 
-.imageModal .slideControl {
+.imageCarousel .slideControl {
     position: absolute;
     outline: none;
     padding: 15px;
@@ -31,15 +33,15 @@
     transform: translateY(-50%);
 }
 
-.imageModal .previousButton {
+.imageCarousel .previousButton {
     left: 3vw;
 }
 
-.imageModal .nextButton {
+.imageCarousel .nextButton {
     right: 3vw;
 }
 
-.imageModal .imagePage {
+.imageCarousel .imagePage {
     position: absolute;
     padding: 3px 10px;
     background-color: rgb(0, 0, 0, 0.5);

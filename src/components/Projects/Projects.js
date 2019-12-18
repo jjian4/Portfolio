@@ -3,68 +3,93 @@ import ImageModal from '../ImageModal/ImageModal';
 import './Projects.css';
 import Fade from 'react-reveal/Fade';
 
-const ProjectRow = props => {
-    const languages = props.languages.map((item, i) => (
-        <span className='tag languageTag' key={i}>
-            {item}
-        </span>
-    ));
+class ProjectRow extends React.Component {
+    state = {
+        imageModalOpen: false
+    };
 
-    const tools = props.tools.map((item, i) => (
-        <span className='tag toolTag' key={i}>
-            {item}
-        </span>
-    ));
+    openImageModal = () => {
+        this.setState({ imageModalOpen: true });
+    };
 
-    return (
-        <div className='container'>
-            <div className='row'>
-                <div className='col-md-7'>
-                    <div className='projectRowTitle'>{props.title}</div>
-                    <div>
-                        {languages}
-                        {tools}
+    closeImageModal = () => {
+        this.setState({ imageModalOpen: false });
+    };
+
+    render() {
+        const languages = this.props.languages.map((item, i) => (
+            <span className='tag languageTag' key={i}>
+                {item}
+            </span>
+        ));
+
+        const tools = this.props.tools.map((item, i) => (
+            <span className='tag toolTag' key={i}>
+                {item}
+            </span>
+        ));
+
+        return (
+            <div className='container'>
+                <div className='row'>
+                    <div className='col-md-7'>
+                        <div className='projectRowTitle'>
+                            {this.props.title}
+                        </div>
+                        <div>
+                            {languages}
+                            {tools}
+                        </div>
+
+                        <p>{this.props.description}</p>
                     </div>
-
-                    <p>{props.description}</p>
-                </div>
-                <div className='col-md-5 projectRowRight'>
-                    <div className='projectImageAndButtons'>
-                        <img
-                            className='projectImage'
-                            src={props.image}
-                            alt='Project Preview'
-                        />
-                        <div className='projectButtons'>
-                            {props.websiteLink && (
-                                <a
-                                    href={props.websiteLink}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
-                                    <button>Visit</button>
-                                </a>
-                            )}
-                            {props.gitLink && (
-                                <a
-                                    href={props.gitLink}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
-                                    <button>Code</button>
-                                </a>
-                            )}
-                            {/* Images button and modal */}
-                            {props.imageList && (
-                                <ImageModal imageList={props.imageList} />
-                            )}
+                    <div className='col-md-5 projectRowRight'>
+                        <div className='projectImageAndButtons'>
+                            <img
+                                className='projectImage'
+                                src={this.props.image}
+                                alt='Project Preview'
+                            />
+                            <div className='projectButtons'>
+                                {this.props.websiteLink && (
+                                    <a
+                                        href={this.props.websiteLink}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        <button>Visit</button>
+                                    </a>
+                                )}
+                                {this.props.gitLink && (
+                                    <a
+                                        href={this.props.gitLink}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        <button>Code</button>
+                                    </a>
+                                )}
+                                {/* Images button and modal */}
+                                {this.props.imageList && (
+                                    <React.Fragment>
+                                        <button onClick={this.openImageModal}>
+                                            Images
+                                        </button>
+                                        <ImageModal
+                                            isOpen={this.state.imageModalOpen}
+                                            onClose={this.closeImageModal}
+                                            imageList={this.props.imageList}
+                                        />
+                                    </React.Fragment>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 const projectRows = [
     <ProjectRow

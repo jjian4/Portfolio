@@ -23,12 +23,7 @@ const customStyles = {
 
 class ImageModal extends Component {
     state = {
-        modalIsOpen: false,
         imageIndex: 0
-    };
-
-    openModal = () => {
-        this.setState({ modalIsOpen: true });
     };
 
     afterOpenModal = () => {
@@ -37,7 +32,7 @@ class ImageModal extends Component {
 
     closeModal = () => {
         document.removeEventListener('keydown', this.keyBoardControl, false);
-        this.setState({ modalIsOpen: false });
+        this.props.onClose();
     };
 
     keyBoardControl = event => {
@@ -80,16 +75,15 @@ class ImageModal extends Component {
     render() {
         return (
             <React.Fragment>
-                <button onClick={this.openModal}>Images</button>
                 <Modal
-                    isOpen={this.state.modalIsOpen}
+                    isOpen={this.props.isOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     style={customStyles}
                     contentLabel='Image Modal'
                     ariaHideApp={false}
                 >
-                    <div className='imageModal'>
+                    <div className='imageCarousel'>
                         <img
                             className='projectImage d-block'
                             src={this.props.imageList[this.state.imageIndex]}
