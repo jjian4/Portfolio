@@ -18,7 +18,14 @@ const ExperienceRow = props => {
     return (
         <div className='container'>
             <div className='row'>
-                <div className='col-md-8'>
+                <div className='col-md-4 order-md-2 experienceRowRight'>
+                    <img
+                        className='experienceImage'
+                        src={props.image}
+                        alt='Experience Logo'
+                    />
+                </div>
+                <div className='col-md-8 order-md-1'>
                     <div className='experienceRowTitle'>{props.title}</div>
                     <div>{props.position}</div>
                     <div>
@@ -27,13 +34,6 @@ const ExperienceRow = props => {
                     </div>
 
                     <p>{props.description}</p>
-                </div>
-                <div className='col-md-4 experienceRowRight'>
-                    <img
-                        className='experienceImage'
-                        src={props.image}
-                        alt='Experience Logo'
-                    />
                 </div>
             </div>
         </div>
