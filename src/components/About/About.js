@@ -106,31 +106,6 @@ const About = () => {
                             </Fade>
                         </div>
                         <div className='col-lg-3 col-sm-6'>
-                            <div className='skillTitle'>Front-end</div>
-                            <Fade>
-                                <div className='skillRow row'>
-                                    <div className='col-4'>
-                                        <Skill
-                                            icon={require('../../static/skills/react.png')}
-                                            skillName='React'
-                                        />
-                                    </div>
-                                    <div className='col-4'>
-                                        <Skill
-                                            icon={require('../../static/skills/redux.png')}
-                                            skillName='Redux'
-                                        />
-                                    </div>
-                                    <div className='col-4'>
-                                        <Skill
-                                            icon={require('../../static/skills/bootstrap.png')}
-                                            skillName='Bootstrap'
-                                        />
-                                    </div>
-                                </div>
-                            </Fade>
-                        </div>
-                        <div className='col-lg-3 col-sm-6'>
                             <div className='skillTitle'>Server-side</div>
                             <Fade>
                                 <div className='skillRow row'>
@@ -150,6 +125,31 @@ const About = () => {
                                         <Skill
                                             icon={require('../../static/skills/flask.png')}
                                             skillName='Flask'
+                                        />
+                                    </div>
+                                </div>
+                            </Fade>
+                        </div>
+                        <div className='col-lg-3 col-sm-6'>
+                            <div className='skillTitle'>Front-end</div>
+                            <Fade>
+                                <div className='skillRow row'>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/react.png')}
+                                            skillName='React'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/redux.png')}
+                                            skillName='Redux'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <Skill
+                                            icon={require('../../static/skills/bootstrap.png')}
+                                            skillName='Bootstrap'
                                         />
                                     </div>
                                 </div>

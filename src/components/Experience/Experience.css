@@ -18,6 +18,11 @@
 
 .experienceRowTitle {
     font-size: 30px;
+    text-decoration: none !important;
+    color: inherit;
+}
+.experienceRowTitle:hover {
+    color: inherit;
 }
 
 .experienceRowRight {

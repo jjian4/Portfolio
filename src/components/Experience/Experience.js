@@ -19,14 +19,27 @@ const ExperienceRow = props => {
         <div className='container'>
             <div className='row'>
                 <div className='col-md-4 order-md-2 experienceRowRight'>
-                    <img
-                        className='experienceImage'
-                        src={props.image}
-                        alt='Experience Logo'
-                    />
+                    <a
+                        href={props.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <img
+                            className='experienceImage'
+                            src={props.image}
+                            alt='Experience Logo'
+                        />
+                    </a>
                 </div>
                 <div className='col-md-8 order-md-1'>
-                    <div className='experienceRowTitle'>{props.title}</div>
+                    <a
+                        className='experienceRowTitle'
+                        href={props.link}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        {props.title}
+                    </a>
                     <div>{props.position}</div>
                     <div>
                         {languages}
@@ -43,6 +56,7 @@ const ExperienceRow = props => {
 const experienceRows = [
     <ExperienceRow
         title='Apple (2020)'
+        link='https://www.apple.com/jobs/us/about.html'
         position='Incoming Software Engineer Intern'
         languages={['Python', 'JavaScript', 'Bash']}
         tools={['Flask', 'MongoDB']}
@@ -53,6 +67,7 @@ const experienceRows = [
     />,
     <ExperienceRow
         title='Dataminr (2019)'
+        link='https://www.dataminr.com/about'
         position='Software Engineer Intern'
         languages={['JavaScript']}
         tools={['Express', 'React', 'Redux', 'Jest', 'Enzyme']}
@@ -65,6 +80,7 @@ const experienceRows = [
     />,
     <ExperienceRow
         title='Michigan Daily (2018 - )'
+        link='https://www.michigandaily.com/'
         position='Web Team Front-end Engineer'
         languages={['Python', 'JavaScript']}
         tools={['Flask', 'React', 'SQL']}
@@ -76,6 +92,7 @@ const experienceRows = [
     />,
     <ExperienceRow
         title='Little Caesars (2019)'
+        link='https://mdp.engin.umich.edu/2020-all-partner/'
         position='Student Software Engineer'
         languages={['Dart']}
         tools={['Flutter', 'MySQL', 'DialogFlow']}
