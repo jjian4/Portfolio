@@ -19,8 +19,9 @@
 }
 
 .logo {
+    font-family: var(--font2);
     float: left;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .navBarRight {
@@ -50,7 +51,7 @@
 
 .navItemActive {
     color: var(--blue) !important;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .footer {

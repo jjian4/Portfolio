@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 :root {
     --light-blue: #eef7fa;
     --blue: rgb(70, 120, 160);
 
     --smoke: #f0f0f0;
     --gray: #e8e8e8;
+
+    --font1: 'Lato', sans-serif;
+    --font2: 'Poppins', sans-serif;
 
     --navBar-height: 45px;
 }
@@ -14,9 +20,7 @@ html {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: var(--font1);
     scroll-behavior: smooth;
 }
 

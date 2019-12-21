@@ -38,7 +38,7 @@ class Home extends React.Component {
         return (
             <div>
                 <div className={loadingScreenClass}>
-                    <span className='loader'>
+                    <span className='spinner'>
                         <FontAwesomeIcon icon={faSpinner} />
                     </span>
                 </div>
@@ -53,7 +53,9 @@ class Home extends React.Component {
                                 loop
                                 id='vid'
                                 onCanPlay={() => {
-                                    this.replaceSpinner();
+                                    if (!this.state.finishedLoading) {
+                                        this.replaceSpinner();
+                                    }
                                 }}
                             >
                                 <source

@@ -1,5 +1,5 @@
 .loadingScreen {
-    background-color: white;
+    background-color: var(--light-blue);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.loader {
+.spinner {
     font-size: 100px;
     color: var(--blue);
     animation: spin 1s linear infinite;
@@ -75,24 +75,26 @@
 }
 
 .landingTitle {
+    font-family: var(--font2);
     font-size: 80px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .landingSubtitle {
+    font-family: var(--font2);
     font-size: 25px;
 }
 
 .landingButtons {
     padding-top: 30px;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
 .landingButton {
     font-size: 20px;
     margin-top: 30px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 5%;
 }
 
@@ -130,7 +132,7 @@
     }
 }
 
-@media (max-width: 1999px) {
+@media (max-width: 1199px) {
     .landingButtons {
         width: 100%;
     }
@@ -151,8 +153,16 @@
 }
 
 @media (max-width: 575px) {
+    .landingContent {
+        width: 90%;
+    }
+
     .landingTitle {
-        font-size: 43px;
+        font-size: 48px;
+    }
+
+    .landingSubtitle {
+        font-size: 22px;
     }
 }
 
