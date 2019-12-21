@@ -88,6 +88,7 @@ class ImageModal extends Component {
                             className='projectImage d-block'
                             src={this.props.imageList[this.state.imageIndex]}
                             alt='projectImage'
+                            onClick={this.showNextImage}
                         />
                         <button
                             className='slideControl previousButton'

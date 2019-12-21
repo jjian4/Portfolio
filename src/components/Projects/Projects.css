@@ -28,6 +28,7 @@
 
 .projectImage {
     max-width: 80%;
+    cursor: pointer;
 }
 
 .projectButtons {

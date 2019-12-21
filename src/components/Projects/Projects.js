@@ -49,6 +49,7 @@ class ProjectRow extends React.Component {
                                 className='projectImage'
                                 src={this.props.image}
                                 alt='Project Preview'
+                                onClick={this.openImageModal}
                             />
                             <div className='projectButtons'>
                                 {this.props.websiteLink && (
