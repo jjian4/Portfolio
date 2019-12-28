@@ -7,6 +7,7 @@
     height: var(--navBar-height);
     z-index: 3;
     border-bottom: 3px var(--blue) solid;
+    user-select: none;
 }
 
 .navBarContainer {
