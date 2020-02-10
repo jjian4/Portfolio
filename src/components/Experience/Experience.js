@@ -58,8 +58,8 @@ const experienceRows = [
         title='Apple (2020)'
         link='https://www.apple.com/jobs/us/about.html'
         position='Software Engineer Intern'
-        languages={['Python', 'JavaScript', 'Swift']}
-        tools={['Flask', 'MongoDB', 'React']}
+        languages={['Python', 'JavaScript']}
+        tools={['Flask', 'MongoDB', 'Amazon S3', 'React', 'Electron', 'Docker']}
         description='I&#39;m excited to be interning at Apple as a Software Automation & Tools intern on the
         Wireless Tech and Ecosystems Team! I will be identifying areas that can be improved with
         automation and provide documented and tested software solutions.'
