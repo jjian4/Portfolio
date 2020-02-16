@@ -43,7 +43,7 @@ button:hover {
     display: inline-block;
     font-size: 12px;
     border-radius: 8px;
-    padding: 3px 5px;
+    padding: 3px 6px;
     margin: 3px 6px 3px 0;
     cursor: default;
 }
@@ -60,6 +60,6 @@ button:hover {
     .tag {
         font-size: 10px;
         border-radius: 8px;
-        padding: 3px;
+        padding: 1px 6px;
     }
 }
