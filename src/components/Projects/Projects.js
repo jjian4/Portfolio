@@ -94,9 +94,26 @@ class ProjectRow extends React.Component {
 
 const projectRows = [
     <ProjectRow
+        title='GitTogether (2020)'
+        languages={['JavaScript']}
+        tools={['Express', 'MongoDB', 'Mongoose', 'React']}
+        description='Easily discover developers on different version control sites like Github, Bitbucket, and Gitlab. After finding an account, users can visit the official profile or see a comprehensive summary, which includes recent activity, public repo details, and language distributions. Users can claim their own git profiles and follow others to quickly access account details.'
+        gitLink='https://github.com/jjian4/GitTogether'
+        image={require('../../static/projects/gitTogether/gitTogether-preview.png')}
+        imageList={[
+            require('../../static/projects/gitTogether/gitTogether-home.png'),
+            require('../../static/projects/gitTogether/gitTogether-search.png'),
+            require('../../static/projects/gitTogether/gitTogether-details1.png'),
+            require('../../static/projects/gitTogether/gitTogether-details2.png'),
+            require('../../static/projects/gitTogether/gitTogether-details3.png'),
+            require('../../static/projects/gitTogether/gitTogether-login.png'),
+            require('../../static/projects/gitTogether/gitTogether-profile.png')
+        ]}
+    />,
+    <ProjectRow
         title='TriviaChat (2019)'
         languages={['JavaScript']}
-        tools={['Express', 'Socket.io', 'MongoDB', 'Mongoose']}
+        tools={['Socket.io', 'MongoDB', 'Mongoose']}
         description='TriviaChat is a chatroom application that enables real-time communication via WebSockets and allows users to interact with randomized jokes and trivia games. The app saves records like "Hardest Question" or "Biggest Chatroom" to populate its auto-updating leaderboard API.'
         websiteLink='https://jiang-triviachat.herokuapp.com/'
         gitLink='https://github.com/jjian4/TriviaChat'
