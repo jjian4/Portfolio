@@ -32,7 +32,7 @@
     background-color: white;
 }
 
-.landingScreen {
+.home .landingScreen {
     height: 100vh;
     width: 100%;
 
@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-.backgroundVideoWrap {
+.home .backgroundVideoWrap {
     position: absolute;
     left: 0;
     top: 0;
@@ -52,12 +52,12 @@
     overflow: hidden;
 }
 
-.backgroundVideoWrap video {
+.home .backgroundVideoWrap video {
     min-width: 100%;
     min-height: 100%;
 }
 
-.videoOverlay {
+.home .videoOverlay {
     height: 100vh;
     position: absolute;
     top: 0;
@@ -68,37 +68,37 @@
     opacity: 0.3;
 }
 
-.landingContent {
+.home .landingContent {
     padding-bottom: 100px;
     width: 70%;
     z-index: 2;
 }
 
-.landingTitle {
+.home .landingTitle {
     font-family: var(--font2);
     font-size: 80px;
     font-weight: bolder;
 }
 
-.landingSubtitle {
+.home .landingSubtitle {
     font-family: var(--font2);
     font-size: 25px;
 }
 
-.landingButtons {
+.home .landingButtons {
     padding-top: 30px;
     width: 85%;
     margin: 0 auto;
 }
 
-.landingButton {
+.home .landingButton {
     font-size: 20px;
     margin-top: 30px;
     padding: 10px 20px;
     border-radius: 5%;
 }
 
-.landingArrow {
+.home .landingArrow {
     font-size: 50px;
     animation: MoveUpDown 1s linear infinite;
     position: absolute;
@@ -108,18 +108,14 @@
     z-index: 2;
 }
 
-.landingArrow button {
+.home .landingArrow button {
     color: black;
     background: none;
     border: none;
 }
 
-.landingArrow button:focus {
+.home .landingArrow button:focus {
     outline: none;
-}
-
-#homeDivider {
-    /* border: 1px black solid; */
 }
 
 @keyframes MoveUpDown {
@@ -133,13 +129,13 @@
 }
 
 @media (max-width: 1199px) {
-    .landingButtons {
+    .home .landingButtons {
         width: 100%;
     }
 }
 
 @media (max-width: 991px) {
-    .landingButton {
+    .home .landingButton {
         font-size: 18px;
         padding: 5px 15px;
         margin-top: 15px;
@@ -147,31 +143,31 @@
 }
 
 @media (max-width: 767px) {
-    .landingTitle {
+    .home .landingTitle {
         font-size: 60px;
     }
 }
 
 @media (max-width: 575px) {
-    .landingContent {
+    .home .landingContent {
         width: 90%;
     }
 
-    .landingTitle {
+    .home .landingTitle {
         font-size: 48px;
     }
 
-    .landingSubtitle {
+    .home .landingSubtitle {
         font-size: 22px;
     }
 }
 
 @media (max-height: 715px) {
-    .landingContent {
+    .home .landingContent {
         padding-bottom: 0;
     }
 
-    .landingArrow {
+    .home .landingArrow {
         visibility: hidden;
     }
 }

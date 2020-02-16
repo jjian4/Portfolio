@@ -6,30 +6,30 @@
     font-size: 20px;
 }
 
-.experienceRow {
+.experience .experienceRow {
     background-color: var(--smoke);
     padding: 20px;
     margin: 10px 0 20px 0;
 }
 
-.experienceRow:hover {
+.experience .experienceRow:hover {
     background-color: var(--light-blue);
 }
 
-.experienceRowTitle {
+.experience .experienceRowTitle {
     font-size: 30px;
     text-decoration: none !important;
     color: inherit;
 }
-.experienceRowTitle:hover {
+.experience .experienceRowTitle:hover {
     color: inherit;
 }
 
-.experienceRowRight {
+.experience .experienceRowRight {
     position: relative;
 }
 
-.experienceImage {
+.experience .experienceImage {
     max-width: 65%;
     max-height: 65%;
 
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: 991px) {
-    .experienceImage {
+    .experience .experienceImage {
         max-width: 70%;
         max-height: 70%;
     }
@@ -53,11 +53,11 @@
     }
 
     /* Remove vertical centering */
-    .experienceRow {
+    .experience .experienceRow {
         text-align: center;
     }
 
-    .experienceImage {
+    .experience .experienceImage {
         max-height: 120px;
 
         position: relative;
@@ -71,10 +71,10 @@
     .experience {
         font-size: 15px;
     }
-    .experienceRowTitle {
+    .experience .experienceRowTitle {
         font-size: 25px;
     }
-    .experienceImage {
+    .experience .experienceImage {
         max-width: 90%;
     }
 }

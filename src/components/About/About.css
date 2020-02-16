@@ -5,39 +5,39 @@
     font-size: 20px;
 }
 
-.portrait {
+.about .portrait {
     padding-bottom: 10px;
 }
-.portrait img {
+.about .portrait img {
     width: 100%;
 }
 
-.aboutIntro {
+.about .aboutIntro {
     font-size: 22px;
 }
 
-.aboutTitle {
+.about .aboutTitle {
     font-weight: bolder;
     padding-top: 15px;
     font-size: 20px;
 }
 
-.skillTitle {
+.about .skillTitle {
     margin: 5px 15px 0 15px;
     text-align: center;
     border-bottom: 1px solid black;
 }
 
-.skillRow {
+.about .skillRow {
     padding: 10px 10px 0 10px;
 }
 
-.skillBlock {
+.about .skillBlock {
     text-align: center;
     font-size: 11px;
 }
 
-.skillIcon {
+.about .skillIcon {
     max-width: 100%;
     height: 40px;
     padding-bottom: 5px;
@@ -48,16 +48,16 @@
         font-size: 18px;
     }
 
-    .aboutIntro {
+    .about .aboutIntro {
         font-size: 18px;
     }
 }
 
 @media (max-width: 575px) {
-    .skillIcon {
+    .about .skillIcon {
         height: 35px;
     }
-    .moreAboutInfo {
+    .about .moreAboutInfo {
         text-align: center;
         font-size: 15px;
     }
