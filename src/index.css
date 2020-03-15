@@ -56,6 +56,10 @@ button:hover {
     background-color: lightblue;
 }
 
+.blueLink {
+    color: blue !important;
+}
+
 @media (max-width: 575px) {
     .tag {
         font-size: 10px;

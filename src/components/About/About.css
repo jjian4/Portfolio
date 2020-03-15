@@ -16,33 +16,6 @@
     font-size: 22px;
 }
 
-.about .aboutTitle {
-    font-weight: bolder;
-    padding-top: 15px;
-    font-size: 20px;
-}
-
-.about .skillTitle {
-    margin: 5px 15px 0 15px;
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
-.about .skillRow {
-    padding: 10px 10px 0 10px;
-}
-
-.about .skillBlock {
-    text-align: center;
-    font-size: 11px;
-}
-
-.about .skillIcon {
-    max-width: 100%;
-    height: 40px;
-    padding-bottom: 5px;
-}
-
 @media (max-width: 991px) {
     .about {
         font-size: 18px;
@@ -50,15 +23,5 @@
 
     .about .aboutIntro {
         font-size: 18px;
-    }
-}
-
-@media (max-width: 575px) {
-    .about .skillIcon {
-        height: 35px;
-    }
-    .about .moreAboutInfo {
-        text-align: center;
-        font-size: 15px;
     }
 }

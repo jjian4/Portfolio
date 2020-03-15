@@ -1,7 +1,8 @@
 import React from 'react';
 import ImageModal from '../ImageModal/ImageModal';
-import './Projects.css';
 import Fade from 'react-reveal/Fade';
+import './Projects.css';
+import Skills from '../Skills/Skills';
 
 class ProjectRow extends React.Component {
     state = {
@@ -196,6 +197,8 @@ const projectRows = [
 const Projects = () => {
     return (
         <div className='projects'>
+            {/* <Skills /> */}
+
             <Fade down>
                 {projectRows.map((item, i) => {
                     return (
@@ -209,6 +212,7 @@ const Projects = () => {
             <div className='moreProjects'>
                 Check out my other projects on{' '}
                 <a
+                    className='blueLink'
                     href='https://github.com/jjian4'
                     target='_blank'
                     rel='noopener noreferrer'
