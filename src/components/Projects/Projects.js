@@ -2,7 +2,6 @@ import React from 'react';
 import ImageModal from '../ImageModal/ImageModal';
 import Fade from 'react-reveal/Fade';
 import './Projects.css';
-import Skills from '../Skills/Skills';
 
 class ProjectRow extends React.Component {
     state = {
@@ -197,8 +196,6 @@ const projectRows = [
 const Projects = () => {
     return (
         <div className='projects'>
-            {/* <Skills /> */}
-
             <Fade down>
                 {projectRows.map((item, i) => {
                     return (

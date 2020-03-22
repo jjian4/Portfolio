@@ -18,7 +18,6 @@ const About = () => {
                     <div className='col-md-9'>
                         <div className='aboutIntro'>
                             <Fade right>
-                                <p>Hello!</p>
                                 <p>
                                     I'm a Computer Science major and
                                     Multidisciplinary Design minor at UMichigan
