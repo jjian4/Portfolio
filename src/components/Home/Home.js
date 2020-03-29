@@ -1,30 +1,31 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {
     faAngleDoubleDown,
     faSpinner
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classnames from 'classnames';
 import './Home.css';
 import About from '../About/About';
-import Fade from 'react-reveal/Fade';
-
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop);
+import animate from '../../animations';
 
 class Home extends React.Component {
     homeDividerRef = React.createRef();
-    executeScroll = () => {
-        scrollToRef(this.homeDividerRef);
-    };
 
     state = {
         finishedLoading: false
     };
 
     replaceSpinner = () => {
-        // Scroll to top to hide spinner offset change
-        window.scrollTo(0, 0);
-        this.setState({ finishedLoading: true });
+        if (!this.state.finishedLoading) {
+            // Scroll to top to hide spinner offset change
+            window.scrollTo(0, 0);
+            this.setState({ finishedLoading: true });
+        }
+    };
+
+    scrollToAbout = () => {
+        window.scrollTo(0, this.homeDividerRef.current.offsetTop);
     };
 
     render() {
@@ -51,12 +52,7 @@ class Home extends React.Component {
                                 autoPlay
                                 muted
                                 loop
-                                id='vid'
-                                onCanPlay={() => {
-                                    if (!this.state.finishedLoading) {
-                                        this.replaceSpinner();
-                                    }
-                                }}
+                                onCanPlay={this.replaceSpinner}
                             >
                                 <source
                                     src={require('../../static/backgrounds/clouds.webm')}
@@ -71,17 +67,27 @@ class Home extends React.Component {
                         <div className='videoOverlay'></div>
                         <div className='landingContent'>
                             <div className='container'>
-                                <div className='landingTitle'>James Jiang</div>
-                                <Fade>
-                                    <div className='landingSubtitle'>
-                                        Full Stack Web Engineer
-                                    </div>
-                                </Fade>
+                                <div
+                                    className={classnames(
+                                        'landingTitle',
+                                        animate('fadeInFast')
+                                    )}
+                                >
+                                    James Jiang
+                                </div>
+                                <div
+                                    className={classnames(
+                                        'landingSubtitle',
+                                        animate('fadeInSlow')
+                                    )}
+                                >
+                                    Full Stack Web Engineer
+                                </div>
                             </div>
                         </div>
                         <div className='container'>
                             <div className='landingArrow'>
-                                <button onClick={this.executeScroll}>
+                                <button onClick={this.scrollToAbout}>
                                     <FontAwesomeIcon icon={faAngleDoubleDown} />
                                 </button>
                             </div>

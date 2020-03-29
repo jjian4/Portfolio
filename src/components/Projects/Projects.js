@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageModal from '../ImageModal/ImageModal';
-import Fade from 'react-reveal/Fade';
+import classnames from 'classnames';
+import animate from '../../animations';
 import './Projects.css';
 
 class ProjectRow extends React.Component {
@@ -197,15 +198,19 @@ const Projects = () => {
     return (
         <>
             <div className='projects'>
-                <Fade down>
-                    {projectRows.map((item, i) => {
-                        return (
-                            <div className='projectRow' key={i}>
-                                {item}
-                            </div>
-                        );
-                    })}
-                </Fade>
+                {projectRows.map((item, i) => {
+                    return (
+                        <div
+                            className={classnames(
+                                'projectRow',
+                                animate('fadeInDown')
+                            )}
+                            key={i}
+                        >
+                            {item}
+                        </div>
+                    );
+                })}
 
                 <div className='moreProjects'>
                     Check out my other projects on{' '}
