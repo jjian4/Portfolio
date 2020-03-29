@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import Fade from 'react-reveal/Fade';
 
@@ -7,7 +8,7 @@ const About = () => {
         <div className='about'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-3'>
+                    <div className='col-xl-3 col-lg-5'>
                         <div className='portrait'>
                             <img
                                 src={require('../../static/portrait2.jpg')}
@@ -15,7 +16,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div className='col-md-9'>
+                    <div className='col-xl-9 col-lg-7'>
                         <div className='aboutIntro'>
                             <Fade right>
                                 <p>
@@ -35,6 +36,19 @@ const About = () => {
                                         jjian@umich.edu
                                     </a>{' '}
                                     to connect.
+                                </div>
+
+                                <div className='aboutButtons'>
+                                    <Link to='/experience'>
+                                        <button className='aboutButton'>
+                                            EXPERIENCE
+                                        </button>
+                                    </Link>
+                                    <Link to='/projects'>
+                                        <button className='aboutButton'>
+                                            PROJECTS
+                                        </button>
+                                    </Link>
                                 </div>
                             </Fade>
                         </div>

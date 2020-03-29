@@ -1,20 +1,12 @@
 import React from 'react';
-import {
-    HashRouter as Router,
-    Switch,
-    Route,
-    Link,
-    NavLink
-} from 'react-router-dom';
+import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop';
-import { faEnvelope, faPaperclip } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Projects from '../Projects/Projects';
+import Footer from '../Footer/Footer';
 
 function App() {
     return (
@@ -50,60 +42,28 @@ function App() {
                     </div>
                 </div>
 
-                {/* Renders Route where path matches current url */}
-                <Switch>
-                    <Route exact path='/' component={Home} />
-                    <Route exact path='/about' component={About} />
-                    <Route exact path='/experience' component={Experience} />
-                    <Route exact path='/projects' component={Projects} />
-                    <Route component={Home} />
-                </Switch>
+                <Route exact path='/'>
+                    <Home />
+                </Route>
 
-                <div className='footer'>
-                    <div className='container'>
-                        <div>
-                            <a
-                                title='Email'
-                                href='mailto:jjian@umich.edu'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='footerIcon'
-                            >
-                                <FontAwesomeIcon icon={faEnvelope} />
-                            </a>
-                            <a
-                                title='Github'
-                                href='https://github.com/jjian4'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='footerIcon'
-                            >
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                            <a
-                                title='Linkedin'
-                                href='https://linkedin.com/in/jjian4/'
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='footerIcon'
-                            >
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                            <a
-                                title='Resume'
-                                href={require('../../static/resume.pdf')}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className='footerIcon'
-                            >
-                                <FontAwesomeIcon icon={faPaperclip} />
-                            </a>
-                        </div>
-                        <div className='footerCopyright'>
-                            James Jiang &copy; 2019
-                        </div>
-                    </div>
-                </div>
+                <Route exact path='/about'>
+                    <About />
+                </Route>
+
+                <Route exact path='/experience'>
+                    <Experience />
+                </Route>
+
+                <Route exact path='/projects'>
+                    <Projects />
+                </Route>
+
+                {/* <Route exact path='/' component={Home} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/experience' component={Experience} />
+                <Route exact path='/projects' component={Projects} /> */}
+
+                <Footer />
             </ScrollToTop>
         </Router>
     );

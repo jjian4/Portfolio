@@ -36,7 +36,7 @@ class Home extends React.Component {
         }
 
         return (
-            <div>
+            <>
                 <div className={loadingScreenClass}>
                     <span className='spinner'>
                         <FontAwesomeIcon icon={faSpinner} />
@@ -74,7 +74,7 @@ class Home extends React.Component {
                                 <div className='landingTitle'>James Jiang</div>
                                 <Fade>
                                     <div className='landingSubtitle'>
-                                        Full Stack Engineer
+                                        Full Stack Web Engineer
                                     </div>
                                     <div className='landingButtons row'>
                                         <span className='col-md-4'>
@@ -116,7 +116,7 @@ class Home extends React.Component {
 
                     <About />
                 </div>
-            </div>
+            </>
         );
     }
 }

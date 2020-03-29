@@ -3,6 +3,7 @@
     background-color: var(--gray);
     color: black;
     font-size: 20px;
+    /* min-height: calc(100vh - var(--footer-height)); */
 }
 
 .about .portrait {
@@ -16,6 +17,18 @@
     font-size: 22px;
 }
 
+.about .aboutButtons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.about .aboutButton {
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 5%;
+    margin: 0 20px;
+}
+
 @media (max-width: 991px) {
     .about {
         font-size: 18px;
@@ -23,5 +36,9 @@
 
     .about .aboutIntro {
         font-size: 18px;
+    }
+
+    .about .aboutButtons {
+        text-align: center;
     }
 }

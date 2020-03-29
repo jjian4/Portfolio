@@ -1,3 +1,11 @@
+.switch-wrapper {
+    position: relative;
+}
+
+.switch-wrapper > div {
+    position: absolute;
+}
+
 .navBar {
     position: fixed;
     top: 0;
@@ -53,36 +61,4 @@
 .navBar .navItemActive {
     color: var(--blue) !important;
     font-weight: bolder;
-}
-
-.footer {
-    padding: 20px;
-    background-color: black;
-    color: gray;
-    text-align: center;
-    z-index: 3;
-}
-
-.footer .footerIcon {
-    display: inline-block;
-    color: gray;
-    padding: 0 35px;
-    font-size: 30px;
-    transition: all 0.1s ease-in-out;
-}
-
-.footer .footerIcon:hover {
-    color: var(--blue);
-    transform: scale(1.2);
-}
-
-.footer .footerCopyright {
-    padding-top: 10px;
-}
-
-@media (max-width: 575px) {
-    .footer .footerIcon {
-        padding: 0 24px;
-        font-size: 25px;
-    }
 }
