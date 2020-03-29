@@ -195,30 +195,32 @@ const projectRows = [
 
 const Projects = () => {
     return (
-        <div className='projects'>
-            <Fade down>
-                {projectRows.map((item, i) => {
-                    return (
-                        <div className='projectRow' key={i}>
-                            {item}
-                        </div>
-                    );
-                })}
-            </Fade>
+        <>
+            <div className='projects'>
+                <Fade down>
+                    {projectRows.map((item, i) => {
+                        return (
+                            <div className='projectRow' key={i}>
+                                {item}
+                            </div>
+                        );
+                    })}
+                </Fade>
 
-            <div className='moreProjects'>
-                Check out my other projects on{' '}
-                <a
-                    className='blueLink'
-                    href='https://github.com/jjian4'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Github
-                </a>
-                !
+                <div className='moreProjects'>
+                    Check out my other projects on{' '}
+                    <a
+                        className='blueLink'
+                        href='https://github.com/jjian4'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Github
+                    </a>
+                    !
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

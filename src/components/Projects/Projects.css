@@ -1,5 +1,5 @@
 .projects {
-    margin-top: var(--navBar-height);
+    margin-top: var(--header-height);
     padding: 10px 0 0px 0;
     background-color: white;
     color: black;

@@ -1,60 +1,28 @@
 import React from 'react';
-import { HashRouter as Router, Route, Link, NavLink } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import ScrollToTop from '../ScrollToTop';
 import './App.css';
 import Home from '../Home/Home';
-import About from '../About/About';
 import Experience from '../Experience/Experience';
 import Projects from '../Projects/Projects';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 function App() {
     return (
         <Router>
             <ScrollToTop>
-                <div className='navBar'>
-                    <div className='container navBarContainer'>
-                        <div className='navItem logo'>
-                            <Link to='/'>JAMES JIANG</Link>
-                        </div>
-                        <nav>
-                            <ul className='navBarRight'>
-                                <li className='navItem'>
-                                    <NavLink
-                                        exact
-                                        to='/experience'
-                                        activeClassName='navItemActive'
-                                    >
-                                        EXPERIENCE
-                                    </NavLink>
-                                </li>
-                                <li className='navItem'>
-                                    <NavLink
-                                        exact
-                                        to='/projects'
-                                        activeClassName='navItemActive'
-                                    >
-                                        PROJECTS
-                                    </NavLink>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
                 <Route exact path='/'>
                     <Home />
                 </Route>
 
-                <Route exact path='/about'>
-                    <About />
-                </Route>
-
                 <Route exact path='/experience'>
+                    <Header />
                     <Experience />
                 </Route>
 
                 <Route exact path='/projects'>
+                    <Header />
                     <Projects />
                 </Route>
 

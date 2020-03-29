@@ -69,37 +69,25 @@
 }
 
 .home .landingContent {
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     width: 70%;
     z-index: 2;
 }
 
 .home .landingTitle {
     font-family: var(--font2);
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bolder;
 }
 
 .home .landingSubtitle {
+    padding-top: 5px;
     font-family: var(--font2);
-    font-size: 25px;
-}
-
-.home .landingButtons {
-    padding-top: 30px;
-    width: 85%;
-    margin: 0 auto;
-}
-
-.home .landingButton {
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 10px 20px;
-    border-radius: 5%;
+    font-size: 30px;
 }
 
 .home .landingArrow {
-    font-size: 50px;
+    font-size: 80px;
     animation: MoveUpDown 1s linear infinite;
     position: absolute;
     left: 0;
@@ -121,10 +109,10 @@
 @keyframes MoveUpDown {
     0%,
     100% {
-        bottom: 130px;
+        bottom: 150px;
     }
     50% {
-        bottom: 140px;
+        bottom: 160px;
     }
 }
 

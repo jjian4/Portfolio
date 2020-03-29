@@ -1,16 +1,17 @@
 .about {
-    padding: 70px 0 20px 0;
+    padding: 50px 0 40px 0;
     background-color: var(--gray);
     color: black;
     font-size: 20px;
-    /* min-height: calc(100vh - var(--footer-height)); */
 }
 
 .about .portrait {
     padding-bottom: 10px;
+    text-align: center;
 }
 .about .portrait img {
     width: 100%;
+    max-width: 400px;
 }
 
 .about .aboutIntro {
@@ -32,6 +33,10 @@
 @media (max-width: 991px) {
     .about {
         font-size: 18px;
+    }
+
+    .about .portrait img {
+        width: 70%;
     }
 
     .about .aboutIntro {
