@@ -7,7 +7,7 @@ const Header = () => {
         <div className='header'>
             <div className='container headerContainer'>
                 <div className='navItem logo'>
-                    <Link to='/'>JAMES JIANG</Link>
+                    <Link to='/'>James Jiang</Link>
                 </div>
                 <nav>
                     <ul className='headerRight'>
@@ -17,7 +17,7 @@ const Header = () => {
                                 to='/experience'
                                 activeClassName='navItemActive'
                             >
-                                EXPERIENCE
+                                Experience
                             </NavLink>
                         </li>
                         <li className='navItem'>
@@ -26,7 +26,7 @@ const Header = () => {
                                 to='/projects'
                                 activeClassName='navItemActive'
                             >
-                                PROJECTS
+                                Projects
                             </NavLink>
                         </li>
                     </ul>

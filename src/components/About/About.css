@@ -1,7 +1,7 @@
 .about {
     padding: 50px 0 40px 0;
     background-color: var(--gray);
-    color: black;
+    color: var(--black);
     font-size: 20px;
 }
 
@@ -25,7 +25,7 @@
 
 .about .aboutButton {
     font-size: 20px;
-    padding: 5px 20px;
+    padding: 3px 15px;
     border-radius: 5%;
     margin: 0 20px;
 }

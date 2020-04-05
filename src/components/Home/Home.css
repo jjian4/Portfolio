@@ -28,7 +28,7 @@
 }
 
 .home {
-    color: black;
+    color: var(--black);
     background-color: white;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .home .landingContent {
-    padding-bottom: 150px;
+    padding-bottom: 130px;
     width: 70%;
     z-index: 2;
 }
@@ -87,7 +87,7 @@
 }
 
 .home .landingArrow {
-    font-size: 80px;
+    font-size: 50px;
     animation: MoveUpDown 1s linear infinite;
     position: absolute;
     left: 0;
@@ -97,7 +97,7 @@
 }
 
 .home .landingArrow button {
-    color: black;
+    color: var(--black);
     background: none;
     border: none;
 }
@@ -109,10 +109,10 @@
 @keyframes MoveUpDown {
     0%,
     100% {
-        bottom: 150px;
+        bottom: 120px;
     }
     50% {
-        bottom: 160px;
+        bottom: 130px;
     }
 }
 

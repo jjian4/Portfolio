@@ -46,12 +46,12 @@ const About = () => {
                             >
                                 <Link to='/experience'>
                                     <button className='aboutButton'>
-                                        EXPERIENCE
+                                        Experience
                                     </button>
                                 </Link>
                                 <Link to='/projects'>
                                     <button className='aboutButton'>
-                                        PROJECTS
+                                        Projects
                                     </button>
                                 </Link>
                             </div>

@@ -7,6 +7,7 @@
 
     --smoke: #f0f0f0;
     --gray: #e8e8e8;
+    --black: #1a1a1a;
 
     --font1: 'Lato', sans-serif;
     --font2: 'Poppins', sans-serif;
@@ -17,7 +18,7 @@
 
 body,
 html {
-    background-color: black;
+    background-color: var(--black);
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -26,7 +27,7 @@ html {
 }
 
 button {
-    background-color: black;
+    background-color: var(--black);
     border: 1px black solid;
     color: white;
     transition: all 0.1s ease-in-out;

@@ -12,17 +12,17 @@ function App() {
     return (
         <Router>
             <ScrollToTop>
+                <Header />
+
                 <Route exact path='/'>
                     <Home />
                 </Route>
 
                 <Route exact path='/experience'>
-                    <Header />
                     <Experience />
                 </Route>
 
                 <Route exact path='/projects'>
-                    <Header />
                     <Projects />
                 </Route>
 

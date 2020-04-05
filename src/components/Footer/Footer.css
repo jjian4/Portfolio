@@ -2,7 +2,7 @@
     height: var(--footer-height);
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: var(--black);
     color: gray;
     text-align: center;
     z-index: 3;

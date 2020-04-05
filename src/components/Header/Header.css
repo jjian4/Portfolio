@@ -2,7 +2,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black;
+    font-size: 16px;
+    background-color: var(--black);
     list-style-type: none;
     height: var(--header-height);
     z-index: 3;
@@ -32,7 +33,7 @@
 }
 
 .header .headerRight li {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .header .navItem {

@@ -5,15 +5,15 @@ import fadeInUp from 'react-animations/lib/fade-in-up';
 const animations = StyleSheet.create({
     fadeInFast: {
         animationName: fadeIn,
-        animationDuration: '1s'
+        animationDuration: '2s'
     },
     fadeIn: {
         animationName: fadeIn,
-        animationDuration: '2s'
+        animationDuration: '3s'
     },
     fadeInSlow: {
         animationName: fadeIn,
-        animationDuration: '3s'
+        animationDuration: '4s'
     },
     fadeInRightFast: {
         animationName: fadeInRight,
