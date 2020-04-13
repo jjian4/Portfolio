@@ -90,14 +90,14 @@
 
     /* Intro */
     .about .portrait img {
-        width: 70%;
+        width: 50%;
     }
 
     .about .aboutIntro {
         font-size: 18px;
     }
 
-    .about .aboutButtons {
-        text-align: center;
+    .about .aboutButton {
+        margin: 0 10px;
     }
 }

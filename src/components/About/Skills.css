@@ -1,0 +1,25 @@
+.skillRow {
+}
+
+.skillCategory {
+    font-weight: bold;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 10px;
+}
+
+.skills .skillBlock {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+.skills .skillIcon {
+    width: 40%;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 575px) {
+    .projects .skillIcon {
+        height: 35px;
+    }
+}
