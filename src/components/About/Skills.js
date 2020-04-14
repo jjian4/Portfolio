@@ -2,11 +2,17 @@ import React from 'react';
 import './Skills.css';
 
 const skillsList = {
-    Languages: ['Python', 'JavaScript', 'C++', 'Java', 'Kotlin'],
-    'Front end': ['React', 'Redux', 'HTML', 'CSS', 'Bootstrap'],
-    'Back end': ['Node', 'Express', 'Flask', 'Socket.io'],
-    'Database + Storage': ['SQL', 'MongoDB', 'Firebase', 'Amazon S3'],
-    Other: ['Git', 'Heroku', 'Docker'],
+    'Programming Languages': ['Python', 'JavaScript', 'C++', 'Java'],
+    'Front end': ['React', 'Redux', 'Vue', 'HTML', 'CSS', 'Bootstrap'],
+    'Back end': ['Postman', 'Node', 'Express', 'Flask', 'Socket.io'],
+    'Database + Storage': [
+        'SQL',
+        'MongoDB',
+        'Mongoose',
+        'Amazon S3',
+        'Firebase',
+    ],
+    Other: ['Bash', 'Git', 'Docker', 'Heroku'],
 };
 
 const Skills = () => {
@@ -20,7 +26,7 @@ const Skills = () => {
                             {skillsList[category].map((skill, index) => {
                                 return (
                                     <div
-                                        className='skillBlock col-md-2 col-sm-3 col-4'
+                                        className='skillBlock col-md-2 col-sm-3 col-3'
                                         key={index}
                                     >
                                         <img
