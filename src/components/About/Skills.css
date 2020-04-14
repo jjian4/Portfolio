@@ -13,6 +13,11 @@
     padding-bottom: 5px;
 }
 
+.skills .skillLink {
+    text-decoration: none;
+    color: inherit;
+}
+
 .skills .skillIcon {
     width: 40%;
     padding-bottom: 5px;

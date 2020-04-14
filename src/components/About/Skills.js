@@ -4,7 +4,7 @@ import './Skills.css';
 const skillsList = {
     'Programming Languages': ['Python', 'JavaScript', 'C++', 'Java'],
     'Front end': ['React', 'Redux', 'Vue', 'HTML', 'CSS', 'Bootstrap'],
-    'Back end': ['Postman', 'Node', 'Express', 'Flask', 'Socket.io'],
+    'Back end': ['Postman', 'Node', 'ExpressJS', 'Flask', 'Socket.io'],
     'Database + Storage': [
         'SQL',
         'MongoDB',
@@ -29,12 +29,19 @@ const Skills = () => {
                                         className='skillBlock col-md-2 col-sm-3 col-3'
                                         key={index}
                                     >
-                                        <img
-                                            className='skillIcon'
-                                            src={require(`../../static/skills/${skill.toLowerCase()}.png`)}
-                                            alt={skill}
-                                        />
-                                        <div>{skill}</div>
+                                        <a
+                                            className='skillLink'
+                                            href={`https://duckduckgo.com/?q=!ducky+${skill}`}
+                                            target='_blank'
+                                            rel='noopener noreferrer'
+                                        >
+                                            <img
+                                                className='skillIcon'
+                                                src={require(`../../static/skills/${skill.toLowerCase()}.png`)}
+                                                alt={skill}
+                                            />
+                                            <div>{skill}</div>
+                                        </a>
                                     </div>
                                 );
                             })}
