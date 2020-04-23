@@ -1,4 +1,6 @@
 import React from 'react';
+import classnames from 'classnames';
+import animate from '../../animations';
 import './Skills.css';
 
 const skillsList = {
@@ -26,7 +28,12 @@ const Skills = () => {
                             {skillsList[category].map((skill, index) => {
                                 return (
                                     <div
-                                        className='skillBlock col-md-2 col-sm-3 col-3'
+                                        className={classnames(
+                                            'skillBlock',
+                                            'col-md-2',
+                                            'col-3',
+                                            animate('fadeInFast')
+                                        )}
                                         key={index}
                                     >
                                         <a
