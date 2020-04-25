@@ -58,7 +58,7 @@
 .about .aboutIntroButton {
     font-size: 20px;
     padding: 3px 15px;
-    border-radius: 5%;
+    border-radius: 5px;
     margin: 0 20px;
 }
 
@@ -66,27 +66,34 @@
 
 .about .showcaseSection {
     text-align: center;
+    margin: 15px 0 60px 0;
 }
 
 .about .experienceImage,
 .about .projectsImage {
-    /* border: 1px solid pink; */
-    width: 60%;
+    width: 75%;
     display: block;
     margin: 0 auto;
 }
 
+.about .projectsImage {
+    border: 1px solid var(--black);
+}
+
 .about .showcaseButton {
-    margin-top: 10px;
-    min-width: 30%;
+    margin-top: 30px;
+    font-size: 22px;
+    padding: 3px 15px;
     border-radius: 5px;
 }
 
 .about .aboutQuote {
-    padding-top: 50px;
-    width: 80%;
-    margin: 0 auto;
+    padding: 20px 5%;
+    margin: 30px auto 20px auto;
     font-size: 20px;
+    border-top: 2px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
+    width: 90%;
 }
 .about .aboutQuote .fa-quote-left {
     margin-right: 12px;
@@ -140,7 +147,12 @@
         font-size: 18px;
     }
 
-    .about .aboutButton {
-        margin: 0 10px;
+    .about .aboutIntroButton {
+        margin: 0 5px;
+    }
+
+    /* Showcase */
+    .about .showcaseSection {
+        margin: 20px 0;
     }
 }

@@ -46,7 +46,7 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faPaperclip} />
                     </a>
                 </div>
-                <div className='footerCopyright'>James Jiang &copy; 2019</div>
+                <div className='footerCopyright'>James Jiang &copy; 2020</div>
             </div>
         </div>
     );

@@ -123,6 +123,19 @@ class About extends React.Component {
                                 <div className='row'>
                                     <div className='showcaseSection col-sm-6'>
                                         <img
+                                            className='projectsImage'
+                                            src={require('../../static/projects/gitTogether/gitTogether-preview.png')}
+                                            alt='experience'
+                                        />
+                                        <Link to='/projects'>
+                                            <button className='showcaseButton'>
+                                                Projects
+                                            </button>
+                                        </Link>
+                                    </div>
+
+                                    <div className='showcaseSection col-sm-6'>
+                                        <img
                                             className='experienceImage'
                                             src={require('../../static/experience/experience.png')}
                                             alt='experience'
@@ -133,20 +146,13 @@ class About extends React.Component {
                                             </button>
                                         </Link>
                                     </div>
-                                    <div className='showcaseSection col-sm-6'>
-                                        <img
-                                            className='projectsImage'
-                                            src={require('../../static/experience/experience.png')}
-                                            alt='experience'
-                                        />
-                                        <Link to='/projects'>
-                                            <button className='showcaseButton'>
-                                                Projects
-                                            </button>
-                                        </Link>
-                                    </div>
                                 </div>
-                                <div className='aboutQuote'>
+                                <div
+                                    className={classnames(
+                                        'aboutQuote',
+                                        animate('fadeInFast')
+                                    )}
+                                >
                                     <FontAwesomeIcon icon={faQuoteLeft} />
                                     James joined our team for few months. He
                                     worked hard to quickly ramp up on all the
