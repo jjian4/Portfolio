@@ -3,14 +3,13 @@
     display: flex;
     align-items: center;
     background-color: var(--black);
-    color: gray;
+    color: var(--dark-gray);
     text-align: center;
     z-index: 3;
 }
 
 .footer .footerIcon {
     display: inline-block;
-    color: gray;
     padding: 0 35px;
     font-size: 30px;
     transition: all 0.1s ease-in-out;

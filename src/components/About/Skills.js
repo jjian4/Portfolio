@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames';
-import animate from '../../animations';
 import './Skills.css';
 
 const skillsList = {
@@ -31,8 +30,7 @@ const Skills = () => {
                                         className={classnames(
                                             'skillBlock',
                                             'col-md-2',
-                                            'col-3',
-                                            animate('fadeInFast')
+                                            'col-3'
                                         )}
                                         key={index}
                                     >

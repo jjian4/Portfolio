@@ -6,7 +6,7 @@ import './Projects.css';
 
 class ProjectRow extends React.Component {
     state = {
-        imageModalOpen: false
+        imageModalOpen: false,
     };
 
     openImageModal = () => {
@@ -59,7 +59,9 @@ class ProjectRow extends React.Component {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                     >
-                                        <button>Visit</button>
+                                        <button className='button'>
+                                            Visit
+                                        </button>
                                     </a>
                                 )}
                                 {this.props.gitLink && (
@@ -68,13 +70,16 @@ class ProjectRow extends React.Component {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                     >
-                                        <button>Code</button>
+                                        <button className='button'>Code</button>
                                     </a>
                                 )}
                                 {/* Images button and modal */}
                                 {this.props.imageList && (
                                     <React.Fragment>
-                                        <button onClick={this.openImageModal}>
+                                        <button
+                                            onClick={this.openImageModal}
+                                            className='button'
+                                        >
                                             Images
                                         </button>
                                         <ImageModal
@@ -108,7 +113,7 @@ const projectRows = [
             require('../../static/projects/gitTogether/gitTogether-details2.png'),
             require('../../static/projects/gitTogether/gitTogether-details3.png'),
             require('../../static/projects/gitTogether/gitTogether-login.png'),
-            require('../../static/projects/gitTogether/gitTogether-profile.png')
+            require('../../static/projects/gitTogether/gitTogether-profile.png'),
         ]}
     />,
     <ProjectRow
@@ -126,7 +131,7 @@ const projectRows = [
             require('../../static/projects/triviaChat/triviaChat-incorrect.png'),
             require('../../static/projects/triviaChat/triviaChat-categories.png'),
             require('../../static/projects/triviaChat/triviaChat-leaderboard.png'),
-            require('../../static/projects/triviaChat/triviaChat.png')
+            require('../../static/projects/triviaChat/triviaChat.png'),
         ]}
     />,
     <ProjectRow
@@ -151,7 +156,7 @@ const projectRows = [
             require('../../static/projects/pincil/pincil-message.png'),
             require('../../static/projects/pincil/pincil-thankyou.png'),
             require('../../static/projects/pincil/pincil-icon.png'),
-            require('../../static/projects/pincil/pincil.png')
+            require('../../static/projects/pincil/pincil.png'),
         ]}
     />,
     <ProjectRow
@@ -170,7 +175,7 @@ const projectRows = [
             require('../../static/projects/companyHub/companyHub-account.png'),
             require('../../static/projects/companyHub/companyHub-posts.png'),
             require('../../static/projects/companyHub/companyHub-donate.png'),
-            require('../../static/projects/companyHub/companyHub.png')
+            require('../../static/projects/companyHub/companyHub.png'),
         ]}
     />,
     <ProjectRow
@@ -189,9 +194,9 @@ const projectRows = [
             require('../../static/projects/alphaTetris/alphaTetris-classic.png'),
             require('../../static/projects/alphaTetris/alphaTetris-high_score.png'),
             require('../../static/projects/alphaTetris/alphaTetris-chrome.png'),
-            require('../../static/projects/alphaTetris/alphaTetris.png')
+            require('../../static/projects/alphaTetris/alphaTetris.png'),
         ]}
-    />
+    />,
 ];
 
 const Projects = () => {

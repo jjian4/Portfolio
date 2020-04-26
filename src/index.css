@@ -14,7 +14,7 @@
     --font2: 'Poppins', sans-serif;
 
     --header-height: 45px;
-    --footer-height: 100px;
+    --footer-height: 65px;
 }
 
 body,
@@ -27,18 +27,25 @@ html {
     scroll-behavior: smooth;
 }
 
-button {
+a {
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
     background-color: var(--black);
     border: 1px black solid;
     color: white;
     transition: all 0.1s ease-in-out;
 }
-
-button:focus {
+.button:focus {
     outline: none;
 }
-
-button:hover {
+.button:hover {
+    color: white;
     transform: scale(1.1);
 }
 

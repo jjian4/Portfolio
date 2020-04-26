@@ -1,5 +1,5 @@
 .about {
-    padding: 50px 0 40px 0;
+    padding: 50px 0 20px 0;
     background-color: var(--gray);
     color: var(--black);
     font-size: 20px;
@@ -37,13 +37,16 @@
 
 /* Intro */
 
-.about .portrait {
-    padding-bottom: 10px;
-    text-align: center;
+.about .portraitRow {
+    padding: 0 15px;
 }
-.about .portrait img {
+.about .portraitRow > div {
+    padding: 0;
+}
+
+.about .portrait {
     width: 100%;
-    max-width: 400px;
+    padding-bottom: 15px;
 }
 
 .about .aboutIntro {
@@ -66,7 +69,7 @@
 
 .about .showcaseSection {
     text-align: center;
-    margin: 15px 0 60px 0;
+    margin: 0px 0 55px 0;
 }
 
 .about .experienceImage,
@@ -81,7 +84,7 @@
 }
 
 .about .showcaseButton {
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 22px;
     padding: 3px 15px;
     border-radius: 5px;
@@ -89,10 +92,10 @@
 
 .about .aboutQuote {
     padding: 20px 5%;
-    margin: 30px auto 20px auto;
+    margin: 50px auto 0px auto;
     font-size: 20px;
-    border-top: 2px solid var(--blue);
-    border-bottom: 2px solid var(--blue);
+    border-top: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
     width: 90%;
 }
 .about .aboutQuote .fa-quote-left {
@@ -139,8 +142,8 @@
     }
 
     /* Intro */
-    .about .portrait img {
-        width: 50%;
+    .about .portraitRow > div {
+        padding: 0;
     }
 
     .about .aboutIntro {
@@ -154,5 +157,9 @@
     /* Showcase */
     .about .showcaseSection {
         margin: 20px 0;
+    }
+
+    .about .aboutQuote {
+        width: 100%;
     }
 }

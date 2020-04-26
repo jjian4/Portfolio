@@ -117,17 +117,9 @@
 }
 
 @media (max-width: 1199px) {
-    .home .landingButtons {
-        width: 100%;
-    }
 }
 
 @media (max-width: 991px) {
-    .home .landingButton {
-        font-size: 18px;
-        padding: 5px 15px;
-        margin-top: 15px;
-    }
 }
 
 @media (max-width: 767px) {

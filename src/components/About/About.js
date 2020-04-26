@@ -47,112 +47,132 @@ class About extends React.Component {
 
                     <div className='content'>
                         {this.state.activeOption === options.intro && (
-                            <div className='row'>
-                                <div className='col-xl-3 col-lg-5'>
-                                    <div className='portrait'>
+                            <div className='aboutIntro'>
+                                <div
+                                    className={classnames(
+                                        'row',
+                                        'portraitRow',
+                                        animate('fadeInFast')
+                                    )}
+                                >
+                                    <div className='col-4'>
                                         <img
+                                            className='portrait'
+                                            src={require('../../static/portrait0.jpg')}
+                                            alt='portrait'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <img
+                                            className='portrait'
+                                            src={require('../../static/portrait1.jpg')}
+                                            alt='portrait'
+                                        />
+                                    </div>
+                                    <div className='col-4'>
+                                        <img
+                                            className='portrait'
                                             src={require('../../static/portrait2.jpg')}
                                             alt='portrait'
                                         />
                                     </div>
                                 </div>
-                                <div className='col-xl-9 col-lg-7'>
-                                    <div className='aboutIntro'>
-                                        <p
-                                            className={animate(
-                                                'fadeInRightFast'
-                                            )}
-                                        >
-                                            I'm a Computer Science major and
-                                            Multidisciplinary Design minor at
-                                            UMichigan Engineering and pursuing a
-                                            career in full stack software
-                                            engineering. I enjoy creating web
-                                            apps during my free time and am
-                                            always looking for new opportunities
-                                            to grow.
-                                        </p>
-                                        <div className={animate('fadeInRight')}>
-                                            Contact me at{' '}
-                                            <a
-                                                className='blueLink'
-                                                href='mailto:jjian@umich.edu'
-                                            >
-                                                jjian@umich.edu
-                                            </a>{' '}
-                                            or{' '}
-                                            <a
-                                                className='blueLink'
-                                                href='https://linkedin.com/in/jjian4'
-                                                target='_blank'
-                                                rel='noopener noreferrer'
-                                            >
-                                                Linkedin
-                                            </a>{' '}
-                                            to connect!
-                                        </div>
 
-                                        <div
-                                            className={classnames(
-                                                'aboutIntroButtons',
-                                                animate('fadeInRightSlow')
-                                            )}
-                                        >
-                                            <Link to='/experience'>
-                                                <button className='aboutIntroButton'>
-                                                    Experience
-                                                </button>
-                                            </Link>
-                                            <Link to='/projects'>
-                                                <button className='aboutIntroButton'>
-                                                    Projects
-                                                </button>
-                                            </Link>
-                                        </div>
-                                    </div>
+                                <p className={animate('fadeInRightFast')}>
+                                    I study Computer Science and minor in
+                                    Multidisciplinary Design at UMichigan
+                                    Engineering! With graduation less than a
+                                    year away, I continue to pursue a career in
+                                    full stack software engineering with a
+                                    strong interest in web product management. I
+                                    enjoy creating side projects during my free
+                                    time and am always looking for new
+                                    oppotunities to explore.
+                                </p>
+                                <div className={animate('fadeInRight')}>
+                                    Contact me at{' '}
+                                    <a
+                                        className='blueLink'
+                                        href='mailto:jjian@umich.edu'
+                                    >
+                                        jjian@umich.edu
+                                    </a>{' '}
+                                    or{' '}
+                                    <a
+                                        className='blueLink'
+                                        href='https://linkedin.com/in/jjian4'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        Linkedin
+                                    </a>{' '}
+                                    to connect!
+                                </div>
+
+                                <div
+                                    className={classnames(
+                                        'aboutIntroButtons',
+                                        animate('fadeInRightSlow')
+                                    )}
+                                >
+                                    <Link
+                                        to='/experience'
+                                        className='button aboutIntroButton'
+                                    >
+                                        Experience
+                                    </Link>
+                                    <Link
+                                        to='/projects'
+                                        className='button aboutIntroButton'
+                                    >
+                                        Projects
+                                    </Link>
                                 </div>
                             </div>
                         )}
 
                         {this.state.activeOption === options.skills && (
-                            <Skills />
+                            <div className={animate('fadeInFast')}>
+                                <Skills />
+                            </div>
                         )}
 
                         {this.state.activeOption === options.showcase && (
-                            <div>
+                            <div className={animate('fadeInFast')}>
                                 <div className='row'>
                                     <div className='showcaseSection col-sm-6'>
-                                        <img
-                                            className='projectsImage'
-                                            src={require('../../static/projects/gitTogether/gitTogether-preview.png')}
-                                            alt='experience'
-                                        />
                                         <Link to='/projects'>
-                                            <button className='showcaseButton'>
-                                                Projects
-                                            </button>
+                                            <img
+                                                className='projectsImage'
+                                                src={require('../../static/projects/gitTogether/gitTogether-preview.png')}
+                                                alt='experience'
+                                            />
+                                        </Link>
+                                        <Link
+                                            to='/projects'
+                                            className='button showcaseButton'
+                                        >
+                                            Projects
                                         </Link>
                                     </div>
 
                                     <div className='showcaseSection col-sm-6'>
-                                        <img
-                                            className='experienceImage'
-                                            src={require('../../static/experience/experience.png')}
-                                            alt='experience'
-                                        />
                                         <Link to='/experience'>
-                                            <button className='showcaseButton'>
-                                                Experience
-                                            </button>
+                                            <img
+                                                className='experienceImage'
+                                                src={require('../../static/experience/experience.png')}
+                                                alt='experience'
+                                            />
+                                        </Link>
+                                        <Link
+                                            to='/experience'
+                                            className='button showcaseButton'
+                                        >
+                                            Experience
                                         </Link>
                                     </div>
                                 </div>
-                                <div
-                                    className={classnames(
-                                        'aboutQuote',
-                                        animate('fadeInFast')
-                                    )}
-                                >
+                                <div className='aboutQuote'>
                                     <FontAwesomeIcon icon={faQuoteLeft} />
                                     James joined our team for few months. He
                                     worked hard to quickly ramp up on all the
@@ -160,7 +180,7 @@ class About extends React.Component {
                                     using and created some cool-looking
                                     applications. His work included back end
                                     work, front end work and standalone scripts
-                                    to aid in project onboarding. He would be
+                                    to aid in project onboarding. He would be a
                                     great asset on any team.
                                     <FontAwesomeIcon icon={faQuoteRight} />
                                     <div className='aboutQuoteName'>
