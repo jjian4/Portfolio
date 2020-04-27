@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import animate from '../../animations';
 import './Experience.css';
 
-const ExperienceRow = props => {
+const ExperienceRow = (props) => {
     const languages = props.languages.map((item, i) => (
         <span className='tag languageTag' key={i}>
             {item}
@@ -32,7 +32,7 @@ const ExperienceRow = props => {
                         />
                     </a>
                 </div>
-                <div className='col-md-8 order-md-1'>
+                <div className='col-md-8 order-md-1 experienceRowLeft'>
                     <a
                         className='experienceRowTitle'
                         href={props.link}
@@ -56,14 +56,33 @@ const ExperienceRow = props => {
 
 const experienceRows = [
     <ExperienceRow
+        title='Facebook (2020)'
+        link='https://www.facebook.com/careers'
+        position='Software Engineer Intern'
+        languages={[]}
+        tools={[]}
+        description='Interning at Facebook during Summer 2020.'
+        image={require('../../static/experience/facebook.png')}
+    />,
+    <ExperienceRow
         title='Apple (2020)'
         link='https://www.apple.com/jobs/us/about.html'
         position='Software Engineer Intern'
         languages={['Python', 'JavaScript']}
-        tools={['Flask', 'MongoDB', 'Amazon S3', 'React', 'Electron', 'Docker']}
-        description='I&#39;m excited to be interning at Apple as a Software Automation & Tools intern on the
-        Wireless Tech and Ecosystems Team! I will be identifying areas that can be improved with
-        automation and provide documented and tested software solutions.'
+        tools={[
+            'Flask',
+            'MongoDB',
+            'Amazon S3',
+            'React',
+            'Electron',
+            'Docker',
+            'Kubernetes',
+        ]}
+        description='I skipped a semester of college to intern on the Wireless Tech & Ecosystems 
+        team in Cupertino. The first project I released was a cloud browsing platform for employees in USA, 
+        China, India, and Germany to organize and download 9500+ logging files. My second project was a 
+        multi-threaded app that automates instances of ML tasks on the cloud by restarting completed tasks 
+        adjusting resources.'
         image={require('../../static/experience/apple.png')}
     />,
     <ExperienceRow
@@ -101,7 +120,7 @@ const experienceRows = [
         My team and I developed a natural language processing mobile application to interpret and respond to customers&#39; 
         intents. We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.'
         image={require('../../static/experience/littleCaesars.png')}
-    />
+    />,
 ];
 
 const Experience = () => {

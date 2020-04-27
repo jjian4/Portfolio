@@ -53,18 +53,6 @@
     font-size: 22px;
 }
 
-.about .aboutIntroButtons {
-    text-align: right;
-    margin-top: 10px;
-}
-
-.about .aboutIntroButton {
-    font-size: 20px;
-    padding: 3px 15px;
-    border-radius: 5px;
-    margin: 0 20px;
-}
-
 /* Showcase */
 
 .about .showcaseSection {
@@ -92,7 +80,7 @@
 
 .about .aboutQuote {
     padding: 20px 5%;
-    margin: 50px auto 0px auto;
+    margin: 50px auto 50px auto;
     font-size: 20px;
     border-top: 3px solid var(--blue);
     border-bottom: 3px solid var(--blue);
@@ -148,10 +136,6 @@
 
     .about .aboutIntro {
         font-size: 18px;
-    }
-
-    .about .aboutIntroButton {
-        margin: 0 5px;
     }
 
     /* Showcase */

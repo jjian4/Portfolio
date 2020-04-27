@@ -108,26 +108,6 @@ class About extends React.Component {
                                     </a>{' '}
                                     to connect!
                                 </div>
-
-                                <div
-                                    className={classnames(
-                                        'aboutIntroButtons',
-                                        animate('fadeInRightSlow')
-                                    )}
-                                >
-                                    <Link
-                                        to='/experience'
-                                        className='button aboutIntroButton'
-                                    >
-                                        Experience
-                                    </Link>
-                                    <Link
-                                        to='/projects'
-                                        className='button aboutIntroButton'
-                                    >
-                                        Projects
-                                    </Link>
-                                </div>
                             </div>
                         )}
 

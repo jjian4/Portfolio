@@ -16,6 +16,10 @@
     background-color: var(--light-blue);
 }
 
+.experience .experienceRowLeft {
+    min-height: 200px;
+}
+
 .experience .experienceRowTitle {
     font-size: 30px;
     text-decoration: none !important;
@@ -30,20 +34,20 @@
 }
 
 .experience .experienceImage {
-    max-width: 65%;
-    max-height: 65%;
-
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
+    max-width: 65%;
+    max-height: 100%;
 }
 
 @media (max-width: 991px) {
     .experience .experienceImage {
-        max-width: 70%;
-        max-height: 70%;
+        max-width: 75%;
+        max-height: 100%;
     }
 }
 
@@ -58,12 +62,12 @@
     }
 
     .experience .experienceImage {
-        max-height: 120px;
-
         position: relative;
         left: auto;
         top: auto;
         transform: none;
+
+        max-height: 120px;
     }
 }
 
@@ -73,8 +77,5 @@
     }
     .experience .experienceRowTitle {
         font-size: 25px;
-    }
-    .experience .experienceImage {
-        max-width: 90%;
     }
 }
