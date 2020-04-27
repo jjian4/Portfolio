@@ -128,6 +128,7 @@ class About extends React.Component {
                                                 alt='experience'
                                             />
                                         </Link>
+                                        <br />
                                         <Link
                                             to='/projects'
                                             className='button showcaseButton'
@@ -144,6 +145,7 @@ class About extends React.Component {
                                                 alt='experience'
                                             />
                                         </Link>
+                                        <br />
                                         <Link
                                             to='/experience'
                                             className='button showcaseButton'

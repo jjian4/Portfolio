@@ -9,12 +9,6 @@
     text-align: center;
 }
 
-.spinner {
-    font-size: 100px;
-    color: var(--blue);
-    animation: spin 1s linear infinite;
-}
-
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -23,7 +17,7 @@
         transform: rotate(360deg);
     }
 }
-.gone {
+.hidden {
     display: none;
 }
 
@@ -69,7 +63,7 @@
 }
 
 .home .landingContent {
-    padding-bottom: 130px;
+    padding-bottom: 110px;
     width: 70%;
     z-index: 2;
 }

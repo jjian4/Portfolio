@@ -1,9 +1,7 @@
 import React from 'react';
-import {
-    faAngleDoubleDown,
-    faSpinner
-} from '@fortawesome/free-solid-svg-icons';
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ClipLoader from 'react-spinners/ClipLoader';
 import classnames from 'classnames';
 import './Home.css';
 import About from '../About/About';
@@ -13,10 +11,10 @@ class Home extends React.Component {
     homeDividerRef = React.createRef();
 
     state = {
-        finishedLoading: false
+        finishedLoading: false,
     };
 
-    replaceSpinner = () => {
+    hideSpinner = () => {
         if (!this.state.finishedLoading) {
             // Scroll to top to hide spinner offset change
             window.scrollTo(0, 0);
@@ -30,18 +28,17 @@ class Home extends React.Component {
 
     render() {
         let loadingScreenClass = 'loadingScreen';
-        let homeClass = 'gone';
+        let homeClass = 'hidden';
         if (this.state.finishedLoading) {
-            loadingScreenClass = 'gone';
+            loadingScreenClass = 'hidden';
             homeClass = 'home';
         }
 
         return (
+            // Cannot use regular conditional rendering. Home div needs to render in the background
             <>
                 <div className={loadingScreenClass}>
-                    <span className='spinner'>
-                        <FontAwesomeIcon icon={faSpinner} />
-                    </span>
+                    <ClipLoader size={100} color={'var(--blue)'} />
                 </div>
 
                 <div className={homeClass}>
@@ -52,7 +49,7 @@ class Home extends React.Component {
                                 autoPlay
                                 muted
                                 loop
-                                onCanPlay={this.replaceSpinner}
+                                onCanPlay={this.hideSpinner}
                             >
                                 <source
                                     src={require('../../static/backgrounds/clouds.webm')}
@@ -70,7 +67,7 @@ class Home extends React.Component {
                                 <div
                                     className={classnames(
                                         'landingTitle',
-                                        animate('fadeInFast')
+                                        animate('fadeIn')
                                     )}
                                 >
                                     James Jiang

@@ -46,7 +46,7 @@
 
 .about .portrait {
     width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 .about .aboutIntro {
@@ -63,8 +63,6 @@
 .about .experienceImage,
 .about .projectsImage {
     width: 75%;
-    display: block;
-    margin: 0 auto;
 }
 
 .about .projectsImage {
@@ -80,7 +78,7 @@
 
 .about .aboutQuote {
     padding: 20px 5%;
-    margin: 50px auto 50px auto;
+    margin: 45px auto 20px auto;
     font-size: 20px;
     border-top: 3px solid var(--blue);
     border-bottom: 3px solid var(--blue);
