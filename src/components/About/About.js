@@ -7,6 +7,7 @@ import {
     faArrowAltCircleRight,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { shuffle } from 'lodash';
 import animate from '../../animations';
 import Skills from './Skills';
 import './About.css';
@@ -18,9 +19,31 @@ const options = {
     showcase: 'Showcase',
 };
 
+const portraits = shuffle([
+    require('../../static/portrait0.jpg'),
+    require('../../static/portrait1.jpg'),
+    require('../../static/portrait2.jpg'),
+    require('../../static/portrait3.jpg'),
+]);
+
 class About extends React.Component {
     state = {
         activeOption: options.intro,
+        portraitIndex: 0,
+    };
+
+    componentDidMount() {
+        this.timer = setInterval(this.updatePortraits, 9000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+
+    updatePortraits = () => {
+        this.setState((prevState) => ({
+            portraitIndex: prevState.portraitIndex + 1,
+        }));
     };
 
     render() {
@@ -61,12 +84,23 @@ class About extends React.Component {
                                     <div className='col-md-3'>
                                         <img
                                             className='portrait'
-                                            src={require('../../static/portrait0.jpg')}
+                                            src={
+                                                portraits[
+                                                    this.state.portraitIndex %
+                                                        portraits.length
+                                                ]
+                                            }
                                             alt='portrait'
                                         />
                                         <img
                                             className='portrait portrait2'
-                                            src={require('../../static/portrait1.jpg')}
+                                            src={
+                                                portraits[
+                                                    (this.state.portraitIndex +
+                                                        1) %
+                                                        portraits.length
+                                                ]
+                                            }
                                             alt='portrait'
                                         />
                                     </div>

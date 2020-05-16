@@ -62,7 +62,7 @@
 
 .about .experienceImage,
 .about .projectsImage {
-    width: 90%;
+    width: 80%;
 }
 
 .about .projectsImage {
@@ -78,7 +78,7 @@
 
 .about .aboutQuote {
     padding: 20px 5%;
-    margin: 10px auto;
+    margin: 15px auto;
     font-size: 20px;
     border-top: 3px solid var(--blue);
     border-bottom: 3px solid var(--blue);
