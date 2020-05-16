@@ -34,8 +34,8 @@ class Home extends React.Component {
             homeClass = 'home';
         }
 
+        // Cannot use regular conditional rendering. Home div needs to render in the background
         return (
-            // Cannot use regular conditional rendering. Home div needs to render in the background
             <>
                 <div className={loadingScreenClass}>
                     <ClipLoader size={100} color={'var(--blue)'} />
