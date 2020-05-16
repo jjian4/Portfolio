@@ -1,5 +1,5 @@
 .skills .skillRow {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .skills .skillCategory {
@@ -20,7 +20,7 @@
 }
 
 .skills .skillIcon {
-    width: 30%;
+    width: 25%;
     padding-bottom: 5px;
 }
 

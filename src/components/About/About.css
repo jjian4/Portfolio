@@ -35,18 +35,18 @@
     flex: 1; /* Width is 100% minus sideNav width */
 }
 
-/* Intro */
+.about .nextButtonRow {
+    text-align: right;
+}
+.about .nextButtonRow > svg {
+    font-size: 40px;
+    cursor: pointer;
+}
 
-.about .portraitRow {
-    padding: 0 15px;
-}
-.about .portraitRow > div {
-    padding: 0;
-}
+/* Intro */
 
 .about .portrait {
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .about .aboutIntro {
@@ -72,7 +72,7 @@
 .about .showcaseButton {
     margin-top: 25px;
     font-size: 22px;
-    padding: 3px 15px;
+    padding: 3px 20px;
     border-radius: 20px;
 }
 
@@ -128,10 +128,6 @@
     }
 
     /* Intro */
-    .about .portraitRow > div {
-        padding: 0;
-    }
-
     .about .aboutIntro {
         font-size: 18px;
     }
@@ -143,5 +139,23 @@
 
     .about .aboutQuote {
         width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Intro */
+    .about .portrait {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .about .portrait2 {
+        display: none;
+    }
+
+    .about .nextButtonRow > svg {
+        font-size: 35px;
     }
 }

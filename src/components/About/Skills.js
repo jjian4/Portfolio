@@ -13,7 +13,7 @@ const skillsList = {
         'Amazon S3',
         'Firebase',
     ],
-    Other: ['Bash', 'Git', 'Docker', 'Heroku'],
+    Other: ['Shell', 'Git', 'Docker', 'Heroku'],
 };
 
 const Skills = () => {
