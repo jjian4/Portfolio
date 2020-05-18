@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.57e78497.chunk.css",
-    "main.js": "/static/js/main.3db7cc9a.chunk.js",
-    "main.js.map": "/static/js/main.3db7cc9a.chunk.js.map",
+    "main.css": "/static/css/main.72855c46.chunk.css",
+    "main.js": "/static/js/main.50a42847.chunk.js",
+    "main.js.map": "/static/js/main.50a42847.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
     "static/js/2.0729d170.chunk.js": "/static/js/2.0729d170.chunk.js",
     "static/js/2.0729d170.chunk.js.map": "/static/js/2.0729d170.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0cd623ebf590517b9c98660fe88cf8d6.js": "/precache-manifest.0cd623ebf590517b9c98660fe88cf8d6.js",
+    "precache-manifest.0c22b6943af47562d550121506b55a5e.js": "/precache-manifest.0c22b6943af47562d550121506b55a5e.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
-    "static/css/main.57e78497.chunk.css.map": "/static/css/main.57e78497.chunk.css.map",
+    "static/css/main.72855c46.chunk.css.map": "/static/css/main.72855c46.chunk.css.map",
     "static/js/2.0729d170.chunk.js.LICENSE.txt": "/static/js/2.0729d170.chunk.js.LICENSE.txt",
     "static/media/alphaTetris-chrome.png": "/static/media/alphaTetris-chrome.776f1b42.png",
     "static/media/alphaTetris-classic.png": "/static/media/alphaTetris-classic.40ec7a70.png",
@@ -72,7 +72,7 @@
     "static/media/portrait0.jpg": "/static/media/portrait0.fa28287f.jpg",
     "static/media/portrait1.jpg": "/static/media/portrait1.29fe4054.jpg",
     "static/media/portrait2.jpg": "/static/media/portrait2.f239fdcc.jpg",
-    "static/media/portrait3.jpg": "/static/media/portrait3.2364e3c4.jpg",
+    "static/media/portrait3.jpg": "/static/media/portrait3.62f553e8.jpg",
     "static/media/postman.png": "/static/media/postman.9ae8ceaa.png",
     "static/media/python.png": "/static/media/python.067050f6.png",
     "static/media/react.png": "/static/media/react.76028bdf.png",
@@ -93,7 +93,7 @@
     "static/js/runtime-main.ceaf4b5f.js",
     "static/css/2.89f067aa.chunk.css",
     "static/js/2.0729d170.chunk.js",
-    "static/css/main.57e78497.chunk.css",
-    "static/js/main.3db7cc9a.chunk.js"
+    "static/css/main.72855c46.chunk.css",
+    "static/js/main.50a42847.chunk.js"
   ]
 }
