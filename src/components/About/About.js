@@ -12,7 +12,7 @@ import animate from '../../animations';
 import Skills from './Skills';
 import './About.css';
 
-const options = {
+const pages = {
     intro: 'Intro',
     // education: 'Education',
     skills: 'Skills',
@@ -28,7 +28,7 @@ const portraits = shuffle([
 
 class About extends React.Component {
     state = {
-        activeOption: options.intro,
+        activePage: pages.intro,
         portraitIndex: 0,
     };
 
@@ -46,34 +46,37 @@ class About extends React.Component {
         }));
     };
 
+    changePage = (page) => {
+        this.setState({
+            activePage: page,
+        });
+        this.props.onPageChange();
+    };
+
     render() {
         return (
             <div className='about'>
                 <div className='container'>
                     <div className='sideNav'>
-                        {Object.values(options).map((option, index) => {
+                        {Object.values(pages).map((page, index) => {
                             return (
                                 <div
                                     key={index}
                                     className={classnames(
                                         'sideNavButton',
-                                        this.state.activeOption === option &&
+                                        this.state.activePage === page &&
                                             'sideNavButtonActive'
                                     )}
-                                    onClick={() =>
-                                        this.setState({
-                                            activeOption: option,
-                                        })
-                                    }
+                                    onClick={() => this.changePage(page)}
                                 >
-                                    {option}
+                                    {page}
                                 </div>
                             );
                         })}
                     </div>
 
                     <div className='content'>
-                        {this.state.activeOption === options.intro && (
+                        {this.state.activePage === pages.intro && (
                             <div
                                 className={classnames(
                                     'aboutIntro',
@@ -158,32 +161,28 @@ class About extends React.Component {
                                     <FontAwesomeIcon
                                         icon={faArrowAltCircleRight}
                                         onClick={() =>
-                                            this.setState({
-                                                activeOption: options.skills,
-                                            })
+                                            this.changePage(pages.skills)
                                         }
                                     />
                                 </div>
                             </div>
                         )}
 
-                        {this.state.activeOption === options.skills && (
+                        {this.state.activePage === pages.skills && (
                             <div className={animate('fadeInFast')}>
                                 <Skills />
                                 <div className='nextButtonRow'>
                                     <FontAwesomeIcon
                                         icon={faArrowAltCircleRight}
                                         onClick={() =>
-                                            this.setState({
-                                                activeOption: options.showcase,
-                                            })
+                                            this.changePage(pages.showcase)
                                         }
                                     />
                                 </div>
                             </div>
                         )}
 
-                        {this.state.activeOption === options.showcase && (
+                        {this.state.activePage === pages.showcase && (
                             <div className={animate('fadeInFast')}>
                                 <div className='row'>
                                     <div className='showcaseSection col-sm-6'>

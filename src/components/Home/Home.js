@@ -93,7 +93,7 @@ class Home extends React.Component {
 
                     <div ref={this.homeDividerRef} id='homeDivider' />
 
-                    <About />
+                    <About onPageChange={this.scrollToAbout} />
                 </div>
             </>
         );

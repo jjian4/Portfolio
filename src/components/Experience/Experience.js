@@ -104,7 +104,7 @@ const experienceRows = [
         position='Web Team Front-end Engineer'
         languages={['Python', 'JavaScript']}
         tools={['Flask', 'React', 'SQL']}
-        description='The Michigan Daily is University of Michigan&#39; oldest publication organization. As an engineer on the
+        description='The Michigan Daily is University of Michigan&#39;s oldest publication organization. As an engineer on the
     Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, 
     a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives 
     to help grow the development team.'
