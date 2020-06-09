@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7731650e129482bba0d04130d0a4f086",
+    "revision": "63eb124094ea885c5d39e5ad1cad5f3c",
     "url": "/index.html"
   },
   {
-    "revision": "bbbe086a915043b16df1",
+    "revision": "a03a82317f5fb73f009d",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "687c3de05d84be16ff02",
+    "revision": "2489e3eaadc08cbc40e9",
     "url": "/static/css/main.72855c46.chunk.css"
   },
   {
-    "revision": "bbbe086a915043b16df1",
-    "url": "/static/js/2.0729d170.chunk.js"
+    "revision": "a03a82317f5fb73f009d",
+    "url": "/static/js/2.3ae25fd8.chunk.js"
   },
   {
     "revision": "6807ca1bc4f53c4e63d83a23e9a381a7",
-    "url": "/static/js/2.0729d170.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.3ae25fd8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "687c3de05d84be16ff02",
-    "url": "/static/js/main.aa934bd9.chunk.js"
+    "revision": "2489e3eaadc08cbc40e9",
+    "url": "/static/js/main.bfbc346a.chunk.js"
   },
   {
     "revision": "5284eec07972ace79c95",
@@ -120,6 +120,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dataminr.03de73b7.png"
   },
   {
+    "revision": "97801131018706af406ac77c2fca380f",
+    "url": "/static/media/django.97801131.png"
+  },
+  {
     "revision": "1e3110a341cac083f59e0eb213577920",
     "url": "/static/media/docker.1e3110a3.png"
   },
@@ -142,10 +146,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a6491796122547990b27301bf6910e79",
     "url": "/static/media/flask.a6491796.png"
-  },
-  {
-    "revision": "8d50f0bcbea6b9deb2695c02f9dd68d3",
-    "url": "/static/media/git.8d50f0bc.png"
   },
   {
     "revision": "759c584c3b6bb4871f22b328b5fd7405",
@@ -180,16 +180,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gitTogether-search.3b5bd8cc.png"
   },
   {
-    "revision": "c21b5310e1e8e824ec642aa781ed0b47",
-    "url": "/static/media/java.c21b5310.png"
-  },
-  {
     "revision": "0cded3a3276425911d55a2552bf361bf",
     "url": "/static/media/javascript.0cded3a3.png"
   },
   {
     "revision": "3fe09ba37094070af4314006e9f211eb",
     "url": "/static/media/littleCaesars.3fe09ba3.png"
+  },
+  {
+    "revision": "90042c7dab12732f6ffb6a249f22588a",
+    "url": "/static/media/mercurial.90042c7d.png"
   },
   {
     "revision": "74a550a33ed35e3cfa37d9d00ed98763",
