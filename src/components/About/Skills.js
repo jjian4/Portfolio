@@ -3,9 +3,16 @@ import classnames from 'classnames';
 import './Skills.css';
 
 const skillsList = {
-    'Programming Languages': ['Python', 'JavaScript', 'C++', 'Java'],
+    'Proficient Languages': ['Python', 'JavaScript', 'C++'],
     'Front end': ['React', 'Redux', 'Vue', 'HTML', 'CSS', 'Bootstrap'],
-    'Back end': ['Postman', 'Node', 'ExpressJS', 'Flask', 'Socket.io'],
+    'Back end': [
+        'Postman',
+        'Node',
+        'ExpressJS',
+        'Flask',
+        'Django',
+        'Socket.io',
+    ],
     'Database + Storage': [
         'SQL',
         'MongoDB',
@@ -13,7 +20,7 @@ const skillsList = {
         'Amazon S3',
         'Firebase',
     ],
-    Other: ['Shell', 'Git', 'Docker', 'Heroku'],
+    Other: ['Shell', 'Git', 'Mercurial', 'Docker', 'Heroku'],
 };
 
 const Skills = () => {
