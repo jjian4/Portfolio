@@ -20,10 +20,10 @@ const pages = {
 };
 
 const portraits = shuffle([
-    require('../../static/portrait0.jpg'),
-    require('../../static/portrait1.jpg'),
-    require('../../static/portrait2.jpg'),
-    require('../../static/portrait3.jpg'),
+    require('../../static/about/portrait0.jpg'),
+    require('../../static/about/portrait1.jpg'),
+    require('../../static/about/portrait2.jpg'),
+    require('../../static/about/portrait3.jpg'),
 ]);
 
 class About extends React.Component {
@@ -57,15 +57,15 @@ class About extends React.Component {
         return (
             <div className='about'>
                 <div className='container'>
-                    <div className='sideNav'>
+                    <div className='aboutNav'>
                         {Object.values(pages).map((page, index) => {
                             return (
                                 <div
                                     key={index}
                                     className={classnames(
-                                        'sideNavButton',
+                                        'aboutNavButton',
                                         this.state.activePage === page &&
-                                            'sideNavButtonActive'
+                                            'aboutNavButtonActive'
                                     )}
                                     onClick={() => this.changePage(page)}
                                 >
@@ -90,17 +90,6 @@ class About extends React.Component {
                                             src={
                                                 portraits[
                                                     this.state.portraitIndex %
-                                                        portraits.length
-                                                ]
-                                            }
-                                            alt='portrait'
-                                        />
-                                        <img
-                                            className='portrait portrait2'
-                                            src={
-                                                portraits[
-                                                    (this.state.portraitIndex +
-                                                        1) %
                                                         portraits.length
                                                 ]
                                             }
@@ -189,7 +178,7 @@ class About extends React.Component {
                                         <Link to='/projects'>
                                             <img
                                                 className='projectsImage'
-                                                src={require('../../static/projects/gitTogether/gitTogether-preview.png')}
+                                                src={require('../../static/about/projects.png')}
                                                 alt='experience'
                                             />
                                         </Link>
@@ -206,7 +195,7 @@ class About extends React.Component {
                                         <Link to='/experience'>
                                             <img
                                                 className='experienceImage'
-                                                src={require('../../static/experience/experience.png')}
+                                                src={require('../../static/about/experience.png')}
                                                 alt='experience'
                                             />
                                         </Link>

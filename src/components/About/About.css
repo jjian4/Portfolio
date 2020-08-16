@@ -1,5 +1,5 @@
 .about {
-    padding: 50px 0 20px 0;
+    padding: 50px 0 50px 0;
     background-color: var(--gray);
     color: var(--black);
     font-size: 20px;
@@ -10,29 +10,28 @@
     display: flex;
 }
 
-/* Sidenav */
-.about .sideNav {
+/* AboutNav */
+.about .container {
+    display: block;
+}
+.about .aboutNav {
     user-select: none;
-    margin-right: 20px;
+    margin: 0 0 10px 0;
 }
-
-.about .sideNavButton {
+.about .aboutNavButton {
     cursor: pointer;
-    text-align: right;
-    padding: 10px 10px;
-    border-right: 4px solid var(--dark-gray);
+    display: inline-block;
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 4px solid var(--dark-gray);
 }
-.about .sideNavButton:hover {
+.about .aboutNavButton:hover {
     background-color: var(--dark-gray);
 }
-.about .sideNavButtonActive {
+.about .aboutNavButtonActive {
     color: var(--blue);
     font-weight: bold;
-    border-right: 4px solid var(--blue);
-}
-
-.about .content {
-    flex: 1; /* Width is 100% minus sideNav width */
+    border-bottom: 4px solid var(--blue);
 }
 
 .about .nextButtonRow {
@@ -62,11 +61,7 @@
 
 .about .experienceImage,
 .about .projectsImage {
-    width: 80%;
-}
-
-.about .projectsImage {
-    border: 1px solid var(--black);
+    width: 40%;
 }
 
 .about .showcaseButton {
@@ -105,28 +100,6 @@
         font-size: 18px;
     }
 
-    /* Make sidenav horizontal */
-    .about .container {
-        display: block;
-    }
-    .about .content {
-        flex: none;
-    }
-    .about .sideNav {
-        margin: 0 0 10px 0;
-    }
-    .about .sideNavButton {
-        display: inline-block;
-        text-align: left;
-        padding: 5px 10px;
-        border-right: none;
-        border-bottom: 4px solid var(--dark-gray);
-    }
-    .about .sideNavButtonActive {
-        border-right: none;
-        border-bottom: 4px solid var(--blue);
-    }
-
     /* Intro */
     .about .aboutIntro {
         font-size: 18px;
@@ -149,10 +122,6 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
-    }
-
-    .about .portrait2 {
-        display: none;
     }
 
     .about .nextButtonRow > svg {
