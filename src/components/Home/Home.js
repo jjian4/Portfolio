@@ -7,6 +7,8 @@ import './Home.css';
 import About from '../About/About';
 import animate from '../../animations';
 
+const HEADER_HEIGHT_PIXELS = 45;
+
 class Home extends React.Component {
     homeDividerRef = React.createRef();
 
@@ -23,7 +25,10 @@ class Home extends React.Component {
     };
 
     scrollToAbout = () => {
-        window.scrollTo(0, this.homeDividerRef.current.offsetTop);
+        window.scrollTo(
+            0,
+            this.homeDividerRef.current.offsetTop - HEADER_HEIGHT_PIXELS
+        );
     };
 
     render() {
@@ -91,9 +96,9 @@ class Home extends React.Component {
                         </div>
                     </div>
 
-                    <div ref={this.homeDividerRef} id='homeDivider' />
+                    <div ref={this.homeDividerRef} />
 
-                    <About onPageChange={this.scrollToAbout} />
+                    <About />
                 </div>
             </>
         );

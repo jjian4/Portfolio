@@ -8,6 +8,7 @@
     --smoke: #f0f0f0;
     --gray: #e8e8e8;
     --dark-gray: #e0e0e0;
+    --slate-gray: #2f4f4f;
     --black: #1a1a1a;
 
     --font1: 'Lato', sans-serif;
@@ -19,6 +20,7 @@
 
 body,
 html {
+    overflow-x: hidden;
     background-color: var(--black);
     margin: 0;
     padding: 0;

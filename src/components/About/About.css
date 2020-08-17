@@ -1,66 +1,40 @@
 .about {
-    padding: 50px 0 50px 0;
     background-color: var(--gray);
     color: var(--black);
     font-size: 20px;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
-.about .container {
-    display: flex;
-}
-
-/* AboutNav */
-.about .container {
-    display: block;
-}
-.about .aboutNav {
-    user-select: none;
-    margin: 0 0 10px 0;
-}
-.about .aboutNavButton {
-    cursor: pointer;
-    display: inline-block;
-    text-align: left;
-    padding: 5px 10px;
-    border-bottom: 4px solid var(--dark-gray);
-}
-.about .aboutNavButton:hover {
-    background-color: var(--dark-gray);
-}
-.about .aboutNavButtonActive {
-    color: var(--blue);
-    font-weight: bold;
-    border-bottom: 4px solid var(--blue);
-}
-
-.about .nextButtonRow {
-    text-align: right;
-}
-.about .nextButtonRow > svg {
-    font-size: 40px;
-    cursor: pointer;
-}
-
 /* Intro */
+
+.about .intro {
+    padding: 60px 0;
+    font-size: 22px;
+}
 
 .about .portrait {
     width: 100%;
 }
 
-.about .aboutIntro {
-    font-size: 22px;
+/* Skills */
+
+.about .skills {
+    padding: 40px 0;
 }
 
 /* Showcase */
 
-.about .showcaseSection {
-    text-align: center;
-    margin: 0px 0 30px 0;
+.about .showcase {
+    padding: 60px 0;
+    background-color: var(--dark-gray);
 }
 
-.about .experienceImage,
-.about .projectsImage {
+.about .showcaseSection {
+    text-align: center;
+    margin: 0px 0 40px 0;
+}
+
+.about .showcaseSectionImage {
     width: 40%;
 }
 
@@ -71,7 +45,7 @@
     border-radius: 20px;
 }
 
-.about .aboutQuote {
+.about .recommendation {
     padding: 20px 5%;
     margin: 15px auto;
     font-size: 20px;
@@ -79,19 +53,19 @@
     border-bottom: 3px solid var(--blue);
     width: 90%;
 }
-.about .aboutQuote .fa-quote-left {
+.about .recommendation .fa-quote-left {
     margin-right: 12px;
 }
-.about .aboutQuote .fa-quote-right {
+.about .recommendation .fa-quote-right {
     margin-left: 12px;
 }
-.about .aboutQuote .aboutQuoteName {
+.about .recommendation .recommendationName {
     text-align: right;
     padding-top: 5px;
     font-size: 18px;
     font-style: italic;
 }
-.about .aboutQuote .aboutQuoteName svg {
+.about .recommendation .recommendationName svg {
     margin-left: 5px;
 }
 
@@ -101,16 +75,16 @@
     }
 
     /* Intro */
-    .about .aboutIntro {
+    .about .intro {
         font-size: 18px;
     }
 
     /* Showcase */
-    .about .showcaseSection {
-        margin: 20px 0;
+    .about .showcaseSectionImage {
+        width: 60%;
     }
 
-    .about .aboutQuote {
+    .about .recommendation {
         width: 100%;
     }
 }
@@ -123,8 +97,15 @@
         margin: 0 auto;
         margin-bottom: 20px;
     }
+}
 
-    .about .nextButtonRow > svg {
-        font-size: 35px;
+@media (max-width: 575px) {
+    /* Showcase */
+    .about .showcaseSectionImage {
+        width: 40%;
+    }
+
+    .about .showcaseButton {
+        margin-top: 20px;
     }
 }

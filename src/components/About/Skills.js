@@ -3,65 +3,85 @@ import classnames from 'classnames';
 import './Skills.css';
 
 const skillsList = {
-    'Proficient Languages': ['Python', 'JavaScript', 'C++'],
-    'Front end': ['React', 'Redux', 'Vue', 'HTML', 'CSS', 'Bootstrap'],
     'Back end': [
-        'Postman',
-        'Node',
-        'ExpressJS',
-        'Flask',
-        'Django',
-        'Socket.io',
+        { name: 'Node', url: 'https://nodejs.org' },
+        { name: 'Express', url: 'https://expressjs.com' },
+        { name: 'Flask', url: 'https://flask.palletsprojects.com' },
+        { name: 'Django', url: 'https://www.djangoproject.com' },
+        { name: 'Socket.io', url: 'https://socket.io' },
+    ],
+    'Front end': [
+        { name: 'React', url: 'https://reactjs.org' },
+        { name: 'Vue', url: 'https://vuejs.org' },
+        { name: 'Redux', url: 'https://redux.js.org' },
+        { name: 'Bootstrap', url: 'https://getbootstrap.com' },
+        { name: 'HTML', url: 'https://www.w3schools.com/html' },
+        { name: 'CSS', url: 'https://www.w3schools.com/css' },
     ],
     'Database + Storage': [
-        'SQL',
-        'MongoDB',
-        'Mongoose',
-        'Amazon S3',
-        'Firebase',
+        { name: 'SQL', url: 'https://www.w3schools.com/sql' },
+        { name: 'MongoDB', url: 'https://www.mongodb.com' },
+        { name: 'Mongoose', url: 'https://mongoosejs.com' },
+        { name: 'Amazon S3', url: 'https://aws.amazon.com/s3' },
+        { name: 'Firebase', url: 'https://firebase.google.com' },
     ],
-    Other: ['Shell', 'Git', 'Mercurial', 'Docker', 'Heroku'],
+    Other: [
+        { name: 'Shell', url: 'https://www.shellscript.sh' },
+        { name: 'Git', url: 'https://git-scm.com' },
+        { name: 'Mercurial', url: 'https://www.mercurial-scm.org' },
+        { name: 'Postman', url: 'https://www.postman.com' },
+        { name: 'Heroku', url: 'https://www.heroku.com' },
+    ],
 };
 
 const Skills = () => {
     return (
-        <div className='skills'>
-            {Object.keys(skillsList).map((category) => {
-                return (
-                    <div className='skillRow' key={category}>
-                        <div className='skillCategory'>{category}</div>
-                        <div className='row'>
-                            {skillsList[category].map((skill, index) => {
-                                return (
-                                    <div
-                                        className={classnames(
-                                            'skillBlock',
-                                            'col-md-2',
-                                            'col-3'
-                                        )}
-                                        key={index}
-                                    >
-                                        <a
-                                            className='skillLink'
-                                            href={`https://duckduckgo.com/?q=!ducky+${skill}`}
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                        >
-                                            <img
-                                                className='skillIcon'
-                                                src={require(`../../static/skills/${skill.toLowerCase()}.png`)}
-                                                alt={skill}
-                                            />
-                                            <div>{skill}</div>
-                                        </a>
-                                    </div>
-                                );
-                            })}
+        <>
+            <div className='row'>
+                {Object.keys(skillsList).map((category) => {
+                    return (
+                        <div className='col-xl-3 col-md-6' key={category}>
+                            <div className='skillSection'>
+                                <div className='skillCategory'>{category}</div>
+                                <div className='row'>
+                                    {skillsList[category].map(
+                                        (skill, index) => {
+                                            return (
+                                                <div
+                                                    className={classnames(
+                                                        'skillBlock',
+                                                        'col-md-4',
+                                                        'col-sm-2',
+                                                        'col-4'
+                                                    )}
+                                                    key={index}
+                                                >
+                                                    <a
+                                                        className='skillLink'
+                                                        href={skill.url}
+                                                        target='_blank'
+                                                        rel='noopener noreferrer'
+                                                    >
+                                                        <img
+                                                            className='skillIcon'
+                                                            src={require(`../../static/skills/${skill.name.toLowerCase()}.png`)}
+                                                            alt={skill.name}
+                                                        />
+                                                        <div className='skillName'>
+                                                            {skill.name}
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            );
+                                        }
+                                    )}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                );
-            })}
-        </div>
+                    );
+                })}
+            </div>
+        </>
     );
 };
 

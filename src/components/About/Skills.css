@@ -1,17 +1,18 @@
-.skills .skillRow {
-    padding-bottom: 5px;
+.skills .skillSection {
+    padding: 20px 5px;
 }
 
 .skills .skillCategory {
     font-weight: bold;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--slate-gray);
     margin-bottom: 10px;
+    color: var(--slate-gray);
 }
 
 .skills .skillBlock {
     text-align: center;
     font-size: 12px;
-    padding-bottom: 5px;
+    padding: 8px 0;
 }
 
 .skills .skillLink {
@@ -20,12 +21,42 @@
 }
 
 .skills .skillIcon {
-    width: 25%;
+    width: 40%;
     padding-bottom: 5px;
 }
 
-@media (max-width: 991px) {
+.skills .skillName {
+    font-size: 12px;
+    color: var(--slate-gray);
+}
+
+@media (max-width: 1199px) {
+    .skills .skillBlock {
+        padding: 10px 0;
+    }
+
     .skills .skillIcon {
-        width: 50%;
+        width: 30%;
+    }
+    .skills .skillName {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+    .skills .skillIcon {
+        width: 40%;
+    }
+    .skills .skillName {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .skills .skillIcon {
+        width: 30%;
     }
 }
