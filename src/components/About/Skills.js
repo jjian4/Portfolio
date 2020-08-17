@@ -6,17 +6,17 @@ const skillsList = {
     'Back end': [
         { name: 'Node', url: 'https://nodejs.org' },
         { name: 'Express', url: 'https://expressjs.com' },
+        { name: 'Socket.io', url: 'https://socket.io' },
         { name: 'Flask', url: 'https://flask.palletsprojects.com' },
         { name: 'Django', url: 'https://www.djangoproject.com' },
-        { name: 'Socket.io', url: 'https://socket.io' },
     ],
     'Front end': [
         { name: 'React', url: 'https://reactjs.org' },
         { name: 'Vue', url: 'https://vuejs.org' },
         { name: 'Redux', url: 'https://redux.js.org' },
-        { name: 'Bootstrap', url: 'https://getbootstrap.com' },
         { name: 'HTML', url: 'https://www.w3schools.com/html' },
         { name: 'CSS', url: 'https://www.w3schools.com/css' },
+        { name: 'Bootstrap', url: 'https://getbootstrap.com' },
     ],
     'Database + Storage': [
         { name: 'SQL', url: 'https://www.w3schools.com/sql' },

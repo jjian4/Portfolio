@@ -23,7 +23,7 @@
 .header .logo {
     font-family: var(--font2);
     float: left;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .header .headerRight {
@@ -38,6 +38,7 @@
 
 .header .navItem {
     display: inline;
+    border-bottom: 3px solid transparent;
 }
 
 .header .navItem a {
@@ -47,11 +48,6 @@
     transition: all 0.1s ease-in-out;
 }
 
-.header .navItem a:hover {
-    transform: scale(1.1);
-}
-
 .header .navItemActive {
-    color: var(--blue) !important;
-    font-weight: bolder;
+    border-bottom: 3px solid var(--blue);
 }

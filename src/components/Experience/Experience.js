@@ -59,10 +59,10 @@ const experienceRows = [
         title='Facebook (2020)'
         link='https://www.facebook.com/careers'
         position='Software Engineer Intern'
-        languages={[]}
-        tools={[]}
-        description='Interning at Facebook during Summer 2020.'
-        image={require('../../static/experience/facebook.png')}
+        languages={['Python', 'PHP', 'JavaScript']}
+        tools={['Django', 'React', 'GraphQL']}
+        description='During Summer 2020, I interned at Facebook on the Instagram APIs and Ads Product Platform team. Details coming soon!'
+        image={require('../../static/experience/instagram.png')}
     />,
     <ExperienceRow
         title='Apple (2020)'
