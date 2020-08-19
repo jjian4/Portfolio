@@ -38,7 +38,7 @@ const Footer = () => {
                     </a>
                     <a
                         title='Resume'
-                        href={require('../../static/resume.pdf')}
+                        href={require('../../static/james_jiang_resume.pdf')}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='footerIcon'

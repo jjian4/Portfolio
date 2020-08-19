@@ -2,7 +2,6 @@
     margin-top: var(--header-height);
     background-color: white;
     padding: 10px 0;
-    color: var(--black);
     font-size: 20px;
 }
 
@@ -40,7 +39,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-    max-width: 30vh;
+    max-width: 25vh;
     max-height: 100%;
 }
 

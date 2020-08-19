@@ -21,7 +21,7 @@ class About extends React.Component {
     };
 
     componentDidMount() {
-        this.timer = setInterval(this.updatePortraits, 9000);
+        this.timer = setInterval(this.updatePortraits, 10000);
     }
 
     componentWillUnmount() {
@@ -64,10 +64,11 @@ class About extends React.Component {
                                 <p className={animate('fadeInRightFast')}>
                                     I enjoy creating side projects during my
                                     free time and am always looking for new
-                                    oppotunities to explore. The number of paths
-                                    to take in engineering are endless, and I'm
-                                    excited to be a part of this digital world
-                                    that is transforming our lives everyday.
+                                    opportunities to explore. The number of
+                                    paths to take in engineering are endless,
+                                    and I'm excited to be a part of this digital
+                                    world that is transforming our lives
+                                    everyday.
                                 </p>
                                 <div className={animate('fadeInRight')}>
                                     Contact me at{' '}

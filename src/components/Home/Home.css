@@ -14,7 +14,6 @@
 }
 
 .home {
-    color: var(--black);
     background-color: white;
 }
 
@@ -55,7 +54,7 @@
 }
 
 .home .landingContent {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     width: 70%;
     z-index: 2;
 }
@@ -83,9 +82,9 @@
 }
 
 .home .landingArrow button {
-    color: var(--black);
     background: none;
     border: none;
+    padding: 60px 100px;
 }
 
 .home .landingArrow button:focus {
@@ -95,10 +94,10 @@
 @keyframes MoveUpDown {
     0%,
     100% {
-        bottom: 120px;
+        bottom: 60px;
     }
     50% {
-        bottom: 130px;
+        bottom: 70px;
     }
 }
 
@@ -130,7 +129,7 @@
 
 @media (max-height: 635px) {
     .home .landingContent {
-        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     .home .landingArrow {
