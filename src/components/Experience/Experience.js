@@ -91,7 +91,7 @@ const experienceRows = [
     />,
     <ExperienceRow
         title='Dataminr (2019)'
-        link='https://www.dataminr.com/about'
+        link='https://www.dataminr.com'
         position='Software Engineer Intern'
         languages={['JavaScript']}
         tools={['Express', 'React', 'Redux', 'Jest', 'Enzyme']}
@@ -116,14 +116,15 @@ const experienceRows = [
     />,
     <ExperienceRow
         title='Little Caesars (2019)'
-        link='https://mdp.engin.umich.edu/2020-all-partner/'
+        link='https://mdp.engin.umich.edu/about-mdp/'
         position='Student Software Engineer'
         languages={['Dart']}
         tools={['Flutter', 'MySQL', 'DialogFlow']}
-        description='I recently completed a year-long corporate-sponsored project with five other 
-        students under the Multidisciplinary Design Program. My team and I developed a natural language 
-        processing mobile application to interpret and respond to customers&#39; intents. We continuously 
-        built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.'
+        description='Under the Multidisciplinary Design Program, I completed a year-long corporate-sponsored 
+        project with five other students under the Multidisciplinary Design Program. My team and I developed 
+        a natural language processing mobile application to interpret and respond to customers&#39; intents. 
+        We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across 
+        the team.'
         image={require('../../static/experience/littleCaesars.png')}
     />,
 ];

@@ -21,7 +21,7 @@ class About extends React.Component {
     };
 
     componentDidMount() {
-        this.timer = setInterval(this.updatePortraits, 10000);
+        this.timer = setInterval(this.updatePortraits, 12000);
     }
 
     componentWillUnmount() {
@@ -30,7 +30,7 @@ class About extends React.Component {
 
     updatePortraits = () => {
         this.setState((prevState) => ({
-            portraitIndex: prevState.portraitIndex + 1,
+            portraitIndex: (prevState.portraitIndex + 1) % portraits.length,
         }));
     };
 
@@ -43,12 +43,7 @@ class About extends React.Component {
                             <div className='col-md-3'>
                                 <img
                                     className='portrait'
-                                    src={
-                                        portraits[
-                                            this.state.portraitIndex %
-                                                portraits.length
-                                        ]
-                                    }
+                                    src={portraits[this.state.portraitIndex]}
                                     alt='portrait'
                                 />
                             </div>

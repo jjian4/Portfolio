@@ -100,6 +100,26 @@ class ProjectRow extends React.Component {
 
 const projectRows = [
     <ProjectRow
+        title='Pac Royale (2020)'
+        languages={['JavaScript']}
+        tools={['Socket.io', 'Firebase', 'React']}
+        description='A Pacman-inspired online battle royale game where up to 20 players compete in an arena by collecting coins and using powerups. Join existing arena games or host your own lobby with cusotmizable settings. Play on three different game modes, and use the coins you collect to buy new avatar skins.'
+        websiteLink='http://ec2-3-128-246-156.us-east-2.compute.amazonaws.com/'
+        gitLink='https://github.com/jjian4/PacRoyale'
+        image={require('../../static/projects/pacRoyale/pacRoyale-preview.png')}
+        imageList={[
+            require('../../static/projects/pacRoyale/pacRoyale-login.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-menu.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-store.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-about.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-gameSettings.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-lobby.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-joinGame.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-gameplay1.png'),
+            require('../../static/projects/pacRoyale/pacRoyale-gameplay2.png'),
+        ]}
+    />,
+    <ProjectRow
         title='GitTogether (2020)'
         languages={['JavaScript']}
         tools={['Express', 'MongoDB', 'Mongoose', 'React']}
