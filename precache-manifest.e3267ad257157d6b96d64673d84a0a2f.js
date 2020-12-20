@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4525d39e0a6b6e98972b58d24215e594",
+    "revision": "e0b0097a95001880ece8eb34326f1d0e",
     "url": "/index.html"
   },
   {
-    "revision": "2a552b289fe79ac995a0",
+    "revision": "65cbabd82a6f7b253e4d",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "c05cf1b6117e47bd4ee1",
-    "url": "/static/css/main.a4c12f2d.chunk.css"
+    "revision": "cd4363f59875c74e87c0",
+    "url": "/static/css/main.d5a752b1.chunk.css"
   },
   {
-    "revision": "2a552b289fe79ac995a0",
-    "url": "/static/js/2.2d76f5ae.chunk.js"
+    "revision": "65cbabd82a6f7b253e4d",
+    "url": "/static/js/2.9c93d68a.chunk.js"
   },
   {
     "revision": "6807ca1bc4f53c4e63d83a23e9a381a7",
-    "url": "/static/js/2.2d76f5ae.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.9c93d68a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c05cf1b6117e47bd4ee1",
-    "url": "/static/js/main.ca92a8e4.chunk.js"
+    "revision": "cd4363f59875c74e87c0",
+    "url": "/static/js/main.fb2de645.chunk.js"
   },
   {
     "revision": "5284eec07972ace79c95",
@@ -210,6 +210,46 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6fe12378c5f8313c413abca60148653c",
     "url": "/static/media/node.6fe12378.png"
+  },
+  {
+    "revision": "ecacea0b47778129a7c271a679095380",
+    "url": "/static/media/pacRoyale-about.ecacea0b.png"
+  },
+  {
+    "revision": "3b465372ba26aae08a3ad91096b124fc",
+    "url": "/static/media/pacRoyale-gameSettings.3b465372.png"
+  },
+  {
+    "revision": "f260cddb0a5f689d94909ac66ef7eba7",
+    "url": "/static/media/pacRoyale-gameplay1.f260cddb.png"
+  },
+  {
+    "revision": "eb3bf3ae2003b48230da0fce54488fba",
+    "url": "/static/media/pacRoyale-gameplay2.eb3bf3ae.png"
+  },
+  {
+    "revision": "82913bff06a96ebe514310a917893057",
+    "url": "/static/media/pacRoyale-joinGame.82913bff.png"
+  },
+  {
+    "revision": "785d675af3553895f2860d1cb53fe0d2",
+    "url": "/static/media/pacRoyale-lobby.785d675a.png"
+  },
+  {
+    "revision": "242ec022ed6bbebd94d6e106f2b13e44",
+    "url": "/static/media/pacRoyale-login.242ec022.png"
+  },
+  {
+    "revision": "b3471777dec14f10df1a94ad4b8b6eee",
+    "url": "/static/media/pacRoyale-menu.b3471777.png"
+  },
+  {
+    "revision": "bc1ce366fe7021fcd508add9b3857803",
+    "url": "/static/media/pacRoyale-preview.bc1ce366.png"
+  },
+  {
+    "revision": "077cf359e95d3445933a5d9cae0e2c38",
+    "url": "/static/media/pacRoyale-store.077cf359.png"
   },
   {
     "revision": "08727f4cf10b0c61cdbcfebd7cb67512",
