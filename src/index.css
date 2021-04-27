@@ -1,81 +1,83 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 :root {
-    --light-blue: #eef7fa;
-    --blue: rgb(70, 120, 160);
+  --light-blue: #eef7fa;
+  --blue: rgb(70, 120, 160);
+  --blue-transparent: rgba(70, 120, 160, 0.8);
 
-    --smoke: #f0f0f0;
-    --gray: #e8e8e8;
-    --dark-gray: #e0e0e0;
-    --slate-gray: #2f4f4f;
-    --black: #1a1a1a;
+  --dark-blue: #000204;
+  --black: #1a1a1a;
 
-    --font1: 'Lato', sans-serif;
-    --font2: 'Poppins', sans-serif;
+  --smoke: #f0f0f0;
+  --gray: #e8e8e8;
+  --dark-gray: #e0e0e0;
 
-    --header-height: 45px;
-    --footer-height: 70px;
+  --font1: "Lato", sans-serif;
+  --font2: "Poppins", sans-serif;
+
+  --header-height: 45px;
+  --footer-height: 70px;
 }
 
 body,
 html {
-    overflow-x: hidden;
-    background-color: var(--black);
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    font-family: var(--font1);
-    scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--black);
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: var(--font1);
+  scroll-behavior: smooth;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .button {
-    display: inline-block;
-    background-color: var(--black);
-    border: 1px black solid;
-    color: white;
-    transition: all 0.1s ease-in-out;
+  display: inline-block;
+  background-color: var(--black);
+  border: 1px black solid;
+  color: white;
+  transition: all 0.1s ease-in-out;
 }
 .button:focus {
-    outline: none;
+  outline: none;
 }
 .button:hover {
-    color: white;
-    transform: scale(1.05);
+  color: white;
+  transform: scale(1.05);
 }
 
 .tag {
-    display: inline-block;
-    font-size: 12px;
-    border-radius: 8px;
-    padding: 3px 6px;
-    margin: 3px 6px 3px 0;
-    cursor: default;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 3px 6px;
+  margin: 3px 6px 3px 0;
+  cursor: default;
 }
 
 .languageTag {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
 }
 
 .toolTag {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .blueLink {
-    color: blue !important;
+  color: blue !important;
 }
 
 @media (max-width: 575px) {
-    .tag {
-        font-size: 10px;
-        border-radius: 8px;
-        padding: 1px 6px;
-    }
+  .tag {
+    font-size: 10px;
+    border-radius: 8px;
+    padding: 1px 6px;
+  }
 }
