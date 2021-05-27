@@ -2,7 +2,7 @@ import React from "react";
 import ImageModal from "../ImageModal/ImageModal";
 import classnames from "classnames";
 import animate from "../../animations";
-import "./Projects.css";
+import "./Projects2.css";
 
 class ProjectRow extends React.Component {
   state = {
@@ -230,10 +230,10 @@ const projectRows = [
   />,
 ];
 
-const Projects = () => {
+const Projects2 = () => {
   return (
     <>
-      <div className="projects">
+      <div className="projects2">
         {projectRows.map((item, i) => {
           return (
             <div
@@ -262,4 +262,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects2;
