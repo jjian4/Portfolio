@@ -1,0 +1,56 @@
+.timeline {
+  padding: 50px 0;
+  background-color: var(--gray);
+
+  --time-column-width: 200px;
+  --logo-column-width: 100px;
+}
+
+.timeline .timelineRow {
+  display: flex;
+  /* border-left: 1px solid gray;
+  padding: 10px 20px; */
+}
+
+.timeline .timelineRow .dateColumn {
+  width: var(--time-column-width);
+  text-align: right;
+  padding-right: 30px;
+  border-right: 1px solid gray;
+  font-style: italic;
+  color: gray;
+}
+
+.timeline .timelineRow .positionColumn {
+  width: calc(100% - var(--time-column-width));
+  padding: 0 30px 45px 30px;
+  display: flex;
+}
+
+.timeline .timelineRow .positionColumn .logoWrapper {
+  width: var(--logo-column-width);
+  min-width: var(--logo-column-width);
+  padding-right: 30px;
+}
+
+.timeline .timelineRow .positionColumn .logoWrapper .companyLogo {
+  width: 100%;
+}
+
+.timeline .timelineRow .positionColumn .positionCompany {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.timeline .timelineRow .positionColumn .positionName {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.timeline .timelineRow .positionColumn .positionDscription {
+  font-size: 17px;
+}
+
+.timeline .timelineRow .positionColumn .positionTags {
+  padding-top: 5px;
+}

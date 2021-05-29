@@ -32,57 +32,59 @@ class ProjectRow extends React.Component {
     ));
 
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-7">
-            <div className="projectRowTitle">{this.props.title}</div>
-            <div>
-              {languages}
-              {tools}
+      <div className={classnames("projectRow", animate("fadeInDown"))}>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="projectRowTitle">{this.props.title}</div>
+              <div>
+                {languages}
+                {tools}
+              </div>
+
+              <p>{this.props.description}</p>
             </div>
+            <div className="col-md-5 projectRowRight">
+              <div className="projectImageAndButtons">
+                <img
+                  className="projectImage"
+                  src={this.props.previewImage}
+                  alt="Project Preview"
+                  onClick={this.openImageModal}
+                />
 
-            <p>{this.props.description}</p>
-          </div>
-          <div className="col-md-5 projectRowRight">
-            <div className="projectImageAndButtons">
-              <img
-                className="projectImage"
-                src={this.props.previewImage}
-                alt="Project Preview"
-                onClick={this.openImageModal}
-              />
-
-              <div className="projectButtons">
-                {this.props.websiteLink && (
-                  <a
-                    href={this.props.websiteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">Visit</button>
-                  </a>
-                )}
-                {this.props.gitLink && (
-                  <a
-                    href={this.props.gitLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">Code</button>
-                  </a>
-                )}
-                {this.props.imageList && (
-                  <React.Fragment>
-                    <button onClick={this.openImageModal} className="button">
-                      Images
-                    </button>
-                    <ImageModal
-                      isOpen={this.state.imageModalOpen}
-                      onClose={this.closeImageModal}
-                      imageList={this.props.imageList}
-                    />
-                  </React.Fragment>
-                )}
+                <div className="projectButtons">
+                  {this.props.websiteLink && (
+                    <a
+                      href={this.props.websiteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="button">Visit</button>
+                    </a>
+                  )}
+                  {this.props.gitLink && (
+                    <a
+                      href={this.props.gitLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="button">Code</button>
+                    </a>
+                  )}
+                  {this.props.imageList && (
+                    <React.Fragment>
+                      <button onClick={this.openImageModal} className="button">
+                        Images
+                      </button>
+                      <ImageModal
+                        isOpen={this.state.imageModalOpen}
+                        onClose={this.closeImageModal}
+                        imageList={this.props.imageList}
+                      />
+                    </React.Fragment>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -97,14 +99,7 @@ const AllProjects = () => {
     <>
       <div className="allProjects">
         {PROJECTS_LIST.map((item, i) => {
-          return (
-            <div
-              className={classnames("projectRow", animate("fadeInDown"))}
-              key={i}
-            >
-              <ProjectRow {...item} />
-            </div>
-          );
+          return <ProjectRow {...item} key={i} />;
         })}
 
         <div className="moreProjects">

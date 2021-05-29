@@ -3,10 +3,11 @@ import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ClipLoader from "react-spinners/ClipLoader";
 import classnames from "classnames";
-import "./Home.css";
 import About from "../About/About";
 import animate from "../../animations";
 import Projects from "../Projects/Projects";
+import Timeline from "../Timeline/Timeline";
+import "./Home.css";
 
 const HEADER_HEIGHT_PIXELS = 45;
 
@@ -97,6 +98,8 @@ class Home extends React.Component {
           <About />
 
           <Projects />
+
+          <Timeline />
         </div>
       </>
     );

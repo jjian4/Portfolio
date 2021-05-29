@@ -1,4 +1,14 @@
-.projectCard {
+.projects {
+  padding: 50px 0;
+  background-color: var(--dark-gray);
+  text-align: center;
+}
+
+.projects .projectCardWrapper {
+  margin-bottom: 30px;
+}
+
+.projects .projectCard {
   border: 3px solid var(--blue);
   position: relative;
 
@@ -11,15 +21,15 @@
   margin: 0 25px;
 }
 
-.projectCard .cardTop {
+.projects .projectCard .cardTop {
   position: relative;
 }
 
-.projectCard .cardTop .cardImage {
+.projects .projectCard .cardTop .cardImage {
   width: 100%;
 }
 
-.projectCard .cardTop .cardBlur {
+.projects .projectCard .cardTop .cardBlur {
   position: absolute;
   top: 0;
   left: 0;
@@ -30,11 +40,11 @@
   transition: opacity 0.15s ease-in;
 }
 
-.projectCard:hover .cardTop .cardBlur {
+.projects .projectCard:hover .cardTop .cardBlur {
   opacity: 0.4;
 }
 
-.projectCard .cardButtons {
+.projects .projectCard .cardButtons {
   z-index: 2;
   position: absolute;
   top: 0;
@@ -47,11 +57,11 @@
   transition: transform 0.5s;
 }
 
-.projectCard:hover .cardButtons {
+.projects .projectCard:hover .cardButtons {
   transform: translateY(0px);
 }
 
-.projectCard .cardButtons .cardButton {
+.projects .projectCard .cardButtons .cardButton {
   cursor: pointer;
   font-size: 20px;
   width: 45px;
@@ -67,12 +77,12 @@
   justify-content: center;
 }
 
-.projectCard .cardButtons .cardButton:hover {
+.projects .projectCard .cardButtons .cardButton:hover {
   background-color: var(--blue);
   color: white;
 }
 
-.projectCard .cardFooter {
+.projects .projectCard .cardFooter {
   cursor: pointer;
 
   background-color: white;
@@ -80,37 +90,21 @@
   text-align: left;
 }
 
-.projectCard .cardFooter .cardTitle {
+.projects .projectCard .cardFooter .cardTitle {
   font-size: 24px;
 }
 
-.projectCard .cardFooter .cardDescription {
-  padding-bottom: 5px;
+.projects .projectCard .cardFooter .cardDescription {
   font-size: 16px;
 }
 
-.projectCard .cardFooter .cardTags {
+.projects .projectCard .cardFooter .cardTags {
+  padding-top: 5px;
   text-align: right;
 }
 
-.projectCard .cardFooter .cardTags .tag {
+.projects .projectCard .cardFooter .cardTags .tag {
   margin: 3px 0 3px 6px;
-}
-
-@media (max-width: 767px) {
-  .projectCard {
-    margin: 0;
-  }
-}
-
-.projects {
-  padding: 50px 0;
-  background-color: var(--dark-gray);
-  text-align: center;
-}
-
-.projects .projectCardWrapper {
-  margin-bottom: 30px;
 }
 
 .projects .moreProjectsButton {
@@ -124,4 +118,10 @@
 
 .projects .moreProjectsButton:hover {
   background-color: var(--blue);
+}
+
+@media (max-width: 767px) {
+  .projects .projectCard {
+    margin: 0;
+  }
 }
