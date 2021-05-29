@@ -1,30 +1,30 @@
 .about {
-    background-color: var(--gray);
-    font-size: 20px;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  background-color: var(--gray);
+  font-size: 20px;
+  /* min-height: calc(100vh - var(--header-height) - var(--footer-height)); */
 }
 
 /* Intro */
 
 .about .intro {
-    padding: 50px 0;
-    font-size: 22px;
+  padding: 50px 0;
+  font-size: 22px;
 }
 
 .about .portrait {
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 5px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 5px;
 }
 
 /* Skills */
 
 .about .skills {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 /* Showcase */
-
+/* 
 .about .showcase {
     padding: 50px 0;
     background-color: var(--dark-gray);
@@ -68,46 +68,43 @@
 }
 .about .recommendation .recommendationName svg {
     margin-left: 5px;
-}
+} */
 
 @media (max-width: 991px) {
-    .about {
-        font-size: 18px;
-    }
+  .about {
+    font-size: 18px;
+  }
 
-    /* Intro */
-    .about .intro {
-        font-size: 18px;
-    }
-
-    /* Showcase */
+  /* Intro */
+  .about .intro {
+    font-size: 18px;
+  }
+  /* 
     .about .showcaseSectionImage {
         width: 60%;
     }
 
     .about .recommendation {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 767px) {
-    /* Intro */
-    .about .portrait {
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
+  .about .portrait {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 575px) {
-    /* Showcase */
-    .about .showcaseSectionImage {
+  /* .about .showcaseSectionImage {
         width: 40%;
     }
 
     .about .showcaseButton {
         margin-top: 20px;
-    }
+    } */
 }

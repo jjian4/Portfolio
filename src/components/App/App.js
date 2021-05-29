@@ -4,8 +4,7 @@ import ScrollToTop from "../ScrollToTop";
 import "./App.css";
 import Home from "../Home/Home";
 import Experience from "../Experience/Experience";
-import Projects from "../Projects/Projects";
-import Projects2 from "../Projects2/Projects2";
+import AllProjects from "../AllProjects/AllProjects";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
@@ -24,13 +23,8 @@ function App() {
         </Route>
 
         <Route exact path="/projects">
-          <Projects />
+          <AllProjects />
         </Route>
-
-        <Route exact path="/projects2">
-          <Projects2 />
-        </Route>
-
         <Footer />
       </ScrollToTop>
     </Router>

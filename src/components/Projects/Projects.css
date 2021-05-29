@@ -1,104 +1,127 @@
-.projects {
-    margin-top: var(--header-height);
-    padding: 10px 0 0px 0;
-    background-color: white;
-    font-size: 20px;
+.projectCard {
+  border: 3px solid var(--blue);
+  position: relative;
+
+  border-radius: 10px;
+  background-color: white;
+
+  overflow: hidden;
+
+  height: 100%;
+  margin: 0 25px;
 }
 
-.projects .projectRow {
-    background-color: var(--smoke);
-    padding: 20px;
-    margin: 10px 0 20px 0;
+.projectCard .cardTop {
+  position: relative;
 }
 
-.projects .projectRow:hover {
-    background-color: var(--light-blue);
+.projectCard .cardTop .cardImage {
+  width: 100%;
 }
 
-.projects .projectRowTitle {
-    font-size: 30px;
+.projectCard .cardTop .cardBlur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.15s ease-in;
 }
 
-.projects .projectImageAndButtons {
-    width: 100%;
-    max-height: 100%;
-    text-align: center;
+.projectCard:hover .cardTop .cardBlur {
+  opacity: 0.4;
 }
 
-.projects .projectImage {
-    max-width: 80%;
-    cursor: pointer;
-    border: 2px solid var(--blue);
+.projectCard .cardButtons {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  margin: 10px;
+
+  transform: translateY(-150%);
+  transition: transform 0.5s;
 }
 
-.projects .projectButtons {
-    margin-top: 10px;
+.projectCard:hover .cardButtons {
+  transform: translateY(0px);
 }
 
-.projects .projectButtons button {
-    font-size: 15px;
-    padding: 5px 15px;
-    margin: 0 3%;
-    border-radius: 5px;
-    min-width: 22%;
+.projectCard .cardButtons .cardButton {
+  cursor: pointer;
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: white;
+  color: var(--blue);
+  transition: 0.15s ease-in;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.projects .moreProjects {
-    background-color: var(--smoke);
-    padding: 20px;
-    margin: 20px 0 0 0;
-    text-align: center;
+.projectCard .cardButtons .cardButton:hover {
+  background-color: var(--blue);
+  color: white;
 }
 
-@media (max-width: 991px) {
-    /* Vertically Center image and buttons at this screen width */
-    .projects .projectRowRight {
-        position: relative;
-    }
+.projectCard .cardFooter {
+  cursor: pointer;
 
-    .projects .projectImageAndButtons {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
+  background-color: white;
+  padding: 12px 20px;
+  text-align: left;
+}
 
-    .projects .projectImage {
-        max-width: 90%;
-    }
+.projectCard .cardFooter .cardTitle {
+  font-size: 24px;
+}
+
+.projectCard .cardFooter .cardDescription {
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.projectCard .cardFooter .cardTags {
+  text-align: right;
+}
+
+.projectCard .cardFooter .cardTags .tag {
+  margin: 3px 0 3px 6px;
 }
 
 @media (max-width: 767px) {
-    .projects {
-        font-size: 17px;
-    }
-
-    /* Remove vertical centering */
-    .projects .projectRow {
-        text-align: center;
-    }
-
-    .projects .projectImageAndButtons {
-        position: relative;
-        left: auto;
-        top: auto;
-        transform: none;
-    }
-
-    .projects .projectImage {
-        max-width: 70%;
-    }
+  .projectCard {
+    margin: 0;
+  }
 }
 
-@media (max-width: 575px) {
-    .projects {
-        font-size: 15px;
-    }
-    .projects .projectRowTitle {
-        font-size: 25px;
-    }
-    .projects .projectImage {
-        max-width: 90%;
-    }
+.projects {
+  padding: 50px 0;
+  background-color: var(--dark-gray);
+  text-align: center;
+}
+
+.projects .projectCardWrapper {
+  margin-bottom: 30px;
+}
+
+.projects .moreProjectsButton {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+}
+
+.projects .moreProjectsButton:hover {
+  background-color: var(--blue);
 }

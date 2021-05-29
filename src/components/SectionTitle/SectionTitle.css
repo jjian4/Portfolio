@@ -1,0 +1,26 @@
+.sectionTitle {
+  text-align: left;
+  padding-bottom: 20px;
+  line-height: 1;
+}
+
+.sectionTitle .text {
+  font-size: 35px;
+  color: var(--dark-blue);
+  font-weight: bolder;
+}
+
+.sectionTitle .underline {
+  display: inline-block;
+  background-color: var(--dark-blue);
+  height: 5px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+@media (max-width: 575px) {
+  .sectionTitle {
+    text-align: center;
+  }
+}

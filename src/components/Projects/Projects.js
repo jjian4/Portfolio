@@ -1,11 +1,19 @@
 import React from "react";
-import ImageModal from "../ImageModal/ImageModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faExternalLinkAlt,
+  faImages,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
+import ImageModal from "../ImageModal/ImageModal";
 import animate from "../../animations";
 import { PROJECTS_LIST } from "../../static/projects/projectsList";
+import SectionTitle from "../SectionTitle/SectionTitle";
 import "./Projects.css";
 
-class ProjectRow extends React.Component {
+class ProjectCard extends React.Component {
   state = {
     imageModalOpen: false,
   };
@@ -32,59 +40,69 @@ class ProjectRow extends React.Component {
     ));
 
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-7">
-            <div className="projectRowTitle">{this.props.title}</div>
-            <div>
-              {languages}
-              {tools}
-            </div>
+      <div className="projectCard">
+        <div className="cardTop">
+          <img
+            tabIndex="1"
+            className="cardImage"
+            src={this.props.bannerImage}
+            alt="Project Preview"
+          />
+          <div className="cardBlur" />
+        </div>
 
-            <p>{this.props.description}</p>
-          </div>
-          <div className="col-md-5 projectRowRight">
-            <div className="projectImageAndButtons">
-              <img
-                className="projectImage"
-                src={this.props.image}
-                alt="Project Preview"
-                onClick={this.openImageModal}
-              />
-              <div className="projectButtons">
-                {this.props.websiteLink && (
-                  <a
-                    href={this.props.websiteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">Visit</button>
-                  </a>
-                )}
-                {this.props.gitLink && (
-                  <a
-                    href={this.props.gitLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">Code</button>
-                  </a>
-                )}
-                {/* Images button and modal */}
-                {this.props.imageList && (
-                  <React.Fragment>
-                    <button onClick={this.openImageModal} className="button">
-                      Images
-                    </button>
-                    <ImageModal
-                      isOpen={this.state.imageModalOpen}
-                      onClose={this.closeImageModal}
-                      imageList={this.props.imageList}
-                    />
-                  </React.Fragment>
-                )}
+        <div className="cardButtons">
+          {this.props.websiteLink && (
+            <a
+              href={this.props.websiteLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex="-1"
+            >
+              <div className="cardButton" tabIndex="-1">
+                <FontAwesomeIcon icon={faExternalLinkAlt} />
               </div>
-            </div>
+            </a>
+          )}
+          {this.props.gitLink && (
+            <a
+              href={this.props.gitLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex="-1"
+            >
+              <div className="cardButton" tabIndex="-1">
+                <FontAwesomeIcon icon={faCode} />
+              </div>
+            </a>
+          )}
+          {/* Images button and modal */}
+          {this.props.imageList && (
+            <>
+              <div
+                className="cardButton"
+                tabIndex="-1"
+                onClick={this.openImageModal}
+              >
+                <FontAwesomeIcon icon={faImages} />
+              </div>
+              <ImageModal
+                isOpen={this.state.imageModalOpen}
+                onClose={this.closeImageModal}
+                imageList={this.props.imageList}
+              />
+            </>
+          )}
+        </div>
+
+        <div className="cardFooter" onClick={this.openImageModal}>
+          <div className="cardTitle">{this.props.title}</div>
+
+          <div className="cardDescription">{this.props.description}</div>
+
+          <div className="cardTags">
+            {languages}
+            {tools}
           </div>
         </div>
       </div>
@@ -94,33 +112,23 @@ class ProjectRow extends React.Component {
 
 const Projects = () => {
   return (
-    <>
-      <div className="projects">
-        {PROJECTS_LIST.map((item, i) => {
-          return (
-            <div
-              className={classnames("projectRow", animate("fadeInDown"))}
-              key={i}
-            >
-              <ProjectRow {...item} />
-            </div>
-          );
-        })}
-
-        <div className="moreProjects">
-          Check out my other projects on{" "}
-          <a
-            className="blueLink"
-            href="https://github.com/jjian4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
-          </a>
-          !
+    <div className={classnames("projects", animate("fadeInFast"))}>
+      <div className="container">
+        <SectionTitle text="Projects" />
+        <div className="row">
+          <div className="col-lg-6 projectCardWrapper">
+            <ProjectCard {...PROJECTS_LIST[0]} />
+          </div>
+          <div className="col-lg-6 projectCardWrapper">
+            <ProjectCard {...PROJECTS_LIST[1]} />
+          </div>
         </div>
+
+        <Link to="/projects" className="button moreProjectsButton">
+          See More
+        </Link>
       </div>
-    </>
+    </div>
   );
 };
 

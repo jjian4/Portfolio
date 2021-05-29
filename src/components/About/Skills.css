@@ -4,9 +4,9 @@
 
 .skills .skillCategory {
   font-weight: bold;
-  border-bottom: 1px solid var(--dark-blue);
+  border-bottom: 1px solid var(--dark-black);
   margin-bottom: 10px;
-  color: var(--dark-blue);
+  color: var(--dark-black);
 }
 
 .skills .skillBlock {
