@@ -39,11 +39,12 @@ const TimelineRow = (props) => {
             />
           </a>
         </div>
-        <div>
+        <div className="positionInfo">
           <div className="positionCompany">
             <a href={props.link} target="_blank" rel="noopener noreferrer">
               {props.title}
             </a>
+            <div className="positionDate-mobile">({props.date})</div>
           </div>
           <div className="positionName">{props.position}</div>
           <div className="positionDscription">{props.description}</div>
@@ -67,7 +68,10 @@ class Timeline extends React.Component {
     const olderExperience = EXPERIENCE_LIST.slice(3);
 
     return (
-      <div className={classnames("timeline", animate("fadeInFast"))}>
+      <div
+        id="experience"
+        className={classnames("timeline", animate("fadeInFast"))}
+      >
         <div className="container">
           <SectionTitle text="Experience" />
 
@@ -86,8 +90,6 @@ class Timeline extends React.Component {
 
             {this.state.isExpanded &&
               olderExperience.map((item, i) => {
-                console.log(i);
-                console.log(i === olderExperience.length - 1);
                 return (
                   <TimelineRow
                     {...item}

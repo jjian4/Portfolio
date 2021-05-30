@@ -9,7 +9,10 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div className={classnames("projects", animate("fadeInFast"))}>
+    <div
+      id="projects"
+      className={classnames("projects", animate("fadeInFast"))}
+    >
       <div className="container">
         <SectionTitle text="Projects" />
         <div className="projectRowWrapper">

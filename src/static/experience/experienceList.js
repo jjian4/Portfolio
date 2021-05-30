@@ -58,18 +58,40 @@ export const EXPERIENCE_LIST = [
     languages: ["Dart"],
     tools: ["Flutter", "MySQL", "DialogFlow"],
     description:
-      "Under the Multidisciplinary Design Program, I completed a year-long corporate-sponsored project with five other students under the Multidisciplinary Design Program. My team and I developed a natural language processing mobile application to interpret and respond to customers' intents. We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.",
+      "Under the University of Michigan's Multidisciplinary Design Program, I completed a year-long corporate-sponsored project with five other students. My team and I developed a natural language processing mobile application to interpret and respond to customers' intents. We continuously built prototypes and updated our sponsors at Little Caesars, using JIRA to manage tasks across the team.",
     image: require("../../static/experience/littleCaesars.png"),
   },
   {
     title: "The Michigan Daily",
     date: "Sept 2018 - Aug 2020",
     link: "https://www.michigandaily.com/",
-    position: "Web Team Front-end Engineer",
+    position: "Student Software Engineer",
     languages: ["Python", "JavaScript"],
     tools: ["Flask", "React", "SQL"],
     description:
-      "The Michigan Daily is University of Michigan's oldest publication organization. As an engineer on the Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives to help grow the development team.",
+      "The Michigan Daily is University of Michigan's oldest publication organization. As an engineer on the Web Team, I collaborated weekly with other students to create digital features for the main news website and GradeGuide, a online tool for comparing grade distribution data from courses. I was also the Recruitment Chair and led recruitment drives to grow the team.",
     image: require("../../static/experience/michiganDaily.png"),
   },
+  {
+    title: "Queensborough Community College",
+    date: "June - Aug 2018",
+    link: "https://www.qcc.cuny.edu/",
+    position: "Web Development Volunteer",
+    languages: ["HTML & CSS"],
+    tools: ["WordPress"],
+    description:
+      "While taking summer classes at QCC, I volunteered at the Marketing & Communication Office to gain more experience in web development. I helped modernize the school's digital presence by rebuilding the art gallery site.",
+    image: require("../../static/experience/qcc.png"),
+  },
+  // {
+  //   title: "University of Michigan",
+  //   date: "Sept 2017 - Apr 2021",
+  //   link: "https://cse.engin.umich.edu/",
+  //   position: "BSE in Computer Science",
+  //   languages: [],
+  //   tools: [],
+  //   description:
+  //     "Graduated with Magna Cum Laude from the University of Michigan College of Engineering. Completed courses include Web Systems, Databases, User Interfaces, Artificial Intelligence, and Information Retrieval.",
+  //   image: require("../../static/experience/umich.png"),
+  // },
 ];

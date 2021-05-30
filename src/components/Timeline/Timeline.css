@@ -41,6 +41,10 @@
   border-radius: 50%;
 }
 
+.timeline .timelineRow:hover .dateColumn .dateMark {
+  background-color: var(--dark-blue);
+}
+
 .timeline .timelineRow .positionColumn {
   transform: translateY(-5px);
 
@@ -73,9 +77,13 @@
   font-weight: bold;
 }
 
+.timeline .timelineRow .positionColumn .positionCompany .positionDate-mobile {
+  display: none;
+}
+
 .timeline .timelineRow .positionColumn .positionName {
-  font-style: italic;
   font-size: 17px;
+  color: gray;
 }
 
 .timeline .timelineRow .positionColumn .positionDscription {
@@ -97,4 +105,86 @@
 
 .timeline .expandTimelineButton:hover {
   background-color: var(--blue);
+}
+
+@media (max-width: 991px) {
+  .timeline {
+    --time-column-width: 170px;
+    --logo-column-width: 80px;
+  }
+
+  .timeline .timelineRow .dateColumn {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+
+  .timeline .timelineRow .positionColumn {
+    padding-bottom: 20px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .timeline .timelineRow .positionColumn .logoWrapper {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline {
+  }
+
+  .timeline .timelineRow {
+    display: block;
+  }
+
+  .timeline .timelineRow .dateColumn {
+    display: none;
+  }
+
+  .timeline .timelineRow .positionColumn {
+    transform: none;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0 0 20px 0;
+  }
+
+  .timeline .timelineRow .positionColumn-last {
+    margin-bottom: 0;
+  }
+
+  .timeline .timelineRow .positionColumn .logoWrapper {
+  }
+
+  .timeline .timelineRow .positionColumn .positionInfo {
+    flex: 1;
+  }
+
+  .timeline .timelineRow .positionColumn .positionCompany {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .timeline .timelineRow .positionColumn .positionCompany .positionDate-mobile {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .timeline {
+  }
+
+  .timeline .timelineRow .positionColumn .positionCompany {
+    font-size: 20px;
+  }
+
+  .timeline .timelineRow .positionColumn .positionName {
+    font-size: 15px;
+  }
+
+  .timeline .timelineRow .positionColumn .positionDscription {
+    font-size: 15px;
+  }
 }

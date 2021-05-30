@@ -3,7 +3,6 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop";
 import "./App.css";
 import Home from "../Home/Home";
-import Experience from "../Experience/Experience";
 import AllProjects from "../AllProjects/AllProjects";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -16,10 +15,6 @@ function App() {
 
         <Route exact path="/">
           <Home />
-        </Route>
-
-        <Route exact path="/experience">
-          <Experience />
         </Route>
 
         <Route exact path="/projects">

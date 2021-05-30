@@ -12,8 +12,6 @@ import "./Home.css";
 const HEADER_HEIGHT_PIXELS = 45;
 
 class Home extends React.Component {
-  homeDividerRef = React.createRef();
-
   state = {
     finishedLoading: false,
   };
@@ -29,7 +27,7 @@ class Home extends React.Component {
   scrollToAbout = () => {
     window.scrollTo(
       0,
-      this.homeDividerRef.current.offsetTop - HEADER_HEIGHT_PIXELS
+      document.getElementById("about").offsetTop - HEADER_HEIGHT_PIXELS
     );
   };
 
@@ -92,8 +90,6 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-
-          <div ref={this.homeDividerRef} />
 
           <About />
 

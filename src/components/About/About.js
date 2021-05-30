@@ -32,7 +32,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div className={classnames("about", animate("fadeInFast"))}>
+      <div id="about" className={classnames("about", animate("fadeInFast"))}>
         <div className="container">
           <div className="row">
             <div className="col-md-3">
