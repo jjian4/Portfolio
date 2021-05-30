@@ -1,12 +1,5 @@
 .about {
-  background-color: var(--gray);
-  font-size: 20px;
-  /* min-height: calc(100vh - var(--header-height) - var(--footer-height)); */
-}
-
-/* Intro */
-
-.about .intro {
+  background-color: var(--whitesmoke);
   padding: 50px 0;
   font-size: 22px;
 }
@@ -17,76 +10,10 @@
   margin-top: 5px;
 }
 
-/* Skills */
-
-.about .skills {
-  padding: 30px 0;
-}
-
-/* Showcase */
-/* 
-.about .showcase {
-    padding: 50px 0;
-    background-color: var(--dark-gray);
-}
-
-.about .showcaseSection {
-    text-align: center;
-    margin: 0px 0 40px 0;
-}
-
-.about .showcaseSectionImage {
-    width: 40%;
-}
-
-.about .showcaseButton {
-    margin-top: 25px;
-    font-size: 22px;
-    padding: 3px 20px;
-    border-radius: 20px;
-}
-
-.about .recommendation {
-    padding: 20px 5%;
-    margin: 15px auto;
-    font-size: 20px;
-    border-top: 3px solid var(--blue);
-    border-bottom: 3px solid var(--blue);
-    width: 90%;
-}
-.about .recommendation .fa-quote-left {
-    margin-right: 12px;
-}
-.about .recommendation .fa-quote-right {
-    margin-left: 12px;
-}
-.about .recommendation .recommendationName {
-    text-align: right;
-    padding-top: 5px;
-    font-size: 18px;
-    font-style: italic;
-}
-.about .recommendation .recommendationName svg {
-    margin-left: 5px;
-} */
-
 @media (max-width: 991px) {
   .about {
     font-size: 18px;
   }
-
-  /* Intro */
-  .about .intro {
-    font-size: 18px;
-  }
-  /* 
-    .about .showcaseSectionImage {
-        width: 60%;
-    }
-
-    .about .recommendation {
-        width: 100%;
-    } */
 }
 
 @media (max-width: 767px) {
@@ -100,11 +27,4 @@
 }
 
 @media (max-width: 575px) {
-  /* .about .showcaseSectionImage {
-        width: 40%;
-    }
-
-    .about .showcaseButton {
-        margin-top: 20px;
-    } */
 }

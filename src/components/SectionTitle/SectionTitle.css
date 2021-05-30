@@ -2,6 +2,7 @@
   text-align: left;
   padding-bottom: 20px;
   line-height: 1;
+  z-index: 3;
 }
 
 .sectionTitle .text {

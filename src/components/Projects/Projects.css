@@ -1,114 +1,14 @@
 .projects {
   padding: 50px 0;
-  background-color: var(--smoke);
+  background-color: white;
   text-align: center;
 }
 
-.projects .projectCardWrapper {
-  margin-bottom: 30px;
-}
-
-.projects .projectCard {
-  border: 3px solid var(--blue);
-  position: relative;
-
-  border-radius: 10px;
-  background-color: white;
-
-  overflow: hidden;
-
-  height: 100%;
-  margin: 0 25px;
-}
-
-.projects .projectCard .cardTop {
-  position: relative;
-}
-
-.projects .projectCard .cardTop .cardImage {
-  width: 100%;
-}
-
-.projects .projectCard .cardTop .cardBlur {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: 0;
-  transition: opacity 0.15s ease-in;
-}
-
-.projects .projectCard:hover .cardTop .cardBlur {
-  opacity: 0.4;
-}
-
-.projects .projectCard .cardButtons {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  display: flex;
-  margin: 10px;
-
-  transform: translateY(-150%);
-  transition: transform 0.5s;
-}
-
-.projects .projectCard:hover .cardButtons {
-  transform: translateY(0px);
-}
-
-.projects .projectCard .cardButtons .cardButton {
-  cursor: pointer;
-  font-size: 20px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  margin: 0 5px;
-  background-color: white;
-  color: var(--blue);
-  transition: 0.15s ease-in;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projects .projectCard .cardButtons .cardButton:hover {
-  background-color: var(--blue);
-  color: white;
-}
-
-.projects .projectCard .cardFooter {
-  cursor: pointer;
-
-  background-color: white;
-  padding: 12px 20px;
-  text-align: left;
-}
-
-.projects .projectCard .cardFooter .cardTitle {
-  font-size: 24px;
-}
-
-.projects .projectCard .cardFooter .cardDescription {
-  font-size: 16px;
-}
-
-.projects .projectCard .cardFooter .cardTags {
-  padding-top: 5px;
-  text-align: right;
-}
-
-.projects .projectCard .cardFooter .cardTags .tag {
-  margin: 3px 0 3px 6px;
+.projects .projectRowWrapper {
+  margin-bottom: 40px;
 }
 
 .projects .moreProjectsButton {
-  margin-top: 10px;
   font-size: 22px;
   padding: 6px 30px;
   border: none;
@@ -121,7 +21,4 @@
 }
 
 @media (max-width: 767px) {
-  .projects .projectCard {
-    margin: 0;
-  }
 }

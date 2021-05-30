@@ -1,6 +1,6 @@
 .timeline {
   padding: 50px 0;
-  background-color: white;
+  background-color: var(--whitesmoke);
   text-align: center;
 
   --time-column-width: 200px;
