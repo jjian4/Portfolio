@@ -110,6 +110,40 @@ class ProjectCard extends React.Component {
   }
 }
 
+// class ProjectCard2 extends React.Component {
+//   state = {
+//     imageModalOpen: false,
+//   };
+
+//   openImageModal = () => {
+//     this.setState({ imageModalOpen: true });
+//   };
+
+//   closeImageModal = () => {
+//     this.setState({ imageModalOpen: false });
+//   };
+
+//   render() {
+//     const languages = this.props.languages.map((item, i) => (
+//       <span className="tag languageTag" key={i}>
+//         {item}
+//       </span>
+//     ));
+
+//     const tools = this.props.tools.map((item, i) => (
+//       <span className="tag toolTag" key={i}>
+//         {item}
+//       </span>
+//     ));
+
+//     return (
+//       <div className="projectCard2">
+
+//       </div>
+//     );
+//   }
+// }
+
 const Projects = () => {
   return (
     <div className={classnames("projects", animate("fadeInFast"))}>

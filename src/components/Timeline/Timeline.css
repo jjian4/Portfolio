@@ -1,6 +1,7 @@
 .timeline {
   padding: 50px 0;
-  background-color: var(--gray);
+  background-color: white;
+  text-align: center;
 
   --time-column-width: 200px;
   --logo-column-width: 100px;
@@ -8,23 +9,51 @@
 
 .timeline .timelineRow {
   display: flex;
-  /* border-left: 1px solid gray;
-  padding: 10px 20px; */
+  text-align: left;
 }
 
 .timeline .timelineRow .dateColumn {
+  position: relative;
   width: var(--time-column-width);
   text-align: right;
   padding-right: 30px;
-  border-right: 1px solid gray;
+  border-right: 1px solid var(--dark-gray);
+}
+
+.timeline .timelineRow .dateColumn .date {
+  line-height: 1;
+  transform: translateY(-5px);
+
   font-style: italic;
   color: gray;
 }
 
+.timeline .timelineRow .dateColumn .dateMark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(55%);
+
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+
 .timeline .timelineRow .positionColumn {
+  transform: translateY(-5px);
+
   width: calc(100% - var(--time-column-width));
-  padding: 0 30px 45px 30px;
+  padding-bottom: 30px;
+  /* border-bottom: 1px solid var(--dark-gray); */
+  margin: 0 30px 30px 30px;
   display: flex;
+}
+
+.timeline .timelineRow .positionColumn-last {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .timeline .timelineRow .positionColumn .logoWrapper {
@@ -38,6 +67,8 @@
 }
 
 .timeline .timelineRow .positionColumn .positionCompany {
+  line-height: 1;
+  padding-bottom: 5px;
   font-size: 22px;
   font-weight: bold;
 }
@@ -53,4 +84,17 @@
 
 .timeline .timelineRow .positionColumn .positionTags {
   padding-top: 5px;
+}
+
+.timeline .expandTimelineButton {
+  margin-top: 10px;
+  font-size: 22px;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark-blue);
+}
+
+.timeline .expandTimelineButton:hover {
+  background-color: var(--blue);
 }

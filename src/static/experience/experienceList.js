@@ -12,7 +12,7 @@ export const EXPERIENCE_LIST = [
   {
     title: "Instagram",
     date: "May - Aug 2020",
-    link: "https://www.facebook.com/careers",
+    link: "https://about.instagram.com/about-us/careers",
     position: "Software Engineer Intern",
     languages: ["Python", "PHP", "JavaScript"],
     tools: ["Django", "React", "GraphQL"],
@@ -58,7 +58,7 @@ export const EXPERIENCE_LIST = [
     languages: ["Dart"],
     tools: ["Flutter", "MySQL", "DialogFlow"],
     description:
-      "Under the Multidisciplinary Design Program, I completed a year-long corporate-sponsored project with five other students under the Multidisciplinary Design Program. My team and I developed a natural language processing mobile application to interpret and respond to customers&#39; intents. We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.",
+      "Under the Multidisciplinary Design Program, I completed a year-long corporate-sponsored project with five other students under the Multidisciplinary Design Program. My team and I developed a natural language processing mobile application to interpret and respond to customers' intents. We continuously built prototypes and updated our sponsors, using JIRA to manage multiple tasks across the team.",
     image: require("../../static/experience/littleCaesars.png"),
   },
   {
@@ -69,7 +69,7 @@ export const EXPERIENCE_LIST = [
     languages: ["Python", "JavaScript"],
     tools: ["Flask", "React", "SQL"],
     description:
-      "The Michigan Daily is University of Michigan&#39;s oldest publication organization. As an engineer on the Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives to help grow the development team.",
+      "The Michigan Daily is University of Michigan's oldest publication organization. As an engineer on the Web Team, I collaborate weekly with other students to create digital features for the main news website and GradeGuide, a online tool for comparing grade distribution data from courses. I am the Recruitment Chair and lead recruitment drives to help grow the development team.",
     image: require("../../static/experience/michiganDaily.png"),
   },
 ];

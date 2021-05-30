@@ -22,8 +22,16 @@ const TimelineRow = (props) => {
 
   return (
     <div className="timelineRow">
-      <div className="dateColumn">{props.date}</div>
-      <div className="positionColumn">
+      <div className="dateColumn">
+        <div className="date">{props.date}</div>
+        <div className="dateMark" />
+      </div>
+
+      <div
+        className={classnames("positionColumn", {
+          "positionColumn-last": props.isLastRow,
+        })}
+      >
         <div className="logoWrapper">
           <a href={props.link} target="_blank" rel="noopener noreferrer">
             <img
@@ -51,20 +59,59 @@ const TimelineRow = (props) => {
   );
 };
 
-const Timeline = () => {
-  return (
-    <div className={classnames("timeline", animate("fadeInFast"))}>
-      <div className="container">
-        <SectionTitle text="Experience" />
+class Timeline extends React.Component {
+  state = {
+    isExpanded: false,
+  };
 
-        <div>
-          {EXPERIENCE_LIST.map((item, i) => {
-            return <TimelineRow {...item} key={i} />;
-          })}
+  render() {
+    const recentExperience = EXPERIENCE_LIST.slice(0, 3);
+    const olderExperience = EXPERIENCE_LIST.slice(3);
+
+    return (
+      <div className={classnames("timeline", animate("fadeInFast"))}>
+        <div className="container">
+          <SectionTitle text="Experience" />
+
+          <div>
+            {recentExperience.map((item, i) => {
+              return (
+                <TimelineRow
+                  {...item}
+                  key={i}
+                  isLastRow={
+                    !this.state.isExpanded && i === recentExperience.length - 1
+                  }
+                />
+              );
+            })}
+
+            {this.state.isExpanded &&
+              olderExperience.map((item, i) => {
+                console.log(i);
+                console.log(i === olderExperience.length - 1);
+                return (
+                  <TimelineRow
+                    {...item}
+                    key={i}
+                    isLastRow={i === olderExperience.length - 1}
+                  />
+                );
+              })}
+          </div>
+
+          {!this.state.isExpanded && (
+            <button
+              className="button expandTimelineButton"
+              onClick={() => this.setState({ isExpanded: true })}
+            >
+              See More
+            </button>
+          )}
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Timeline;
