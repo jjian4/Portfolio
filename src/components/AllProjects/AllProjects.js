@@ -4,11 +4,16 @@ import animate from "../../animations";
 import { PROJECTS_LIST } from "../../static/projects/projectsList";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import ProjectRow from "../ProjectRow/ProjectRow";
+import { scrollToTop } from "../../scrollHelpers";
 import "./AllProjects.css";
 
-const AllProjects = () => {
-  return (
-    <>
+class AllProjects extends React.Component {
+  componentDidMount() {
+    scrollToTop();
+  }
+
+  render() {
+    return (
       <div className="allProjects">
         <div className="container">
           <div className={classnames(animate("fadeInDown"))}>
@@ -22,6 +27,7 @@ const AllProjects = () => {
                   "projectRowWrapper",
                   animate("fadeInDown")
                 )}
+                key={i}
               >
                 <ProjectRow {...item} key={i} />
               </div>
@@ -42,8 +48,8 @@ const AllProjects = () => {
           !
         </div>
       </div>
-    </>
-  );
-};
+    );
+  }
+}
 
 export default AllProjects;

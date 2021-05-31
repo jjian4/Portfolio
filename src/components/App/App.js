@@ -1,27 +1,25 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import ScrollToTop from "../ScrollToTop";
-import "./App.css";
+import Header from "../Header/Header";
 import Home from "../Home/Home";
 import AllProjects from "../AllProjects/AllProjects";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop>
-        <Header />
+      <Header />
 
-        <Route exact path="/">
-          <Home />
-        </Route>
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-        <Route exact path="/projects">
-          <AllProjects />
-        </Route>
-        <Footer />
-      </ScrollToTop>
+      <Route exact path="/projects">
+        <AllProjects />
+      </Route>
+
+      <Footer />
     </Router>
   );
 }

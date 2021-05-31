@@ -26,38 +26,29 @@
   white-space: nowrap;
 }
 
-.header .navItem {
-  background-color: transparent;
+.header .navLink {
+  display: inline-block;
   color: white;
-  border: none;
 }
 
-.header .navItem:focus {
-  outline: 0;
-}
-
-.header .navItem:not(:last-child) {
+.header .navLink:not(:last-child) {
   margin-right: 20px;
 }
 
-.header .navItem div {
+.header .navLink div {
   border-bottom: 3px solid transparent;
 }
 
-.header .navItem:focus div {
-  border-bottom: 1px solid var(--dark-blue);
-}
-
-.header .headerContent .navItem-active div {
+.header .headerContent .navLink-active div {
   transition: all 0.15s ease-in-out;
   border-bottom: 3px solid var(--blue);
 }
 
 @media (max-width: 575px) {
-  .header .navItem {
+  .header .navLink {
     font-size: 13px;
   }
-  .header .navItem:not(:last-child) {
-    margin-right: 5px;
+  .header .navLink:not(:last-child) {
+    margin-right: 10px;
   }
 }

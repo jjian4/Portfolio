@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
+import {
+  HEADER_HEIGHT_PIXELS,
+  scrollToProjects,
+  scrollToExperience,
+  scrollToTop,
+} from "../../scrollHelpers";
 import "./Header.css";
-
-const HEADER_HEIGHT_PIXELS = 45;
 
 class Header extends React.Component {
   state = {
@@ -23,33 +27,13 @@ class Header extends React.Component {
     this.setState({ scrollPosition: document.documentElement.scrollTop });
   };
 
-  scrollToAbout = () => {
-    window.scrollTo(
-      0,
-      document.getElementById("about")?.offsetTop - HEADER_HEIGHT_PIXELS
-    );
-  };
-
-  scrollToProjects = () => {
-    window.scrollTo(
-      0,
-      document.getElementById("projects")?.offsetTop - HEADER_HEIGHT_PIXELS
-    );
-  };
-
-  scrollToExperience = () => {
-    window.scrollTo(
-      0,
-      document.getElementById("experience")?.offsetTop - HEADER_HEIGHT_PIXELS
-    );
-  };
-
   isScrollInProjects = () => {
     const element = document.getElementById("projects");
     const elementPosition = element?.offsetTop - HEADER_HEIGHT_PIXELS;
     return (
-      this.state.scrollPosition >= elementPosition &&
-      this.state.scrollPosition < elementPosition + element?.offsetHeight
+      this.state.scrollPosition >= elementPosition - window.innerHeight / 4 &&
+      this.state.scrollPosition <
+        elementPosition + element?.offsetHeight - window.innerHeight / 4
     );
   };
 
@@ -57,8 +41,9 @@ class Header extends React.Component {
     const element = document.getElementById("experience");
     const elementPosition = element?.offsetTop - HEADER_HEIGHT_PIXELS;
     return (
-      this.state.scrollPosition >= elementPosition &&
-      this.state.scrollPosition < elementPosition + element?.offsetHeight
+      this.state.scrollPosition >= elementPosition - window.innerHeight / 4 &&
+      this.state.scrollPosition <
+        elementPosition + element?.offsetHeight - window.innerHeight / 4
     );
   };
 
@@ -68,28 +53,30 @@ class Header extends React.Component {
         <div className="container">
           <div className="headerContent">
             <div className="logo">
-              <Link to="/" onClick={this.scrollToAbout}>
+              <Link to="/" onClick={scrollToTop}>
                 James Jiang
               </Link>
             </div>
 
             <div>
-              <button
-                className={classnames("navItem", {
-                  "navItem-active": this.isScrollInProjects(),
+              <Link
+                className={classnames("navLink", {
+                  "navLink-active": this.isScrollInProjects(),
                 })}
-                onClick={this.scrollToProjects}
+                to="/#projects"
+                onClick={scrollToProjects}
               >
                 <div>Projects</div>
-              </button>
-              <button
-                className={classnames("navItem", {
-                  "navItem-active": this.isScrollInExperience(),
+              </Link>
+              <Link
+                className={classnames("navLink", {
+                  "navLink-active": this.isScrollInExperience(),
                 })}
-                onClick={this.scrollToExperience}
+                to="/#experience"
+                onClick={scrollToExperience}
               >
                 <div>Experience</div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

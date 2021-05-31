@@ -7,28 +7,34 @@ import About from "../About/About";
 import animate from "../../animations";
 import Projects from "../Projects/Projects";
 import Timeline from "../Timeline/Timeline";
+import {
+  scrollToAbout,
+  scrollToProjects,
+  scrollToExperience,
+  scrollToTop,
+} from "../../scrollHelpers";
 import "./Home.css";
-
-const HEADER_HEIGHT_PIXELS = 45;
 
 class Home extends React.Component {
   state = {
     finishedLoading: false,
   };
 
-  hideSpinner = () => {
+  hideSpinner = async () => {
     if (!this.state.finishedLoading) {
-      // Scroll to top to hide spinner offset change
-      window.scrollTo(0, 0);
-      this.setState({ finishedLoading: true });
-    }
-  };
+      await this.setState({ finishedLoading: true });
 
-  scrollToAbout = () => {
-    window.scrollTo(
-      0,
-      document.getElementById("about").offsetTop - HEADER_HEIGHT_PIXELS
-    );
+      // Scroll to top (or another section) after spinner page disappears
+      if (window.location.href.includes("#about")) {
+        scrollToAbout();
+      } else if (window.location.href.includes("#projects")) {
+        scrollToProjects();
+      } else if (window.location.href.includes("#experience")) {
+        scrollToExperience();
+      } else {
+        scrollToTop();
+      }
+    }
   };
 
   render() {
