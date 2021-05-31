@@ -90,7 +90,7 @@ class Home extends React.Component {
             </div>
             <div className="container">
               <div className="landingArrow">
-                <button onClick={this.scrollToAbout}>
+                <button onClick={scrollToAbout}>
                   <FontAwesomeIcon icon={faAngleDoubleDown} />
                 </button>
               </div>

@@ -102,7 +102,7 @@ class Timeline extends React.Component {
 
           {!this.state.isExpanded && (
             <button
-              className="button expandTimelineButton"
+              className="expandTimelineButton"
               onClick={() => this.setState({ isExpanded: true })}
             >
               See More

@@ -22,7 +22,7 @@ const Projects = () => {
           <ProjectRow {...PROJECTS_LIST[1]} />
         </div>
 
-        <Link to="/projects" className="button moreProjectsButton">
+        <Link to="/projects" className="moreProjectsButton">
           See More
         </Link>
       </div>

@@ -1,53 +1,39 @@
 import React from "react";
 import classnames from "classnames";
-import { shuffle } from "lodash";
 import animate from "../../animations";
 import "./About.css";
 
-const portraits = shuffle([
+const portraits = [
   require("../../static/about/portrait0.jpg"),
-  require("../../static/about/portrait1.jpg"),
+  require("../../static/about/portrait1.png"),
   require("../../static/about/portrait2.jpg"),
   require("../../static/about/portrait3.jpg"),
-]);
+  require("../../static/about/portrait4.jpg"),
+];
+
+const portraitIndex = Math.floor(Math.random() * portraits.length);
 
 class About extends React.Component {
-  state = {
-    portraitIndex: 0,
-  };
-
-  componentDidMount() {
-    this.timer = setInterval(this.updatePortraits, 12000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-
-  updatePortraits = () => {
-    this.setState((prevState) => ({
-      portraitIndex: (prevState.portraitIndex + 1) % portraits.length,
-    }));
-  };
-
   render() {
     return (
       <div id="about" className={classnames("about", animate("fadeInFast"))}>
         <div className="container">
           <div className="row">
-            <div className="col-md-3">
-              <img
-                className="portrait"
-                src={portraits[this.state.portraitIndex]}
-                alt="portrait"
-              />
+            <div className="col-md-4">
+              <div className="portraitWrapper">
+                <img
+                  className="portrait"
+                  src={portraits[portraitIndex]}
+                  alt="portrait"
+                />
+              </div>
             </div>
-            <div className="col-md-9">
+            <div className="col-md-8">
               <p className={animate("fadeInRightFast")}>
-                I study Computer Science and minor in Multidisciplinary Design
-                at UMichigan Engineering! With graduation less than a year away,
-                I continue to pursue a career in full stack software engineering
-                with a strong interest in web product management.
+                Hello! I recently graduated from the University of Michigan
+                College of Engineering with a degree in Computer Science. I am
+                pursuing a career in full stack software engineering with a
+                strong interest in product management.
               </p>
               <p className={animate("fadeInRightFast")}>
                 I enjoy creating side projects during my free time and am always

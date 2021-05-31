@@ -41,19 +41,6 @@ a:hover {
   color: inherit;
 }
 
-.button {
-  display: inline-block;
-  background-color: var(--black);
-  border: 1px black solid;
-  color: white;
-  transition: all 0.1s ease-in-out;
-}
-.button:hover {
-  background-color: var(--dark-black);
-  color: white;
-  /* transform: scale(1.05); */
-}
-
 .tag {
   display: inline-block;
   font-size: 12px;

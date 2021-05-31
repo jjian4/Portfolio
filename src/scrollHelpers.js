@@ -14,13 +14,13 @@ export const scrollToAbout = () => {
 export const scrollToProjects = () => {
   window.scrollTo(
     0,
-    document.getElementById("projects")?.offsetTop - HEADER_HEIGHT_PIXELS
+    document.getElementById("projects")?.offsetTop - HEADER_HEIGHT_PIXELS / 2
   );
 };
 
 export const scrollToExperience = () => {
   window.scrollTo(
     0,
-    document.getElementById("experience")?.offsetTop - HEADER_HEIGHT_PIXELS
+    document.getElementById("experience")?.offsetTop - HEADER_HEIGHT_PIXELS / 2
   );
 };
