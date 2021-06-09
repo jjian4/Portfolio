@@ -1,52 +1,54 @@
 .ReactModal__Overlay {
-    z-index: 20;
+  z-index: 20;
 }
 
 .ReactModal__Content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .imageCarousel {
-    overflow-y: hidden;
-    overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .imageCarousel .projectImage {
-    max-width: 100%;
-    max-height: 85vh;
-    margin-left: auto;
-    margin-right: auto;
-    user-select: none;
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
 }
 
 .imageCarousel .slideControl {
-    position: absolute;
-    outline: none;
-    padding: 15px;
-    border: none;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: white;
-    font-size: 50px;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  outline: none;
+  padding: 15px;
+  border: none;
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .imageCarousel .previousButton {
-    left: 3vw;
+  left: 3vw;
 }
 
 .imageCarousel .nextButton {
-    right: 3vw;
+  right: 3vw;
 }
 
 .imageCarousel .imagePage {
-    position: absolute;
-    padding: 3px 10px;
-    background-color: rgb(0, 0, 0, 0.5);
-    border-radius: 15%;
-    color: white;
-    right: 3vw;
-    top: 3vh;
+  position: absolute;
+  padding: 3px 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 15%;
+  color: white;
+  right: 3vw;
+  top: 3vh;
 }

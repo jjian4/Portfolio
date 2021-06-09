@@ -1,5 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("./static/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./static/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
 
 :root {
   --light-blue: #eef7fa;
@@ -15,8 +22,8 @@
   --gray: #e8e8e8;
   --dark-gray: #e0e0e0;
 
-  --font1: "Lato", sans-serif;
-  --font2: "Poppins", sans-serif;
+  --font1: "Lato";
+  --font2: "Poppins";
 
   --header-height: 45px;
   --footer-height: 70px;

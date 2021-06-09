@@ -4,7 +4,7 @@ export const PROJECTS_LIST = [
     languages: ["JavaScript"],
     tools: ["Express", "MongoDB", "Mongoose", "Passport", "React"],
     description:
-      "A personalized job application manager that offers customizable tools to help organize positions during the job search. Record important dates, reorder entries with drag-and-drop, and display your in multiple dashboard and spreadsheet styles.",
+      "A personalized job application manager that offers customizable tools to help organize positions during the job search. Record important dates, reorder entries with drag-and-drop, and display your data in a variety of dashboard and spreadsheet styles.",
     websiteLink: "https://myjam1.herokuapp.com/",
     gitLink: "https://github.com/jjian4/MyJAM",
     bannerImage: require("./myJam/myJam-banner.png"),
