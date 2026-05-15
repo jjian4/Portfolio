@@ -5,10 +5,10 @@ import "./About.css";
 
 const portraits = [
   require("../../static/about/portrait0.jpg"),
-  require("../../static/about/portrait1.png"),
-  require("../../static/about/portrait2.jpg"),
-  require("../../static/about/portrait3.jpg"),
-  require("../../static/about/portrait4.jpg"),
+  // require("../../static/about/portrait1.png"),
+  // require("../../static/about/portrait2.jpg"),
+  // require("../../static/about/portrait3.jpg"),
+  // require("../../static/about/portrait4.jpg"),
 ];
 
 const portraitIndex = Math.floor(Math.random() * portraits.length);
@@ -30,21 +30,19 @@ class About extends React.Component {
             </div>
             <div className="col-md-8">
               <p className={animate("fadeInRightFast")}>
-                Hello! I recently graduated from the University of Michigan
-                College of Engineering with a degree in Computer Science. I am
-                pursuing a career in full stack software engineering with a
-                strong interest in product management.
+                I'm a Senior Software Engineer at Meta with experience building
+                products across Instagram VR, Facebook Marketplace, and Avatars.
+                I specialize in user-facing experiences and enjoy building 0→1
+                products from concept to launch.
               </p>
               <p className={animate("fadeInRightFast")}>
                 I enjoy creating side projects during my free time and am always
-                looking for new opportunities to explore. The number of paths to
-                take in engineering are endless, and I'm excited to be a part of
-                this digital world that is transforming our lives everyday.
+                looking for new opportunities to explore.
               </p>
               <div className={animate("fadeInRight")}>
-                Contact me at{" "}
-                <a className="blueLink" href="mailto:jjian@umich.edu">
-                  jjian@umich.edu
+                Always open to connecting. Feel free to reach out at{" "}
+                <a className="blueLink" href="mailto:jiangja4@gmail.com">
+                  jiangja4@gmail.com
                 </a>{" "}
                 or{" "}
                 <a
@@ -54,8 +52,8 @@ class About extends React.Component {
                   rel="noopener noreferrer"
                 >
                   Linkedin
-                </a>{" "}
-                to connect!
+                </a>
+                .
               </div>
             </div>
           </div>
